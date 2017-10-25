@@ -4,9 +4,7 @@ import pprint
 g = Graph()
 g.parse("sto.ttl", format="turtle")
 
-len(g) # prints 2
-
-
-for stmt in g:
-    pprint.pprint(stmt)
+print("--- start: turtle ---")
+print(g.serialize(format="turtle"))
+print("--- end: turtle ---\n")
 
