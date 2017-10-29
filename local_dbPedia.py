@@ -12,7 +12,7 @@ query = """
     SELECT ?sub ?dbPediaResource WHERE {
          ?sub rdf:type sto:Standard .
          ?sub sto:hasDBpediaResource ?dbPediaResource .
-    } LIMIT 1    
+    } LIMIT 1
     """
 
     # check for the dbPediaResource
@@ -39,14 +39,14 @@ for row in g.query(query):
       """ + "r:" + resource + """ ?pred ?obj
     } 
     """
-    #print prefixes + second_query;
+    # print prefixes + second_query;
 
     sparql.setQuery(prefixes + second_query)
 
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
 
-    for result in results["results"]["bindings"]:
-        print('predicate  ' + result["pred"]["value"] + '   object   ' + result["obj"]["value"])
+    # for result in results["results"]["bindings"]:
+    #     print('predicate  ' + result["pred"]["value"] + '   object   ' + result["obj"]["value"])
         # print result
 
