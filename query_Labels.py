@@ -52,7 +52,7 @@ for row in g.query(sto_query):
   for result in results['results']['bindings']:
     if result['pred']['value'] == 'http://www.w3.org/2000/01/rdf-schema#label':
       label_lang = result['obj']['xml:lang']
-	  # excluding Russian, Arabic and Chinese languages because of the encoding-decoding issues
+      # excluding Russian, Arabic and Chinese languages because of the encoding-decoding issues
       if label_lang not in ['ru', 'ar', 'zh', 'en']:
         # encoding might be needed because of different scripts
         label_str = result['obj']['value'].encode(sys.stdout.encoding, errors='replace')
