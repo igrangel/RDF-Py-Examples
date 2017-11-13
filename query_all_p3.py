@@ -18,6 +18,13 @@ sto_query = """
 """
 
 obj_types = ['uri', 'literal', 'typed-literal', 'bnode']
+excl_pred = [
+  'http://dbpedia.org/ontology/thumbnail', 
+  'http://dbpedia.org/ontology/wikiPageID',
+  'http://dbpedia.org/ontology/wikiPageRevisionID',
+  'http://purl.org/voc/vrank#hasRank',
+  'http://xmlns.com/foaf/0.1/depiction'
+  ]
 update_num = 0
 for row in g.query(sto_query):
   # extracting the name of the standard
@@ -51,28 +58,34 @@ for row in g.query(sto_query):
 
   # parsing returned JSON object and extracting all possible labels
   for result in results['results']['bindings']:
-    res_pred = URIRef(result['pred']['value'])
-    res_obj_val = result['obj']['value']
-    res_obj_type = result['obj']['type']
-
-    # Types: uri / literal / typed-literal / bnode
-    if res_obj_type == 'uri':
-      g.add([row[0], res_pred, URIRef(res_obj_val)])
-    elif res_obj_type == 'literal':
-      if 'xml:lang' in result['obj']:
-        g.add([row[0], res_pred, Literal(res_obj_val, result['obj']['xml:lang'])])
+    if result['pred']['value'] not in excl_pred:
+      res_pred = URIRef(result['pred']['value'])
+      res_obj_val = result['obj']['value']
+      res_obj_type = result['obj']['type']
+      
+      # Types: uri / literal / typed-literal / bnode
+      if res_obj_type == 'uri':
+        g.add([row[0], res_pred, URIRef(res_obj_val)])
+      elif res_obj_type == 'literal':
+        if 'xml:lang' in result['obj']:
+          g.add([row[0], res_pred, Literal(res_obj_val, result['obj']['xml:lang'])])
+        else:
+          g.add([row[0], res_pred, Literal(res_obj_val)])
+      elif res_obj_type == 'typed-literal':
+        if 'xml:lang' in result['obj']:
+          g.add([row[0], res_pred, Literal(res_obj_val, result['obj']['xml:lang'], datatype=result['obj']['datatype'])])
+        else:
+          g.add([row[0], res_pred, Literal(res_obj_val, datatype=result['obj']['datatype'])])
+      elif res_obj_type == 'bnode':
+        g.add([row[0], res_pred, BNode(res_obj_val)])
       else:
-        g.add([row[0], res_pred, Literal(res_obj_val)])
-    elif res_obj_type == 'typed-literal':
-      if 'xml:lang' in result['obj']:
-        g.add([row[0], res_pred, Literal(res_obj_val, result['obj']['xml:lang'], datatype=result['obj']['datatype'])])
-      else:
-        print(row[0])
-        g.add([row[0], res_pred, Literal(res_obj_val, datatype=result['obj']['datatype'])])
-    elif res_obj_type == 'bnode':
-      g.add([row[0], res_pred, BNode(res_obj_val)])
-    else:
-      print('---UNKNOWN OBJECT TYPE FOR ' + row[1] + '---')
+        print('---UNKNOWN OBJECT TYPE FOR ' + row[1] + '---')
 
 # exporting updated graph to a new .ttl file
+g.bind('dbont', 'http://dbpedia.org/ontology/')
+g.bind('dbprop', 'http://dbpedia.org/property/')
+g.bind('nsprov', 'http://www.w3.org/ns/prov#')
+g.bind('vocvr', 'http://purl.org/voc/vrank#')
+g.bind('lingg', 'http://purl.org/linguistics/gold/')
+
 g.serialize(destination='sto-updated.ttl', format='turtle')

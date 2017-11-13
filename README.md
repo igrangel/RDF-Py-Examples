@@ -1,11 +1,11 @@
 # RDF-Py-Examples
 
 ## Description
-`query_labels_not_en.py` - Querying labels in all languages for subjects that have only labels in English and a DBpedia resource specified (Python2).
-
-`query_all.py` - Querying all available data for subjects that have a DBpedia resource specified (Python2).
-
 `query_all_p3.py` - Querying all available data for subjects that have a DBpedia resource specified (Python3).
+
+`archive/query_labels_not_en.py` - Querying labels in all languages for subjects that have only labels in English and a DBpedia resource specified (Python2).
+
+`archive/query_all.py` - Querying all available data for subjects that have a DBpedia resource specified (Python2).
 
 ## Code Style
 
