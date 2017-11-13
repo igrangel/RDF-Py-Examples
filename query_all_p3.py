@@ -22,8 +22,10 @@ excl_pred = [
   'http://dbpedia.org/ontology/thumbnail', 
   'http://dbpedia.org/ontology/wikiPageID',
   'http://dbpedia.org/ontology/wikiPageRevisionID',
+  'http://dbpedia.org/ontology/wikiPageExternalLink',
   'http://purl.org/voc/vrank#hasRank',
-  'http://xmlns.com/foaf/0.1/depiction'
+  'http://xmlns.com/foaf/0.1/depiction',
+  'http://xmlns.com/foaf/0.1/isPrimaryTopicOf'
   ]
 update_num = 0
 for row in g.query(sto_query):
