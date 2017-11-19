@@ -115,13 +115,6 @@ sto:BBF_TR-069 a <http://dbpedia.org/class/yago/Abstraction100002137>,
 *  покупка оборудования абонентом/клиентом при подключении в виде комплекта у оператора/провайдера; 
 *  самостоятельная покупка оборудования абонентом/клиентом (в этом случае оборудование изначально не настроено для работы в сети оператора/провайдера)."""@ru,
         "TR069是 CPE 和 ACS 之間溝通的通訊協定。CPE 可以藉著這個協定完成服務開通、功能設定、檔案上傳下載、系統檢測 等等初始化及營運管理的必須動作。 TR-069 全名是 Technical Report - 069 是由 DSL Forum (之後更名為 Broadband Forum) 的技術標準制定組織在 2004 年五月發表公開，係在 CWMP (CPE WAN Management Protocol) 上發展的一項遠程控制使用者終端設備的通訊協定。之後於 2006, 2007, 2010, 及 2011年又發表了更新的版本，最新的版本係 1.3。這套協議也同時整合成為一個平台架構，提供給其它終端裝置控管的一個基本平台，讓諸如 VoIP 或 STB 裝置也能透過這項協定的基礎進行管理維護等動作。"@zh ;
-    dbont:wikiPageExternalLink <http://www.axiros.com/tr-069>,
-        <http://www.broadband-forum.org/cwmp.php>,
-        <http://www.broadband-forum.org/marketing/download/mktgdocs/MR-230.pdf>,
-        <http://www.broadband-forum.org/technical/download/TR-069_Amendment-5.pdf>,
-        <http://www.easycwmp.org/>,
-        <http://www.friendly-tech.com/uploads/files/fyyLz-q22XUCzahe6yYLFqEVvk9fJwff.pdf>,
-        <https://genieacs.com/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Application_layer>,
         <http://dbpedia.org/resource/Broadband_Forum>,
         <http://dbpedia.org/resource/Category:Digital_subscriber_line>,
@@ -169,8 +162,7 @@ sto:BBF_TR-069 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1351784>,
         <http://www.wikidata.org/entity/Q1351784>,
         <http://yago-knowledge.org/resource/TR-069> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/TR-069?oldid=726688827> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/TR-069> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/TR-069> ;
     sto:developer sto:BBF ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/TR-069> ;
     sto:hasOfficialResource <https://www.broadband-forum.org/standards-and-software/technical-specifications/tr-069-files-tools> ;
@@ -220,9 +212,6 @@ sto:ETSI_ULE a <http://dbpedia.org/class/yago/Abstraction100002137>,
     rdfs:label "ETSI ULE"@en,
         "ULE - Ultra Low Energy"@en ;
     dbont:abstract "ULE - Ultra Low Energy is a wireless communication standard, which is used to create wireless sensor and actuator networks. The primary application areas of ULE based devices are home automation, home security, climate control. ULE originated from the DECT technology (thus it is often referred to as DECT ULE). In May 2013 ETSI released the specification of the ULE standard (Technical Specification TS 102 939-01). The basic ULE wireless network uses a “star network topology”; i.e. there is one main device, called “base”, which controls the network; the “base” is wirelessly connected to “nodes”, which usually are devices with dedicated functions, such as sensors, remote controls, actuators, smart meters, etc. Some examples of node devices – door locks, smoke detectors, motion detectors, remote controls, gas and electricity meters, baby monitors, elderly care, etc. ULE enables simultaneous data and voice communication; this means that sensors are not limited to indicating the event, but also enable voice interface. A good example is a pendant device for elderly care, which in case of emergency enables person carrying it not only indicate of an emergency situation, but also communicate with a remotely located caretaker, or service station as with regular cordless phone, but all with the simple press of a button. The ULE technology is promoted by the ULE Alliance, a non-profit organization, located in Bern, Switzerland."@en ;
-    dbont:wikiPageExternalLink <http://www.etsi.org/deliver/etsi_ts/102900_102999/10293901/01.01.01_60/ts_10293901v010101p.pdf>,
-        <http://www.etsi.org/news-events/news/673-2013-05-etsi-publishes-dect-ule-specification>,
-        <http://www.ulealliance.org/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/802.11b>,
         <http://dbpedia.org/resource/802.11g>,
         <http://dbpedia.org/resource/Bluetooth>,
@@ -240,8 +229,7 @@ sto:ETSI_ULE a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q17146026>,
         <http://www.wikidata.org/entity/Q17146026>,
         <http://yago-knowledge.org/resource/ULE_-_Ultra_Low_Energy> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ULE_-_Ultra_Low_Energy?oldid=601212016> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/ULE_-_Ultra_Low_Energy> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ULE_-_Ultra_Low_Energy> ;
     sto:developer sto:ETSI ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/ULE_-_Ultra_Low_Energy> ;
     sto:hasOfficialResource <http://www.etsi.org/technologies-clusters/technologies/dect/dect-ule> ;
@@ -266,8 +254,7 @@ sto:IEC_14443 a sto:Standard ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/International_Organization_for_Standardization> ;
     rdfs:comment "The ISO/IEC 14443 standard is a four-part international standard for contact-less smart cards operating at 13.56 MHz in close proximity (~10cm) with a reader antenna. This ISO standard describes the modulation and transmission protocols between card and reader to create interoperability for contact-less smart card products. There are two main communication protocols supported by the ISO/IEC 14443 standard, they are addressed as Type A and Type B. Most High Frequency (13.56 MHz) proximity tags are using these guidelines for their communication."@en ;
     owl:sameAs sto:ISO_14443 ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO?oldid=530584969> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/ISO> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/ISO/IEC_14443> ;
     sto:hasOfficialResource <https://www.iso.org/standard/70170.html> ;
     sto:hasTag "Identification cards -- Contactless integrated circuit cards -- Proximity cards"@en ;
@@ -375,9 +362,6 @@ sto:IEC_61508 a <http://dbpedia.org/class/yago/Abstraction100002137>,
 *  Phases 14-16 concernant l'opération. L’analyse de sécurité détermine un niveau de risque appelé SIL, Safety Integrity Level (ou niveau d'intégrité de la sécurité) classé de SIL 1 à SIL 4, SIL 4 correspondant au risque le plus élevé. En fonction de ce niveau de risques, les activités de développement imposées par la norme sont plus contraignantes. Ainsi pour le matériel, les taux de fiabilité attendus seront plus élevés pour un système classé SIL 4. Quant au logiciel dans le cas d'un système électronique programmables, sa fiabilité n'étant pas quantifiable, les contraintes liées à son processus de développement seront plus fortes avec par exemple un niveau de documentation supérieure, une exigence supérieure sur les tests ou encore une exigence d'indépendance entre les personnes qui conçoivent et celles qui testent afin d'éviter les erreurs dites systématiques. Cette norme générique est déclinée par métier. L'ISO 26262 dans le secteur automobile hérite ainsi des principes de la CEI 61508. Dans le secteur ferroviaire, les normes EN 50126, EN 50128, EN 50129 héritent de la CEI 61508, quand le secteur nucléaire dispose de la norme CEI 61513."""@fr,
         "IEC 61508は、IEC（国際電気標準会議）が制定した基本安全規格(basic safety publication)であり、プロセス産業における電気・電子・プログラマブル電子(Electrical・Electronic・Programmable Electronic)（以下、E/E/PE）機能安全に関する国際規格である。E/E/PEの機能または故障・障害によって人命、環境、財産に大きな影響を与えるものなどを対象とする。機械だけで構成する装置はIEC 61508の対象外である。IEC 61508は、プラント、発電所、機械、鉄道､医療機器、家電やシステムのリスクを軽減するために使用するコンピュータ・ソフトウェアを含むE/E/PEによる安全性を高めるための機能安全規格である。また、これらの設計製造・運用保守・改修廃却に至る全製品生存期間（ライフサイクル）における安全評価の要求や、組織の機能安全能力審査、安全評価者の独立性及び従事者の資質(competency)を記述している。また，確率論的危険（リスク）解析などによって，全体システムのリスクが許容リスクを下回るようにするために，当該安全装置の安全度水準（SIL）を決定する。安全に関わる故障・障害を，システマティック故障（決定論的原因故障）と、確率論的で無作為なランダムハードウェア故障に分類し、安全度水準（SIL:Safety Integrity Level）に応じたリスク低減策（対策）を行う。 2000年にIEC61508の第1.0版が制定された。また，2010年にIEC61508の第2.0版が制定された。国内ではJIS C 0508「電気・電子・プログラマブル電子安全関連系の機能安全」として、IEC61508のFDIS、CDV段階のものを1999年に制定している。2012年にJIS C 0508の第2.0版が制定された。"@ja,
         "IEC 61508是一项用于工业领域的国际标准，其名称是《电气/电子/可编程电子安全相關系統的功能安全》（Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems (E/E/PE, or E/E/PES）。 IEC 61508是由国际电工委员会發佈，其目的要建立一个可应用于各种工业領域的基本功能安全标准。它将功能安全定义为：「是受控设备（EUC）或受控设备系統总体安全中的一部分；其安全性是依赖于电气/电子/可编程电子（E/E/PE）安全相關系統、其他技術的安全相關系統或外部风险降低措施的正确機能。」"@zh ;
-    dbont:wikiPageExternalLink <http://www.61508.org/>,
-        <http://www.iec.ch/functionalsafety>,
-        <http://www.nxtbook.com/nxtbooks/cmp/esd-europe0607/index.php?startpage=32> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/ALARP>,
         <http://dbpedia.org/resource/Category:Electrical_standards>,
         <http://dbpedia.org/resource/Category:IEC_standards>,
@@ -417,8 +401,7 @@ sto:IEC_61508 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1060017>,
         <http://www.wikidata.org/entity/Q1060017>,
         <http://yago-knowledge.org/resource/IEC_61508> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61508?oldid=745288506> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/IEC_61508> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61508> ;
     rami:hasAdminShellSubmodel rami:Safety ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/IEC_61508> ;
     sto:hasOfficialResource <http://www.iec.ch/functionalsafety/> ;
@@ -465,8 +448,7 @@ sto:IEC_62264 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q1653426>,
         <http://yago-knowledge.org/resource/IEC_62264> ;
     skos:altLabel "B2MML" ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_62264?oldid=738530835> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/IEC_62264> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_62264> ;
     rami:hasRAMIITLayer rami:Functional ;
     sto:developer sto:IEC ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/IEC_62264> ;
@@ -512,7 +494,6 @@ sto:IEC_62424 a <http://dbpedia.org/class/yago/Abbreviation107091587>,
         "IEC 62424"@en ;
     dbont:abstract "CAEX (Computer Aided Engineering Exchange) ist ein neutrales Datenformat zur Speicherung hierarchischer Objektinformationen. Die ursprüngliche Intention für die Entwicklung von CAEX war das Fehlen eines einheitlichen und eingeführten Datenaustauschformates zwischen den Gewerken der Verfahrens- und Prozessleittechnikplanung. Mittels CAEX kann z. B. die hierarchische Anlagenstruktur abgebildet werden, die auf einer gewissen Abstraktionsebene aus verkoppelten und parametrisierten Modulen und Komponenten besteht. CAEX ermöglicht das Speichern dieser Module und Komponenten mit Hilfe des Objektansatzes. Es unterstützt explizit Konzepte wie Kapselung, Klassen, Klassenbibliotheken, Instanzen, Instanzhierarchien, Vererbung, Relationen, Attribute und Schnittstellen. CAEX basiert auf XML und ist als XML-Schema definiert (xsd-Datei). CAEX kann für technische statische Objektstrukturen wie beispielsweise Anlagentopologien, Dokument- oder Produkttopologien oder Petrinetze verwendet werden. CAEX kann jedoch auch im nichttechnischen Bereich angewendet werden, z. B. zur Speicherung von Stammbäumen."@de,
         "CAEX (Computer Aided Engineering Exchange) is a neutral data format that allows storage of hierarchical object information, e.g. the hierarchical architecture of a plant. On a certain abstraction level, a plant consists in modules or components that are interconnected. CAEX allows storage of those modules or components by means of objects. Object oriented concepts as encapsulation, classes, class libraries, instances, instance hierarchies, inheritance, relations, attributes and interfaces are explicitly supported. CAEX bases on XML and is defined as XML schema (xsd file). The original intention of developing CAEX was the industrial lack of a common and established data exchange between process engineering tools and process control engineering tools. However, CAEX can be applied to all types of static object information, e.g. plant topologies, document topologies, product topologies, petri nets, but also for non-technical applications like phylogenetic trees."@en ;
-    dbont:wikiPageExternalLink <http://www.plt.rwth-aachen.de/cms/PLT/Forschung/Projekte2/~ejwy/CAEX_IEC_62424/?lidx=1> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/ABB_Group>,
         <http://dbpedia.org/resource/AutomationML>,
         <http://dbpedia.org/resource/BASF>,
@@ -542,8 +523,7 @@ sto:IEC_62424 a <http://dbpedia.org/class/yago/Abbreviation107091587>,
         <http://wikidata.dbpedia.org/resource/Q1022724>,
         <http://www.wikidata.org/entity/Q1022724>,
         <http://yago-knowledge.org/resource/CAEX> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/CAEX?oldid=681828591> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/CAEX> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/CAEX> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/CAEX> ;
     sto:hasOfficialResource <https://webstore.iec.ch/publication/25442> ;
     sto:hasTag "CAEX"@en ;
@@ -821,12 +801,6 @@ sto:ISO_20922 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "MQ Telemetry Transport (MQTT) – oparty o wzorzec publikacja/subskrypcja, ekstremalnie prosty, lekki protokół transmisji danych. Przeznaczony jest do transmisji dla urządzeń niewymagających dużej przepustowości. Poprzez ograniczenie prędkości transmisji, protokół zapewnia większą niezawodność. Protokół ten idealnie sprawdza się przy połączeniach maszyna-maszyna, w internecie rzeczy (IoT), w urządzeniach mobilnych, oraz tam, gdzie wymagana jest oszczędność przepustowości, oraz energii. Protokół MQTT został stworzony przez Andy'ego Stanforda-Clarka z firmy IBM, oraz przez Arlena Nippera z firmy Arcom (obecnie Eurotech) w 1999r. MQ w nazwie MQTT pochodzi od nazwy linii produktów firmy IBM (message queuing). Najnowsza wersja protokołu to MQTTv3.1.1."@pl,
         "MQTT, acrônimo de Message Queuing Telemetry Transport  (anteriormente conhecido como MQ Telemetry Transport), é um protocolo de mensagens leve para sensores e pequenos dispositivos móveis otimizado para redes TCP/IP não confiáveis ou de alta latência. . O esquema de troca de mensagens é fundamentado no modelo Publicador-Subscritor. MQTT-SN é uma variação do protocolo destinada a redes que não sejam baseadas em TCP/IP, como ZigBee."@pt,
         "MQTT (Message Queue Telemetry Transport)  — упрощённый сетевой протокол, работающий поверх TCP/IP. Используется для обмена сообщениями между устройствами по принципу издатель-подписчик."@ru ;
-    dbont:wikiPageExternalLink <http://mqtt.org/>,
-        <http://www.cirrus-link.com>,
-        <http://www.eejournal.com/blog/is-exactly-once-delivery-possible-with-mqtt/>,
-        <http://www.hivemq.com/blog/mqtt-essentials/>,
-        <http://www.irse.org/knowledge/publicdocuments/3.09%20Wood%20-%20Message%20broker%20technology%20for%20flexible%20signalling%20control.pdf>,
-        <https://media.defcon.org/DEF%20CON%2024/DEF%20CON%2024%20presentations/DEFCON-24-Lucas-Lundgren-Light-Weight%20Protocol-Critical-Implications.pdf> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Advanced_Message_Queuing_Protocol>,
         <http://dbpedia.org/resource/Amazon_Web_Services>,
         <http://dbpedia.org/resource/Andy_Stanford-Clark>,
@@ -879,8 +853,7 @@ sto:ISO_20922 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q10322548>,
         <http://www.wikidata.org/entity/Q10322548>,
         <http://yago-knowledge.org/resource/MQ_Telemetry_Transport> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/MQTT?oldid=742422589> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/MQTT> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/MQTT> ;
     sto:developer sto:IBM,
         sto:OASIS ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/MQTT> ;
@@ -994,24 +967,6 @@ sto:ISO_PAS_17506 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "COLLADAは、対話型3次元コンピュータグラフィックスアプリケーション間の交換用ファイルフォーマット。\"COLLAborative Design Activity\" の略。非営利技術コンソーシアムのクロノス・グループが管理している。 COLLADAは、本来ならそれぞれ非互換なファイルフォーマットでデジタル資産を格納している各種グラフィックスアプリケーションソフトウェアの間で、デジタル資産を交換するためのオープン標準の XML Schema を定義している。デジタル資産を記述したCOLLADA文書はXMLファイルであり、通常は拡張子として .dae (digital asset exchange) を付与する。"@ja,
         "COLLADA (abreviação do inglês para COLLAborative Design Activity) é um padrão de exportação e importação de arquivos criado pela Sony e usado como padrão para o console Playstation 3. É suportado por editores 3D como Blender (software livre), 3D Studio Max e Maya. O formato utiliza XML como padrão e suporta além de modelos detalhados, animações e iluminação."@pt,
         "COLLADA — это формат, разработанный для обмена между 3D приложениями. Управляется некоммерческой организацией Khronos Group. COLLADA использует открытый стандарт XML для обмена форматами, которые в противном случае были бы несовместимы. COLLADA был задуман как промежуточный формат для переноса файлов. Реализована поддержка таких программ, как Maya (используя ColladaMaya); 3ds Max (при помощи ColladaMax); Poser (v.7.0); Lightwave 3D (version 9.5); Cinema 4D (MAXON); Softimage|XSI; Houdini; MeshLab; CityScape, CityEngine, SketchUp, Blender, modo и Strata 3D. Adobe Photoshop с версии CS3. Игровые движки, такие как Unreal engine, Unity и Torque 3D, также поддерживают этот формат. Библиотека Assimp также поддерживает формат COLLADA. 27 марта 2013 года Khronos Group анонсировали, что COLLADA 1.5.0 был опубликован в качестве официального стандарта ISO."@ru ;
-    dbont:wikiPageExternalLink <http://assimp.sourceforge.net/index.html>,
-        <http://collada.org/mediawiki/index.php/COLLADA_DOM>,
-        <http://collada.org/mediawiki/index.php/ColladaMax>,
-        <http://collada.org/mediawiki/index.php/ColladaMaya>,
-        <http://collada.org/mediawiki/index.php/FCollada>,
-        <http://developer.apple.com/library/mac/documentation/3DDrawing/Conceptual/SceneKit_PG/Introduction/Introduction.html>,
-        <http://khronos.org/collada/>,
-        <http://mediagrid.org/news/2010-11_iED_Create_Once_Experience_Everywhere.html>,
-        <http://pycollada.github.com/>,
-        <http://research.scea.com/scea_shared_source_license.html>,
-        <http://sourceforge.net/projects/collada-dom/>,
-        <http://sourceforge.net/projects/glc-player/>,
-        <http://www.cheddarcheesepress.com/>,
-        <http://www.khronos.org/collada/>,
-        <http://www.mobilemodelviewer.com/>,
-        <http://www.neoaxis.com>,
-        <http://www.vandaengine.com>,
-        <https://github.com/khronosGroup/OpenCOLLADA> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/3-D_computer_graphics>,
         <http://dbpedia.org/resource/3D_computer_graphics>,
         <http://dbpedia.org/resource/3ds_Max>,
@@ -1182,8 +1137,7 @@ sto:ISO_PAS_17506 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q603967>,
         <http://www.wikidata.org/entity/Q603967>,
         <http://yago-knowledge.org/resource/COLLADA> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/COLLADA?oldid=737333192> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/COLLADA> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/COLLADA> ;
     sto:developer sto:ISO ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/COLLADA> ;
     sto:hasOfficialResource <https://www.iso.org/standard/59902.html> ;
@@ -1213,7 +1167,6 @@ sto:KATS a dbont:Organisation,
         sto:SDO ;
     rdfs:label "Korean Agency for Technology and Standards"@en ;
     dbont:abstract "Korean Agency for Technology and Standards (KATS) is the government standards organization for South Korea. It is part of the Ministry of Knowledge Economy. KATS is a member of the International Organization for Standardization (ISO), as well as the International Electrotechnical Commission ."@en ;
-    dbont:wikiPageExternalLink <http://www.kats.go.kr> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Category:ISO_member_bodies>,
         <http://dbpedia.org/resource/International_Electrotechnical_Commission>,
         <http://dbpedia.org/resource/International_Organization_for_Standardization>,
@@ -1230,9 +1183,8 @@ sto:KATS a dbont:Organisation,
         <http://rdf.freebase.com/ns/m.0jwz2l4>,
         <http://wikidata.dbpedia.org/resource/Q16094554>,
         <http://www.wikidata.org/entity/Q16094554> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Korean_Agency_for_Technology_and_Standards?oldid=570808450> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Korean_Agency_for_Technology_and_Standards> ;
     foaf:homepage <http://www.kats.go.kr> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Korean_Agency_for_Technology_and_Standards> ;
     sto:abbreviation "KATS"@de ;
     sto:belongsTo dbr:South_Korea ;
     sto:hasDBpediaResource <http://dbpedia.org/page/Korean_Agency_for_Technology_and_Standards> ;
@@ -1260,13 +1212,6 @@ sto:MTConnect a <http://dbpedia.org/class/yago/Abstraction100002137>,
         sto:Standard ;
     rdfs:label "MTConnect"@en ;
     dbont:abstract "MTConnect is a manufacturing industry standard to facilitate the organized retrieval of process information from numerically controlled machine tools. The initiative began as a result of lectures given by David Edstrom of Sun Microsystems and Dr. David Patterson, Professor of Computer Science at the University of California, Berkeley (UCB) at the 2006 annual meeting of the Association for Manufacturing Technology (AMT) membership. The two lectures, “How the Internet’s Participation Age Will Drive Dramatic Changes in the Machine Tool Industry” & “Creating A Thriving American Manufacturing Base In The 21st Century America” described the need for an open communication standard to enable Internet connectivity to manufacturing equipment. Initial development of the standard was carried out by a joint effort between the UCB Electrical Engineering & Computer Sciences (EECS) department, the UCB Mechanical Engineering (ME) department (both in the College of Engineering) and the Georgia Institute of Technology, using input from industry representatives. The resulting standard is available under royalty-free licensing terms."@en ;
-    dbont:wikiPageExternalLink <http://demo.mtconnect.org>,
-        <http://mtconnect.org/>,
-        <http://www.amtonline.org/TechnologyandStandards/TechnologyInitiatives/mtconnct-whatisit.htm>,
-        <http://www.amtonline.org/calendar/related_materials.cfm?file_name=2006Annual+Mtg+Brochure.pdf>,
-        <http://www.controldesign.com/articles/2009/MTConnectIN08Q4.html>,
-        <http://www.mmsonline.com/articles/mtconnect-is-for-real.aspx>,
-        <http://www.mtconnect.org/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/AMT_-_Association_for_Manufacturing_Technology>,
         <http://dbpedia.org/resource/Association_for_Manufacturing_Technology>,
         <http://dbpedia.org/resource/Category:Automation>,
@@ -1313,8 +1258,7 @@ sto:MTConnect a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q6718422>,
         <http://www.wikidata.org/entity/Q6718422>,
         <http://yago-knowledge.org/resource/MTConnect> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/MTConnect?oldid=727445294> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/MTConnect> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/MTConnect> ;
     sto:developer sto:MTConnect_Institute ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/MTConnect> ;
     sto:hasISA95Level sto:DeviceLevel ;
@@ -1384,22 +1328,6 @@ sto:ModBus a <http://dbpedia.org/class/yago/Abstraction100002137>,
 *  公开发表并且无版税要求 2.  
 *  相对容易的工业网络部署 3.  
 *  对供应商来说，修改移动原生的位元或字节没有很多限制 Modbus允许多个 (大約240個) 设备连接在同一个网络上进行通信，举个例子，一个由测量温度和湿度的装置，并且将结果发送给计算机。在数据采集与监视控制系统（SCADA）中，Modbus通常用来连接监控计算机和远程终端控制系统（RTU）。"""@zh ;
-    dbont:wikiPageExternalLink <http://ibh-systems.com/modbus/slave/>,
-        <http://jamod.sourceforge.net/>,
-        <http://libmodbus.org>,
-        <http://wiki.tcl.tk/21150>,
-        <http://www.globalmultimedia.in/modnet.htm>,
-        <http://www.hmisys.com/downloads/PeakHMISlaveSimulatorInstall.exe>,
-        <http://www.interlog.com/~speff/usefulinfo/modbus_protocol.pdf>,
-        <http://www.modbus.org/>,
-        <http://www.modbusbacnet.com/includes/pdf/MODBUS_2010Nov12.pdf>,
-        <https://code.google.com/p/modbus-tk/>,
-        <https://github.com/bashwork/pymodbus>,
-        <https://github.com/digitalpetri/modbus>,
-        <https://github.com/firatkucuk/modslave>,
-        <https://github.com/sourceperl/MBclient>,
-        <https://pypi.python.org/pypi/MinimalModbus>,
-        <https://stackoverflow.com/questions/17081442/python-modbus-library> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/ASCII>,
         <http://dbpedia.org/resource/American_Petroleum_Institute>,
         <http://dbpedia.org/resource/Byte>,
@@ -1485,8 +1413,7 @@ sto:ModBus a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1135322>,
         <http://www.wikidata.org/entity/Q1135322>,
         <http://yago-knowledge.org/resource/Modbus> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Modbus?oldid=743230451> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Modbus> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Modbus> ;
     rami:hasRAMIITLayer rami:Integration ;
     sto:hasDBpediaResource <http://dbpedia.org/page/Modbus> ;
     sto:hasISA95Level sto:SCADALevel ;
@@ -1541,27 +1468,6 @@ sto:NIST a dbont:Agent,
     dbont:headquarter <http://dbpedia.org/resource/Gaithersburg,_Maryland> ;
     dbont:leader <http://dbpedia.org/resource/Willie_E._May> ;
     dbont:location <http://dbpedia.org/resource/Gaithersburg,_Maryland> ;
-    dbont:wikiPageExternalLink <http://dlmf.nist.gov/>,
-        <http://nist.time.gov>,
-        <http://ts.nist.gov/measurementservices/referencematerials/index.cfm>,
-        <http://www.mep.nist.gov>,
-        <http://www.nist.gov>,
-        <http://www.nist.gov/>,
-        <http://www.nist.gov/cnst/>,
-        <http://www.nist.gov/cnst/index.cfm>,
-        <http://www.nist.gov/ctl/>,
-        <http://www.nist.gov/director/vcat/>,
-        <http://www.nist.gov/el/>,
-        <http://www.nist.gov/itl/>,
-        <http://www.nist.gov/mep/>,
-        <http://www.nist.gov/mml/>,
-        <http://www.nist.gov/ncnr/>,
-        <http://www.nist.gov/pml/>,
-        <http://www.nist.gov/publication-portal.cfm>,
-        <http://www.nist.gov/srd/>,
-        <http://www.nist.gov/srm>,
-        <http://www.technicalreports.org/>,
-        <https://www.federalregister.gov/agencies/national-institute-of-standards-and-technology> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/AD-X2>,
         <http://dbpedia.org/resource/Advanced_Encryption_Standard_process>,
         <http://dbpedia.org/resource/Advanced_Technology_Program>,
@@ -1768,9 +1674,8 @@ sto:NIST a dbont:Agent,
         <http://rdf.freebase.com/ns/m.05hhw>,
         <http://wikidata.dbpedia.org/resource/Q176691>,
         <http://www.wikidata.org/entity/Q176691> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology?oldid=735125128> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology> ;
     foaf:homepage <http://www.nist.gov/> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology> ;
     foaf:name "National Institute of Standards and Technology (NIST)"@en ;
     sto:abbreviation "NIST" ;
     sto:belongsTo dbr:United_States ;
@@ -1801,7 +1706,6 @@ sto:ODVA a <http://dbpedia.org/class/yago/Abstraction100002137>,
         sto:SDO ;
     rdfs:label "ODVA (company)"@en ;
     dbont:abstract "ODVA, Inc. (formerly Open DeviceNet Vendors Association, Inc.) was founded in 1995 and is a global trade and standard development organization whose members are suppliers of devices for industrial automation application. To qualify for membership in ODVA, applicants must be an entity that makes and sells products using ODVA technologies. ODVA technologies include the Common Industrial Protocol or \"CIP\" - ODVA's media-independent, object-oriented protocol - along with ODVA's network adaptations of CIP - EtherNet/IP, DeviceNet, ControlNet and CompoNet. ODVA has more than 15 technical working groups, overseen by its Technical Review Board, which develop and enhance ODVA's implementation specifications for its technologies. These specifications define how a product shall be designed in accordance with the specifications. ODVA maintains a conformance testing practice to validate that products designed using ODVA technologies comply with the specifications and interoperate in multivendor systems. ODVA also provides other services to its members to promote adoption of ODVA technologies by industry. ODVA is a US 501(c)6 corporation incorporated in the state of Wisconsin. Its headquarters are in Ann Arbor, Michigan U.S.A. It also has conformance test service providers in North America, China, Germany and Japan."@en ;
-    dbont:wikiPageExternalLink <http://www.odva.org/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Ann_Arbor>,
         <http://dbpedia.org/resource/Category:Computer_network_organizations>,
         <http://dbpedia.org/resource/Common_Industrial_Protocol>,
@@ -1816,8 +1720,7 @@ sto:ODVA a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q7096000>,
         <http://www.wikidata.org/entity/Q7096000>,
         <http://yago-knowledge.org/resource/Open_DeviceNet_Vendors_Association> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ODVA_(company)?oldid=735373463> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/ODVA_(company)> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ODVA_(company)> ;
     sto:abbreviation "ODVA" ;
     sto:formationDate "1995-01-01"^^xsd:date ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/ODVA_(company)> ;
@@ -1846,25 +1749,6 @@ sto:OMG_DDS a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "Data Distribution Service ou DDS est une norme (ou standard de jure) spécifiée par l'OMG (Object Management Group), dont le rôle est de proposer une technologie évoluée d'échanges de données via un réseau. Elle s'adresse principalement aux industries soumises à de fortes contraintes de fiabilité et de performances, telles que l'aéronautique, la défense ou encore les télécommunications, dont les données manipulées peuvent être de nature complexe. DDS se positionne au niveau 7 (couche applicative) du Modèle OSI."@fr,
         "Il Data Distribution Service for Real Time Systems (DDS) è uno standard emanato dall'Object Management Group (OMG) che definisce un middleware per la distribuzione di dati in tempo reale secondo il paradigma publish/subscribe."@it,
         "Data Distribution Service for Real-time Systems（DDS）は、CORBAに欠けていたデータ中心の出版-購読型仕様を求める声に応じて作成された分散システムの出版-購読型ミドルウェアの仕様である。それまでもいくつかの独自なDDSソリューションはあったが、2004年に主要DDSベンダー2社（Real-Time InnovationsとThales）が共同でDDSの標準仕様を策定し、Object Management Group(OMG)がこれを承認したものである。なお、通信プロトコルとしてはRTPSプロトコル(2008年末時点ではRev 2.1)を使用することが規定されている。"@ja ;
-    dbont:wikiPageExternalLink <http://portals.omg.org/dds/>,
-        <http://portals.omg.org/dds/where-can-i-get-dds/>,
-        <http://www.ociweb.com>,
-        <http://www.omg.org/hot-topics/dds.htm>,
-        <http://www.omg.org/news/whitepapers/index.htm#DDS>,
-        <http://www.omg.org/spec/#DDS>,
-        <http://www.opendds.org>,
-        <http://www.opendds.org/downloads.html>,
-        <http://www.opendds.org/license.html>,
-        <http://www.pocomatic.com/docs/whitepapers/dds>,
-        <http://www.prismtech.com>,
-        <http://www.prismtech.com/dds-community/software-downloads>,
-        <http://www.prismtech.com/vortex/software-downloads>,
-        <http://www.prismtech.com/vortex/vortex-opensplice>,
-        <http://www.rti.com/products/compare/>,
-        <https://github.com/PrismTech/opensplice>,
-        <https://github.com/objectcomputing/OpenDDS>,
-        <https://www.rti.com/downloads/rti-dds.html>,
-        <https://www.rti.com/products/dds/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Ada_(programming_language)>,
         <http://dbpedia.org/resource/Air-traffic_control>,
         <http://dbpedia.org/resource/Application_layer>,
@@ -1939,9 +1823,8 @@ sto:OMG_DDS a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q1149607>,
         <http://yago-knowledge.org/resource/Data_Distribution_Service>,
         <http://yago-knowledge.org/resource/Data_distribution_service> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Data_Distribution_Service?oldid=742227385> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Data_Distribution_Service> ;
     foaf:homepage <http://portals.omg.org/dds/> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Data_Distribution_Service> ;
     sto:hasDBpediaResource <http://dbpedia.org/page/Data_Distribution_Service> ;
     sto:hasISA95Level sto:DeviceLevel ;
     sto:hasOfficialResource <http://portals.omg.org/dds/> ;
@@ -1994,20 +1877,6 @@ sto:SysML a <http://dbpedia.org/class/yago/Artifact100021939>,
 *  Большая гибкость и выразительность. SysML убирает программно-ориентированные ограничения UML за счёт введения двух дополнительных типов диаграмм: диаграммы требований и параметрической диаграммы. Первая, очевидно, служит для сбора требований, а вторая для количественного анализа и анализа производительности. В результате становится возможным моделирование широкого спектра систем, которые могут включать оборудование, ПО, информацию, процессы, персонал и площади. 
 *  SysML более компактный язык, его легче изучать и применять, так как он избавлен от многих программно-ориентированных особенностей UML. 
 *  Конструкции языка для управления моделью поддерживают модели, представления (англ. views), и точки зрения (англ. viewpoints) (используются для создания представлений). Эти конструкции расширяют возможности UML и архитектурно стоят в одном ряду с IEEE-Std-1471-2000 (Рекомендованная IEEE практика для архитектурного описания программно-нагруженных систем) англ. (IEEE Recommended Practice for Architectural Description of Software Intensive Systems)."""@ru ;
-    dbont:wikiPageExternalLink <http://mbse.gfse.de>,
-        <http://model-based-systems-engineering.com/sysml-tools/>,
-        <http://www.conceptdraw.com/solution-park/software-sysml>,
-        <http://www.eetimes.com/news/latest/showArticle.jhtml?articleID=187200782>,
-        <http://www.informit.com/store/sysml-distilled-a-brief-guide-to-the-systems-modeling-9780321927866>,
-        <http://www.jot.fm/issues/issue_2007_07/article5.pdf>,
-        <http://www.nomagic.com/support/quick-reference-guides.html>,
-        <http://www.omgsysml.org>,
-        <http://www.omgsysml.org/SysML_Modelling_Language_explained-finance.pdf>,
-        <http://www.sysml.org>,
-        <http://www.system-modeling.com>,
-        <http://www.theiet.org/resources/books/computing/sysml.cfm>,
-        <https://www.youtube.com/watch?v=1tJq6DgY0BE>,
-        <https://www.youtube.com/watch?v=xGDErNmqNLw> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Acceleration>,
         <http://dbpedia.org/resource/Activity_diagram>,
         <http://dbpedia.org/resource/Air_conditioning>,
@@ -2092,8 +1961,7 @@ sto:SysML a <http://dbpedia.org/class/yago/Artifact100021939>,
         <http://wikidata.dbpedia.org/resource/Q2117885>,
         <http://www.wikidata.org/entity/Q2117885>,
         <http://yago-knowledge.org/resource/Systems_Modeling_Language> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Systems_Modeling_Language?oldid=740496028> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Systems_Modeling_Language> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Systems_Modeling_Language> ;
     sto:developer sto:OMG ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Systems_Modeling_Language> ;
     sto:hasOfficialResource <http://sysml.org/>,
@@ -2141,12 +2009,6 @@ sto:W3C_RIF a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "De Rule Interchange Format (RIF) is een standaard van het World Wide Web Consortium (W3C). RIF is een deel van de infrastructuur voor het Semantisch web net als SPARQL, RDF en OWL."@nl,
         "RIF, Rule Interchange Format («формат обмена правилами») — стандартный формат Семантической паутины для обеспечения взаимодействия между системами, основанными на правилах (rule-based system (англ.)). Является рекомендацией W3C с 22 июня 2010 года. Первоначально предназначался в качестве слоя абстракции для работы с правилами в семантической паутине, но в реальности спроектирован для обеспечения взаимодействия между различными языками правил."@ru,
         "规则交换格式（Rule Interchange Format，RIF）是一个已经建议的语义网构成要素。W3C目前正在构建RIF，将其作为可能推荐的，适合于语义网之上基于规则的系统之中规则交换的格式。RIF旨在为不同的规则语言和推理引擎创建一种交换格式。"@zh ;
-    dbont:wikiPageExternalLink <http://TBD/silk#)>,
-        <http://example.org/fuzzy/membershipfunction>,
-        <http://example.org/pub#)>,
-        <http://www.w3.org/2005/rules/wiki/RIF_FAQ>,
-        <http://www.w3.org/2005/rules/wiki/RIF_Working_Group>,
-        <http://xmlns.com/foaf/0.1/)> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Answer_set_programming>,
         <http://dbpedia.org/resource/Category:Knowledge_representation_languages>,
         <http://dbpedia.org/resource/Category:Semantic_Web>,
@@ -2206,8 +2068,7 @@ sto:W3C_RIF a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1857202>,
         <http://www.wikidata.org/entity/Q1857202>,
         <http://yago-knowledge.org/resource/Rule_Interchange_Format> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Rule_Interchange_Format?oldid=744971867> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Rule_Interchange_Format> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Rule_Interchange_Format> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Rule_Interchange_Format> ;
     sto:hasOfficialResource <https://www.w3.org/TR/rif-overview/> ;
     sto:hasTag "RIF"@en ;
@@ -2276,18 +2137,6 @@ sto:W3C_SPARQL a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "SPARQL（讀做「sparkle」、「史巴–摳」）是一種用於RDF上的查詢語言，他的名字是一個遞迴縮寫，代表「SPARQL Protocol and RDF Query Language（SPARQL協定與RDF查詢語言）」。它的標準化為全球資訊網協會的RDF資料存取工作小組（DAWG）所進行，被認為是語意網科技的一個關鍵。2008年1月15日，SPARQL正式成為一項W3C推薦標準。 一個SPARQL查詢由一些三體組合、與邏輯、或邏輯，及選項組合所組成 。 SPARQL現已有在多個程式語言上的實作了。在一個2006年5月的訪問裡，提姆·柏納李說到：「SPARQL將會帶來很大的變化」。"@zh ;
     dbont:developer <http://dbpedia.org/resource/W3C> ;
     dbont:latestReleaseVersion "1.1" ;
-    dbont:wikiPageExternalLink <http://blog.dydra.com/2011/09/08/dawg-tests>,
-        <http://dbpedia.org/isparql/>,
-        <http://jena.sourceforge.net/ARQ/algebra.html>,
-        <http://openjena.org/wiki/SSE>,
-        <http://www.dblab.ntua.gr/~bikakis/SPARQL2XQuery.html>,
-        <http://www.w3.org/2001/sw/DataAccess/>,
-        <http://www.w3.org/TR/2008/REC-rdf-sparql-XMLres-20080115/>,
-        <http://www.w3.org/TR/rdf-sparql-protocol/>,
-        <http://www.w3.org/TR/rdf-sparql-query/>,
-        <http://www.w3.org/TR/sparql11-overview/>,
-        <http://www.w3.org/TR/sparql11-query/>,
-        <https://query.wikidata.org> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/API>,
         <http://dbpedia.org/resource/Apache_Software_Foundation>,
         <http://dbpedia.org/resource/Branch_predication>,
@@ -2372,8 +2221,7 @@ sto:W3C_SPARQL a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q54871>,
         <http://www.wikidata.org/entity/Q54871>,
         <http://yago-knowledge.org/resource/SPARQL> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/SPARQL?oldid=732596660> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/SPARQL> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/SPARQL> ;
     foaf:name "SPARQL"@en ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/SPARQL> ;
     sto:hasOfficialResource <https://www.w3.org/SPARQL> ;
@@ -2641,7 +2489,6 @@ sto:ASAM a dbont:Agent,
     dbont:purpose "International Standardization" ;
     dbont:status "Association" ;
     dbont:type <http://dbpedia.org/resource/International_nongovernmental_organization> ;
-    dbont:wikiPageExternalLink <http://www.asam.net/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/AUTOSAR>,
         <http://dbpedia.org/resource/Application_Programming_Interface>,
         <http://dbpedia.org/resource/Application_programming_interface>,
@@ -2720,9 +2567,8 @@ sto:ASAM a dbont:Agent,
         <http://rdf.freebase.com/ns/m.063_vfh>,
         <http://wikidata.dbpedia.org/resource/Q743638>,
         <http://www.wikidata.org/entity/Q743638> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Association_for_Standardisation_of_Automation_and_Measuring_Systems?oldid=719544369> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Association_for_Standardisation_of_Automation_and_Measuring_Systems> ;
     foaf:homepage <http://www.asam.net/> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Association_for_Standardisation_of_Automation_and_Measuring_Systems> ;
     foaf:name "Association for Standardisation of Automation and Measuring Systems"@en ;
     sto:abbreviation "ASAM" ;
     sto:belongsTo dbr:Germany ;
@@ -2825,10 +2671,6 @@ sto:IBM a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dbont:revenue "8.1741E10"^^<http://dbpedia.org/datatype/usDollar> ;
     dbont:soundRecording <http://dbpedia.org/resource/IBM__1> ;
     dbont:type <http://dbpedia.org/resource/Public_company> ;
-    dbont:wikiPageExternalLink <http://query.nytimes.com/gst/fullpage.html?res=9C00E4DF1631F936A25750C0A9629C8B63&fta=y>,
-        <http://source.icu-project.org/repos/icu/icu/trunk/license.html>,
-        <http://www.ibm.com>,
-        <http://www.ibm.com/us-en/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/1250_René-Lévesque>,
         <http://dbpedia.org/resource/2008_Summer_Olympics>,
         <http://dbpedia.org/resource/330_North_Wabash>,
@@ -3344,9 +3186,8 @@ sto:IBM a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q37156>,
         <http://www4.wiwiss.fu-berlin.de/wikicompany/resource/IBM>,
         <http://yago-knowledge.org/resource/IBM> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IBM?oldid=744295472> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IBM> ;
     foaf:homepage <http://www.ibm.com/us-en/> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/IBM> ;
     foaf:name "International Business Machines Corporation"@en ;
     sto:abbreviation "IBM" ;
     sto:formationDate "1911-06-16"^^xsd:date ;
@@ -3381,9 +3222,6 @@ sto:IEC_61131 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "IEC 61131 es un conjunto de normas e informes técnicos publicados por la Comisión Electrotécnica Internacional con el objetivo de estandarizar los  autómatas programables."@es,
         "CEI 61131 est une norme de la Commission électrotechnique internationale (CEI) destinée à réglementer plusieurs aspects de la programmation, équipements et communication des automates programmables industriels. Cette norme était nommée CEI 1131 auparavant."@fr,
         "IEC 61131是國際電工委員會 (IEC) 制定的可程式邏輯控制器標準。在IEC編號系統更改以前，稱為IEC 1131。"@zh ;
-    dbont:wikiPageExternalLink <http://www.PLCopen-NA.org>,
-        <http://www.PLCopen.org>,
-        <http://www.plcopen.org/pages/tc6_xml/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Category:Electronic_engineering>,
         <http://dbpedia.org/resource/Category:IEC_standards>,
         <http://dbpedia.org/resource/Category:Programmable_logic_controllers>,
@@ -3418,8 +3256,7 @@ sto:IEC_61131 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1275526>,
         <http://www.wikidata.org/entity/Q1275526>,
         <http://yago-knowledge.org/resource/IEC_61131> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61131?oldid=738528954> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/IEC_61131> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61131> ;
     rami:hasRAMIHierarchyLevel rami:ControlDevice,
         rami:Station,
         rami:WorkCenter ;
@@ -3461,8 +3298,7 @@ sto:IEC_61511 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q5970200>,
         <http://www.wikidata.org/entity/Q5970200>,
         <http://yago-knowledge.org/resource/IEC_61511> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61511?oldid=676783327> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/IEC_61511> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61511> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/IEC_61511> ;
     sto:hasOfficialResource <https://webstore.iec.ch/publication/24241> ;
     sto:hasTag "Functional safety - Safety instrumented systems for the process industry sector"@en ;
@@ -3499,10 +3335,6 @@ sto:IEC_61512 a <http://dbpedia.org/class/yago/Abstraction100002137>,
 *  ISA-TR88.00.02-2008 Machine and Unit States: An Implementation Example of ISA-88 S88 provides a consistent set of standards and terminology for batch control and defines the physical model, procedures, and recipes. The standard sought to address the following problems: lack of a universal model for batch control, difficulty in communicating user requirement, integration among batch automation suppliers, difficulty in batch control configuration. The standard defines a process model which consists of a process which consists of an ordered set of process stages which consist of an ordered set of process operations which consist of an ordered set of process actions. The physical model begins with the enterprise which must contain a site which may contain areas which may contain process cells which must contain a unit which may contain equipment modules which may contain control modules. Some of these levels may be excluded, but not the Unit. The procedural control model consists of recipe procedures which consist of an ordered set of unit procedures which consist of an ordered set of operations which consist of an ordered set of phases. Some of these levels may be excluded. Recipes can have the following types: general, site, master, control. The contents of the recipe include: header, formula, equipment requirements, procedure, and other information required to make the recipe."""@en,
         "ANSI/ISA-88.00.0x est une norme américaine développée par l'ISA au sein du comité ISA88.Elle est également publiée comme norme internationale CEI 61512 par la CEI au sein du comité SC65A. La mission initiale du comité ISA88 était de « définir des standards et pratiques recommandés pour la conception et la spécification des systèmes de contrôle des procédés de fabrication par lots (batch) mis en œuvre dans les industries de process ». Le périmètre de la norme s'est depuis étoffé dans la pratique avec la définition de modèles de données pour l'interopérabilité entre systèmes et la structuration des données de production ainsi que la spécification des transformations physico-chimiques du produit, établissant le lien avec le PLM (Product Lifecycle Management). La pratique réelle, les évolutions en cours et l'absence de standards équivalents la positionne comme référence universelle pour la conception fonctionnelle du contrôle de tous les procédés industriels au-delà des procédés de type « batch »."@fr,
         "ANSI/ISA-88 of kortweg ISA-88 is een internationale standaard. Het helpt industrieën om flexibel te kunnen produceren. De standaard bestaat uit modellen en termen die het productieproces logisch indelen en de besturing van het machinepark regelen. S88 kan worden toegepast in volledig geautomatiseerde, semigeautomatiseerde en zelfs in volledig handmatige productieprocessen."@nl ;
-    dbont:wikiPageExternalLink <https://www.isa.org/store/products/product-detail/?productId=116649>,
-        <https://www.isa.org/store/products/product-detail/?productId=116687>,
-        <https://www.isa.org/store/products/product-detail/?productId=116702>,
-        <https://www.isa.org/store/products/product-detail/?productId=116712> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Category:ANSI_standards>,
         <http://dbpedia.org/resource/Category:Manufacturing>,
         <http://dbpedia.org/resource/Instrumentation,_Systems,_and_Automation_Society>,
@@ -3523,8 +3355,7 @@ sto:IEC_61512 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1512301>,
         <http://www.wikidata.org/entity/Q1512301>,
         <http://yago-knowledge.org/resource/ISA-88> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISA-88?oldid=631483159> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/ISA-88> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISA-88> ;
     rami:hasRAMIHierarchyLevel rami:ControlDevice,
         rami:Product,
         rami:Station,
@@ -3561,8 +3392,6 @@ sto:IEC_61804 a dbont:Language,
         "IEC 61804"@en ;
     dbont:abstract "Device Description Language (DDL; deutsch Gerätebeschreibungssprache) ist eine formale Sprache zur Beschreibung der Bedienung und Parametrierung von Geräten der Prozess- und Fertigungsautomatisierung."@de,
         "Device Description Language (DDL) is the formal language describing the service and configuration of field devices for process and factory automation."@en ;
-    dbont:wikiPageExternalLink <http://eddl.ifak.eu/>,
-        <http://www.eddl.org/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Category:Automation>,
         <http://dbpedia.org/resource/Emerson_Electric_Company>,
         <http://dbpedia.org/resource/Endress+Hauser>,
@@ -3582,9 +3411,8 @@ sto:IEC_61804 a dbont:Language,
         <http://rdf.freebase.com/ns/m.0k0gc81>,
         <http://wikidata.dbpedia.org/resource/Q1206769>,
         <http://www.wikidata.org/entity/Q1206769> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Device_Description_Language?oldid=630631916> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Device_Description_Language> ;
     foaf:homepage <http://www.eddl.org/> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Device_Description_Language> ;
     rami:hasAdminShellSubmodel rami:Configuration ;
     rami:hasRAMIHierarchyLevel rami:ControlDevice,
         rami:FieldDevice ;
@@ -3627,16 +3455,6 @@ sto:IEC_61850 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "IEC 61850 è uno standard per la progettazione dei sistemi di automazioni per le sottostazioni elettriche. Fa parte della Commissione Elettrotecnica Internazionale (International Electrotechnical Commission o IEC in inglese) Commissione Tecnica 57 (TC57) Il modello di dati astratto definito nel IEC 61850 può essere \"mappato\" su un diverso numero di protocolli. Sono previste le mappature su MMS, GOOSE, Sampled Values (SMV) e alcuni servizi web.Generalmente questi protocolli girano su reti TCP/IP o LAN di stazione con switch ethernet molto performanti per rispondere ai requisiti stringenti dei dispositivi di protezione, che necessitano tempi di risposta inferiori a 4 o 5 millisecondi."@it,
         "IEC 61850 jest normą (standardem) dotyczącą projektowania automatyki dla stacji energetycznych. IEC 61850 jest częścią architektury systemów energetycznych stworzoną przez Komitet Techniczny 57 (TC 57) Międzynarodowej Komisji Elektrotechnicznej (International Electrotechnical Commission IEC). Abstrakcyjny model danych zdefiniowany w standardzie IEC 61850 jest mapowany na wiele protokołów komunikacyjnych. Obecnie mapowanie obejmuje MMS (ang. Manufacturing Message Specification), GOOSE, SMV (Sampled Measured Values) a także WebServices, DNP3 i IEC60870-5-104. Powyższe protokoły pracują w sieciach opartych na TCP/IP lub lokalnych stacyjnych sieciach Ethernet oferujących wymagany czas odpowiedzi poniżej 4ms (dla funkcji zabezpieczeniowych)."@pl,
         "МЭК-61850 — стандарт «Коммуникационные сети и системы подстанций», описывающий свод правил для организации событийного протокола передачи данных."@ru ;
-    dbont:wikiPageExternalLink <http://eprints.qut.edu.au/41257>,
-        <http://ieeexplore.ieee.org/Xplore/login.jsp?url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F5619950%2F5621989%2F05622092.pdf%3Farnumber%3D5622092&authDecision=-203>,
-        <http://seclab.web.cs.illinois.edu/wp-content/uploads/2011/03/iec61850-intro.pdf>,
-        <http://tissues.iec61850.com/parts.mspx>,
-        <http://www.bcit.ca/files/appliedresearch/pdf/ruggedcom_industry.pdf>,
-        <http://www.iec.ch>,
-        <http://www.prosoft-technology.com/content/download/4576/32664/file/IEC61850_A-Protocol-with-Powerful-Potential.pdf>,
-        <http://www.stri.se/wwwpublic/STRI-References-IEC61850.pdf>,
-        <http://www.ucaiug.org/default.aspx>,
-        <http://xn--61850-txen0l.xn--p1ai/wp-content/plugins/downloads-manager/upload/Introduction%20of%20Smart%20Subsltation%20Projects.pdf> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Category:Electric_power>,
         <http://dbpedia.org/resource/Category:IEC_standards>,
         <http://dbpedia.org/resource/Category:Smart_grid>,
@@ -3691,8 +3509,7 @@ sto:IEC_61850 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q168160>,
         <http://www.wikidata.org/entity/Q168160>,
         <http://yago-knowledge.org/resource/IEC_61850> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61850?oldid=738529810> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/IEC_61850> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61850> ;
     sto:hasDBpediaResource <http://dbpedia.org/page/IEC_61850> ;
     sto:hasOfficialResource <https://webstore.iec.ch/publication/4550> ;
     sto:hasWikidataEntity <https://www.wikidata.org/wiki/Q168160> ;
@@ -3745,8 +3562,7 @@ sto:IEC_62061 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q16976659>,
         <http://www.wikidata.org/entity/Q16976659>,
         <http://yago-knowledge.org/resource/IEC_62061> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_62061?oldid=738529743> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/IEC_62061> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_62061> ;
     rami:hasAdminShellSubmodel rami:Safety ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/IEC_62061> ;
     sto:hasOfficialResource <https://webstore.iec.ch/publication/22797> ;
@@ -3817,8 +3633,7 @@ sto:ISA-95 a sto:Standard ;
     dbont:wikiPageRedirects <http://dbpedia.org/resource/American_National_Standards_Institute> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/American_National_Standards_Institute> ;
     rdfs:comment "ANSI/ISA-95, or ISA-95 as it is more commonly referred, is an international standard from the International Society of Automation for developing an automated interface between enterprise and control systems. This standard has been developed for global manufacturers. It was developed to be applied in all industries, and in all sorts of processes, like batch processes, continuous and repetitive processes.There are 5 parts of the ISA-95 standard.ISA-95 Models"@en ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ANSI?oldid=600958629> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/ANSI> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ANSI> ;
     sto:developer sto:ANSI,
         sto:ISA ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/ANSI/ISA-95> ;
@@ -3887,8 +3702,7 @@ sto:ISO_13849 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1275552>,
         <http://www.wikidata.org/entity/Q1275552>,
         <http://yago-knowledge.org/resource/ISO_13849> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO_13849?oldid=668045442> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/ISO_13849> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO_13849> ;
     rami:hasAdminShellSubmodel rami:Safety ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/ISO_13849> ;
     sto:hasOfficialResource <http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=69883> ;
@@ -3942,7 +3756,6 @@ sto:ISO_19439 a <http://dbpedia.org/class/yago/Abstraction100002137>,
 *  Générique 
 *  Partiel 
 *  Particulier"""@fr ;
-    dbont:wikiPageExternalLink <http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=33833> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/CIMOSA>,
         <http://dbpedia.org/resource/Category:Enterprise_modelling>,
         <http://dbpedia.org/resource/Category:ISO_standards>,
@@ -3967,8 +3780,7 @@ sto:ISO_19439 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q3146921>,
         <http://www.wikidata.org/entity/Q3146921>,
         <http://yago-knowledge.org/resource/ISO_19439> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO_19439?oldid=703509741> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/ISO_19439> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO_19439> ;
     rami:hasRAMIITLayer rami:Business ;
     sto:hasDBpediaResource <http://dbpedia.org/page/ISO_19439> ;
     sto:hasISA95Level sto:EnterpriseLevel ;
@@ -4001,22 +3813,6 @@ sto:MESA a dbont:Settlement,
 *  Approach investment decisions in technology with more information and confidence 
 *  Learn to improve the deployment of new technology"""@en,
         "MESA International (англ. Manufacturing Enterprise Solutions Association) — всемирная некоммерческая ассоциация разработчиков, системных интеграторов, экспертов и пользователей решений для промышленных предприятий (решений MES). MESA является разработчиком руководящих документов и рекомендаций, содержащих новые подходы и ориентиры для улучшения управления производством, облегчающих деятельность по разработке, внедрению и использованию MES. В России ассоциация MESA представлена российской рабочей группой."@ru ;
-    dbont:wikiPageExternalLink <http://grantek.com/>,
-        <http://mesa.org/en/aboutus/keystonesponsors.asp>,
-        <http://mesa.org/en/globaleducationprogram/educationprogram.asp>,
-        <http://mesa.org/en/modelstrategicinitiatives/MESAModel.asp>,
-        <http://savigent.com/>,
-        <http://www.ats-global.com/>,
-        <http://www.dmdii.uilabs.org/>,
-        <http://www.ibaset.com/?gclid=CNjg_dmf38ECFbPm7AodAlMAjw>,
-        <http://www.infinityqs.com/>,
-        <http://www.lighthousesystems.com/>,
-        <http://www.mesa.org/en/BatchML.asp>,
-        <http://www.mesa.org/en/index.asp>,
-        <http://www.oagi.org/dnn2/Home.aspx>,
-        <http://www.stonetek.com/>,
-        <https://smartmanufacturingcoalition.org/>,
-        <https://www.posccaesar.org/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/ABB_Group>,
         <http://dbpedia.org/resource/B2MML>,
         <http://dbpedia.org/resource/Best_practices>,
@@ -4047,8 +3843,7 @@ sto:MESA a dbont:Settlement,
         <http://rdf.freebase.com/ns/m.02pgwbl>,
         <http://wikidata.dbpedia.org/resource/Q1891847>,
         <http://www.wikidata.org/entity/Q1891847> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Manufacturing_Enterprise_Solutions_Association?oldid=712821595> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Manufacturing_Enterprise_Solutions_Association> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Manufacturing_Enterprise_Solutions_Association> ;
     sto:abbreviation "MESA" ;
     sto:formationDate "1992-01-01"^^xsd:date ;
     sto:hasDBpediaResource <http://dbpedia.org/page/Manufacturing_Enterprise_Solutions_Association> ;
@@ -4110,7 +3905,6 @@ sto:OPC_Foundation a dbont:Agent,
     dbont:purpose "International Standardization" ;
     dbont:status "Association" ;
     dbont:type <http://dbpedia.org/resource/International_nongovernmental_organization> ;
-    dbont:wikiPageExternalLink <http://www.asam.net/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/AUTOSAR>,
         <http://dbpedia.org/resource/Application_Programming_Interface>,
         <http://dbpedia.org/resource/Application_programming_interface>,
@@ -4189,9 +3983,8 @@ sto:OPC_Foundation a dbont:Agent,
         <http://rdf.freebase.com/ns/m.063_vfh>,
         <http://wikidata.dbpedia.org/resource/Q743638>,
         <http://www.wikidata.org/entity/Q743638> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Association_for_Standardisation_of_Automation_and_Measuring_Systems?oldid=719544369> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Association_for_Standardisation_of_Automation_and_Measuring_Systems> ;
     foaf:homepage <http://www.asam.net/> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Association_for_Standardisation_of_Automation_and_Measuring_Systems> ;
     foaf:name "Association for Standardisation of Automation and Measuring Systems"@en ;
     sto:abbreviation "OPC" ;
     sto:formationDate "1994-01-01"^^xsd:date ;
@@ -4443,8 +4236,7 @@ sto:SE a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www4.wiwiss.fu-berlin.de/wikicompany/resource/Schneider_Electric>,
         <http://yago-knowledge.org/resource/Sarel>,
         <http://yago-knowledge.org/resource/Schneider_Electric> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Schneider_Electric?oldid=744384039> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Schneider_Electric> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Schneider_Electric> ;
     sto:abbreviation "SE" ;
     sto:formationDate "1936-01-01"^^xsd:date ;
     sto:hasDBpediaResource <http://dbpedia.org/page/Schneider_Electric> ;
@@ -4473,8 +4265,7 @@ sto:VDMA a <http://dbpedia.org/class/yago/Abstraction100002137>,
     rdfs:comment "The Mechanical Engineering Industry Association (Verband Deutscher Maschinen- und Anlagenbau – VDMA) has its headquarters in Frankfurt am Main, Germany, and represents around 3,200 members, making it the largest industry association in Europe. The Association represents the interests of the predominantly medium-sized companies in the mechanical engineering industry towards policymakers and society, as well as towards business, the scientific community, public authorities and the media. With more than one million employees and a turnover of around EUR 218 billion (2015), mechanical and plant engineering is Germany’s largest employer in the industrial sector.In addition, VDMA sees itself as a platform that provides its member companies with various networks where they can discuss technological challenges, interdisciplinary issues and many other topics." ;
     owl:sameAs <http://rdf.freebase.com/ns/m.04hzd28>,
         <http://yago-knowledge.org/resource/VDMA> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/VDMA?oldid=741604943> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/VDMA> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/VDMA> ;
     sto:abbreviation "VDMA" ;
     sto:formationDate "1892-11-15"^^xsd:date ;
     sto:hasDBpediaResource <ttp://dbpedia.org/resource/VDMA> ;
@@ -4525,21 +4316,6 @@ sto:W3C_OWL a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "A OWL (Web Ontology Language) é uma linguagem para definir e instanciar ontologias na Web. Uma ontologia OWL pode incluir descrições de classes e suas respectivas propriedades e seus relacionamentos. OWL foi projetada para o uso por aplicações que precisam processar o conteúdo da informação ao invés de apenas apresentá-la aos humanos. Ela facilita mais a possibilidade de interpretação por máquinas do conteúdo da Web do que XML, RDF e RDFS (RDF Schema), por fornecer vocabulário adicional com uma semântica formal. A OWL foi baseada nas linguagens OIL e DAML+OIL, e é hoje uma recomendação da W3C (isto é, um padrão). OWL é vista como uma tecnologia importante para a futura implementação da Web semântica. Ela vem ocupando um papel importante em um número cada vez maior de aplicações, e vem sendo foco de pesquisa para ferramentas, técnicas de inferências, fundamentos formais e extensões de linguagem. OWL foi projetada para disponibilizar uma forma comum para o processamento de conteúdo semântico da informação na Web. Ela foi desenvolvida para aumentar a facilidade de expressar semântica (significado) disponível em XML, RDF e RDFS. Consequentemente, pode ser considerada uma evolução destas linguagens em termos de sua habilidade de representar conteúdo semântico da Web interpretável por máquinas. Já que a OWL é baseada em XML, a informação pode ser facilmente trocada entre diferentes tipos de computadores usando diferentes sistemas operacionais e linguagens de programação. Por ter sido projetada para ser lida por aplicações computacionais, algumas vezes considera-se que a linguagem não possa ser facilmente lida por humanos, porém esta é uma questão de ferramentas. OWL vem sendo usada para criar padrões que forneçam um framework para gerenciamento de ativos, integração empresarial e compartilhamento de dados na Web. Uma versão estendida da OWL (algumas vezes chamada OWL 1.1, mas sem ser oficial) foi proposta, incluindo maior expressividade, um modelo de dados mais simples e serialização, assim como uma coleção de sub-linguagens, cada uma com conhecidas propriedades computacionais."@pt,
         "OWL (англ. Web Ontology Language) — язык описания онтологий для семантической паутины. Язык OWL позволяет описывать классы и отношения между ними, присущие веб-документам и приложениям. OWL основан на более ранних языках OIL и DAML+OIL и в настоящее время является рекомендованным консорциумом Всемирной паутины. В основе языка — представление действительности в модели данных «объект — свойство». OWL пригоден для описания не только веб-страниц, но и любых объектов действительности. Каждому элементу описания в этом языке (в том числе свойствам, связывающим объекты) ставится в соответствие URI."@ru,
         "网络本体语言 (英文：Web Ontology Language，OWL) 旨在提供一种可用于描述网络文档和应用之中所固有的那些类及其之间关系的语言。OWL网络本体语言当前已经获得万维网联盟认可的，用于编纂本体的知识表达语言家族。其功能在于为网络文档和应用中固有的类以及其间的逻辑关系提供描述，使得基于此技术的网络应用更加人性化和智能化，节省用户自身资源搜索时间并将这些处理交给计算机系统内部处理。基于不同的语义论特性此家族语言大致分为两个系统： 基于描述逻辑进而丰富表达和精准计算属性的OWL DL和OWL Lite，以及以资源描述架构（英文：resource description framwork:RDF）提供兼容叙述的OWL Full。 网络本体语言已经被认为是语义网技术的基础语言并吸引了包括学术和商业范围内人士的广泛兴趣。"@zh ;
-    dbont:wikiPageExternalLink <http://marinemetadata.org>,
-        <http://mmisw.org>,
-        <http://owlapi.sourceforge.net/>,
-        <http://semtech2010.semanticuniverse.com/>,
-        <http://www.cancer.gov/cancertopics/terminologyresources>,
-        <http://www.comlab.ox.ac.uk/people/ian.horrocks/Seminars/download/Horrocks_Ian_pt1.pdf>,
-        <http://www.comlab.ox.ac.uk/people/ian.horrocks/Seminars/download/Horrocks_Ian_pt2.pdf>,
-        <http://www.cs.man.ac.uk/>,
-        <http://www.cs.man.ac.uk/~horrocks/ISWC2003/Tutorial/>,
-        <http://www.cs.ox.ac.uk/people/ian.horrocks/Seminars/>,
-        <http://www.inf.unibz.it/~franconi/dl/course/>,
-        <http://www.w3.org/TR/owl-ref/>,
-        <http://www.w3.org/TR/owl-ref/#MIMEType>,
-        <http://www.w3.org/TR/owl2-overview/>,
-        <http://www.w3.org/TR/owl2-xml-serialization/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Abstract_syntax>,
         <http://dbpedia.org/resource/Agris:_International_Information_System_for_the_Agricultural_Sciences_and_Technology>,
         <http://dbpedia.org/resource/Artificial_intelligence>,
@@ -4678,8 +4454,7 @@ sto:W3C_OWL a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q826165>,
         <http://www.wikidata.org/entity/Q826165>,
         <http://yago-knowledge.org/resource/Web_Ontology_Language> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Web_Ontology_Language?oldid=722785423> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Web_Ontology_Language> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Web_Ontology_Language> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Web_Ontology_Language> ;
     sto:hasOfficialResource <https://www.w3.org/OWL/> ;
     sto:hasTag "OWL"@en ;
@@ -4730,9 +4505,6 @@ sto:BBF a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "The Broadband Forum is a non-profit industry consortium dedicated to developing broadband network specifications. Members include telecommunications networking and service provider companies, broadband device and equipment vendors, consultants and independent testing labs (ITLs). Service provider members are primarily wire-line service providers (non-mobile) telephone companies."@en,
         "寬頻論壇（2008年6月17日前作DSL論壇）是由全球約200多個分屬電信、資訊科技產業的公司組成的跨國組織。會員包含有線服務業者、寬頻設備業者、諮詢機構、獨立的測試實驗室（independent testing labs，ITLs）等。 寬頻論壇成立於1994年，並且為寬頻市場的公司之交流平台。其主要目的是來建立有關數位用戶迴路（DSL）通訊產品（如傳輸）的新標準，如ADSL、SHDSL、VDSL、ADSL2+、VDSL2等。 寬頻論壇自2004年起，擴展其組織內有關最後一哩的技術工作，包含光纖等。"@zh ;
     dbont:formationYear "1994-01-01"^^xsd:gYear ;
-    dbont:wikiPageExternalLink <http://www.broadband-forum.org>,
-        <http://www.broadbandtalk.co>,
-        <http://www.indiabroadbandforum.in> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/ADSL>,
         <http://dbpedia.org/resource/ADSL2+>,
         <http://dbpedia.org/resource/ATM_Forum>,
@@ -4781,8 +4553,7 @@ sto:BBF a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q922023>,
         <http://www.wikidata.org/entity/Q922023>,
         <http://yago-knowledge.org/resource/Broadband_Forum> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Broadband_Forum?oldid=711485997> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Broadband_Forum> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Broadband_Forum> ;
     foaf:name "Broadband Forum"@en ;
     sto:abbreviation "BBF" ;
     sto:formationDate "2008-01-01"^^xsd:date ;
@@ -4838,12 +4609,6 @@ sto:ETSI_DECT a <http://dbpedia.org/class/yago/Abstraction100002137>,
 * Administração de Mobilidade (MM) Todos estes serviços comunicam através de uma Entidade de Controlo de Ligação (LCE). O GAP é um perfil de interoperabilidade para os equipamentos DECT. A intenção é todos os diferentes produtos definidos dentro dos limites da norma DECT, sejam capazes de interoperar de forma a implementarem, no mínimo, as funcionalidades básicas de conversação telefónica. Desta forma, qualquer telefone que suporte GAP pode ser registado em qualquer base que também o suporte, podendo portanto ser usado para fazer ou receber chamadas. O suporte do perfil GAP não garante, no entanto, o acesso a funcionalidades avançadas da base, como por exemplo a operação de um atendedor automático aí embebido. A maioria dos dispositivos DECT a nível de consumidor suportam também o perfil GAP, mesmo aqueles não anunciam esta funcionalidade. A norma DECT foi desenvolvida pela ETSI e adotada por diversos países em todo o mundo. Os equipamentos DECT são utilizados em todos os países da Europa, na Austrália e também na maior parte dos países da Ásia e América do Sul. Na América do Norte, devido a restrições quanto às frequências que podem ser usadas nos EUA, foi adotada uma variação da norma (mais restrita) que recebeu o nome de 'DECT 6.0'."""@pt,
         "DECT (англ. Digital Enhanced Cordless Telecommunication) — технология беспроводной связи на частотах 1880—1900 МГц с модуляцией GMSK (BT = 0,5), используется в современных радиотелефонах.Стандарт DECT не только получил широчайшее распространение в Европе, но и является наиболее популярным стандартом беспроводного телефона в мире благодаря простоте развёртывания DECT-сетей, широкому спектру пользовательских услуг и высокому качеству связи. По оценкам 1999 года, DECT принят более чем в 100 странах, а число абонентских устройств DECT в мире приближается к 50 миллионам. В Европе DECT практически полностью вытеснил беспроводные телефоны стандартов CT2, CT3; на других континентах DECT успешно конкурирует с американским стандартом PACS и японским PHS. Стандарт DECT в России для домашнего пользования не требует лицензирования (получения частотного решения ГКРЧ, разрешения Роскомнадзора)."@ru,
         "數位增強無線通訊（英语：Digital Enhanced Cordless Telecommunications，縮寫 DECT），是一種數位通信標準，主要用於發展無繩電話系統。 DECT規範係於1992年由歐洲電信標準協會所發佈。本來命名為CT3，但由於CT3已被注冊而改用此名稱。DECT大大改進CT2的缺點，採用時分多址（TDMA）技術，使用小範圍、超高頻、低功率方式，在高密度用戶區域提供可進行12部電話同時通話的服務。在歐洲地區，早期的900MHz CT1（第一代無繩電話）以及CT2（第二代無繩電話）已經被它取而代之。 除了歐洲，該技術也普及至澳洲、亞洲、南美洲等地區。北美洲由於美國無線電頻率法規的限制而衍生出DECT 6.0，使用稍微不同的頻率範圍，雖然技術幾乎相同，但頻率差異使得其相容系統無法在其他地區使用，即使是同一個製造商也無法避免。DECT標準幾乎已取代其他標準，但北美地區除外。 DECT是主要用於家庭或小型辦公系統，但也應用於許多中、大型企業的用戶交換機（PBX）系統。DECT也可用於無繩電話以外的場合，例如語音系統就愈來愈普及。也有用於數據傳遞，但相較Wi-Fi則已經有點黯然失色。在3G手機的整體競爭裡，DECT與Wi-Fi算是難分軒輊。"@zh ;
-    dbont:wikiPageExternalLink <http://dect.osmocom.org/>,
-        <http://einstein.informatik.uni-oldenburg.de/rechnernetze/seite24.htm>,
-        <http://www.dect.org/>,
-        <http://www.dectweb.com/>,
-        <http://www.etsi.org/WebSite/Technologies/DECT.aspx>,
-        <http://www.etsi.org/website/newsandevents/2007_05_ng_dect.aspx> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/3G>,
         <http://dbpedia.org/resource/4G>,
         <http://dbpedia.org/resource/Aastra_Technologies>,
@@ -4996,8 +4761,7 @@ sto:ETSI_DECT a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1224749>,
         <http://www.wikidata.org/entity/Q1224749>,
         <http://yago-knowledge.org/resource/Digital_Enhanced_Cordless_Telecommunications> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Digital_Enhanced_Cordless_Telecommunications?oldid=739559987> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Digital_Enhanced_Cordless_Telecommunications> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Digital_Enhanced_Cordless_Telecommunications> ;
     sto:developer sto:ETSI ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Digital_Enhanced_Cordless_Telecommunications> ;
     sto:hasOfficialResource <http://www.etsi.org/technologies-clusters/technologies/dect> ;
@@ -5018,12 +4782,6 @@ sto:IEC_61499 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "IEC 61499"@en ;
     dbont:abstract "Die Europäische Norm EN 61499 bzw. internationale Norm IEC 61499, befasst sich mit Funktionsbausteinen für industrielle Prozessmess- und -steuerungssysteme. Sie ist auch als DIN-Norm für Deutschland gültig und wurde erstmals 2005 veröffentlicht. Die Spezifikation IEC 61499 bzw. EN 61499 definiert ein generisches Modell für verteilte Steuerungssysteme und basiert auf der IEC 61131 bzw. EN 61131. Neben dem Standard selbst werden die Konzepte des IEC-61499-Standards in den Büchern von Lewis und Zoitl  sowie Vyatkin  detailliert beschrieben."@de,
         "The international standard IEC 61499, addressing the topic of function blocks for industrial process measurement and control systems, was initially published in 2005. The specification of IEC 61499 defines a generic model for distributed control systems and is based on the IEC 61131 standard. The concepts of IEC 61499 are also explained by Lewis and Zoitl  as well as Vyatkin."@en ;
-    dbont:wikiPageExternalLink <http://www.iec-normen.de/219342/iec-61499-1-2012-11-ed-2-0-zweisprachig.html>,
-        <http://www.iec-normen.de/219343/iec-61499-2-2012-11-ed-2-0-zweisprachig.html>,
-        <http://www.iec-normen.de/219630/iec-61499-4-2013-01-ed-2-0-zweisprachig.html>,
-        <http://www.nxtcontrol.com/en/distribution/>,
-        <https://www.researchgate.net/publication/224089609_IEC_61499_Function_Block_Model_Facts_and_Fallacies>,
-        <https://www.researchgate.net/publication/256025296_IEC_61499_vs._61131_A_Comparison_Based_on_Misperceptions> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Category:IEC_standards>,
         <http://dbpedia.org/resource/DTD>,
         <http://dbpedia.org/resource/FAQ>,
@@ -5044,8 +4802,7 @@ sto:IEC_61499 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q188109>,
         <http://www.wikidata.org/entity/Q188109>,
         <http://yago-knowledge.org/resource/IEC_61499> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61499?oldid=744913607> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/IEC_61499> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61499> ;
     rami:hasRAMIHierarchyLevel rami:ControlDevice,
         rami:FieldDevice ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/IEC_61499> ;
@@ -5109,11 +4866,6 @@ sto:IEC_62714 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "IEC 62714"@en ;
     dbont:abstract "AutomationML (Automation Markup Language) ist ein neutrales, XML-basiertes Datenformat für die Speicherung und zum Austausch von Anlagenplanungsdaten, das als offener Standard zur Verfügung steht. Ziel der AutomationML ist der Austausch von Engineering-Daten in einer heterogenen Tool-Landschaft von modernen Engineering-Werkzeugen für verschiedene Disziplinen wie zum Beispiel Mechanisches Design, Elektrisches Design, HMI-Entwicklung, SPS-Programmierung oder Robotersteuerung. Das Datenaustauschformat AutomationML wird in der IEC 62714 standardisiert, wobei sowohl der erste Teil „Architecture and general requirements“ als auch der zweite Teil „Role class libraries“ bereits internationaler Standard (IS)   sind."@de,
         "AutomationML (Automation Markup Language) is a neutral data format based on XML for the storage and exchange of plant engineering information, which is provided as open standard. Goal of AutomationML is to interconnect the heterogeneous tool landscape of modern engineering tools in their different disciplines, e.g. mechanical plant engineering, electrical design, HMI development, PLC, robot control."@en ;
-    dbont:wikiPageExternalLink <http://www.AutomationML.org>,
-        <http://www.iosb.fraunhofer.de>,
-        <http://www.netallied.de>,
-        <http://www.plcopen.org/>,
-        <http://www.zuhlke.com> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Asea_Brown_Boveri>,
         <http://dbpedia.org/resource/CAEX>,
         <http://dbpedia.org/resource/COLLADA>,
@@ -5150,8 +4902,7 @@ sto:IEC_62714 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q431851>,
         <http://yago-knowledge.org/resource/AutomationML> ;
     skos:altLabel "AML"@en ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/AutomationML?oldid=673745347> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/AutomationML> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/AutomationML> ;
     rami:hasAdminShellSubmodel rami:Engineering ;
     rami:hasRAMIHierarchyLevel rami:ControlDevice,
         rami:FieldDevice,
@@ -5200,8 +4951,6 @@ sto:ISO_13584 a <http://dbpedia.org/class/yago/Abstraction100002137>,
 *  ISO 13584-511, Mechanical systems and components for general use -- Reference dictionary for fasteners PLIB and IEC 61360 Component Data Dictionary are using the same datamodel. External links: 
 *  PLIB home page 
 *  IEC 61360 - Component Data Dictionary"""@en ;
-    dbont:wikiPageExternalLink <http://std.iec.ch/iec61360>,
-        <http://www.plib.ensma.fr/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/API>,
         <http://dbpedia.org/resource/Category:ISO_standards>,
         <http://dbpedia.org/resource/DIN_66304>,
@@ -5219,8 +4968,7 @@ sto:ISO_13584 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q5974206>,
         <http://www.wikidata.org/entity/Q5974206>,
         <http://yago-knowledge.org/resource/ISO_13584> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO_13584?oldid=544613175> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/ISO_13584> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO_13584> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/ISO_13584> ;
     sto:hasOfficialResource <https://webstore.iec.ch/publication/5380%0Ahttp://www.iso.org/iso/catalogue_detail.htm?csnumber=43423> ;
     sto:hasTag "Industrial automation systems and integration"@en ;
@@ -5352,14 +5100,6 @@ sto:W3C_RDF a <http://dbpedia.org/class/yago/Abstraction100002137>,
 *  Indicação: consiste na combinação de um recurso, de uma propriedade, e de um valor. Atualmente, os principais buscadores utilizam RDFs fornecidos pelos websites para otimizar os rankings de indexação, dessa forma, os sites que contenham tais informações podem ser melhor qualificados nos resultados de busca."""@pt,
         "Resource Description Framework (RDF, «среда описания ресурса») — это разработанная консорциумом Всемирной паутины модель для представления данных, в особенности — метаданных. RDF представляет утверждения о ресурсах в виде, пригодном для машинной обработки. RDF является частью концепции семантической паутины. Ресурсом в RDF может быть любая сущность — как информационная (например, веб-сайт или изображение), так и неинформационная (например, человек, город или некое абстрактное понятие). Утверждение, высказываемое о ресурсе, имеет вид «субъект — предикат — объект» и называется триплетом. Утверждение «небо голубого цвета» в RDF-терминологии можно представить следующим образом: субъект — «небо», предикат — «имеет цвет», объект — «голубой». Для обозначения субъектов, отношений и объектов в RDF используются URI. Множество RDF-утверждений образует ориентированный граф, в котором вершинами являются субъекты и объекты, а рёбра отображают отношения. RDF сам по себе является не форматом файла, а только лишь абстрактной моделью данных, то есть описывает предлагаемую структуру, способы обработки и интерпретации данных. Для хранения и передачи информации, уложенной в модель RDF, существует целый ряд форматов записи. Для обработки RDF-данных предлагается реализовать языки запросов: SPARQL (стандарт W3C), RQL, RDQL."@ru,
         "资源描述框架（英语：Resource Description Framework，縮寫为RDF），是万维网联盟（W3C）提出的一组标记语言的技术规范，以便更为丰富地描述和表达网络资源的内容与结构。"@zh ;
-    dbont:wikiPageExternalLink <http://www.w3.org/1999/02/22-rdf-syntax-ns#type,>,
-        <http://www.w3.org/2000/10/swap/pim/contact#mailbox,>,
-        <http://www.w3.org/People/EM/contact#me,>,
-        <http://www.w3.org/RDF/>,
-        <http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/>,
-        <http://www.w3.org/TR/2004/REC-rdf-mt-20040210/>,
-        <http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/>,
-        <http://www.w3.org/TR/turtle/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/4Suite>,
         <http://dbpedia.org/resource/Apple_Computer>,
         <http://dbpedia.org/resource/Associative_model_of_data>,
@@ -5572,8 +5312,7 @@ sto:W3C_RDF a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q54872>,
         <http://www.wikidata.org/entity/Q54872>,
         <http://yago-knowledge.org/resource/Resource_Description_Framework> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Resource_Description_Framework?oldid=744183063> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Resource_Description_Framework> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Resource_Description_Framework> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Resource_Description_Framework> ;
     sto:hasOfficialResource <https://www.w3.org/RDF/> ;
     sto:hasTag "RDF"@en ;
@@ -5637,13 +5376,6 @@ sto:IEC_61158 a <http://dbpedia.org/class/yago/Abstraction100002137>,
 *  волоконно-оптические линии; 
 *  беспроводную связь (радиомодемы и Wi-Fi). Промышленные сети могут взаимодействовать с обычными компьютерными сетями, в частности использовать глобальную сеть Internet. Термин полевая шина является дословным переводом английского термина fieldbus. Термин промышленная сеть является более точным переводом и в настоящее время именно он используется в профессиональной технической литературе."""@ru,
         "現場總線是許多工業用通訊協定的總稱，一般用在即時分散式控制系統，IEC 61158是有關現場總線的標準，不過也有一些現場總線未列在IEC 61158中，如Modbus、LonWorks、CANopen等。 一個複雜的自動化系統（例如組裝生產線）會需要一個有組織的控制系統階層才能運作。在此階層的頂端一般是人機界面（Human Machine Interface, HMI），可以讓操作員監控及使用此系統。中間層則由許多可程式邏輯控制器（PLC）組成，PLC之間藉由網路系統（如Ethernet）傳遞資料。低層則是由現埸總線連接PLC及感測器、致動器、馬達、開關、閥門、接觸器等實際動作或偵測的元件。"@zh ;
-    dbont:wikiPageExternalLink <http://plc-training.org/>,
-        <http://www.ffeucme.org/>,
-        <http://www.fieldbus.ir/index.htm>,
-        <http://www.fieldbus.org>,
-        <http://www.fieldbus.org.au/>,
-        <http://www.fieldbus.org/index.html>,
-        <http://www.p-net.org> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/AFDX>,
         <http://dbpedia.org/resource/ARCNET>,
         <http://dbpedia.org/resource/AS-Interface>,
@@ -5752,8 +5484,7 @@ sto:IEC_61158 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q1141640>,
         <http://yago-knowledge.org/resource/Fieldbus>,
         <http://yago-knowledge.org/resource/IEC_61158> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Fieldbus?oldid=742124333> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Fieldbus> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Fieldbus> ;
     sto:hasDBpediaResource <http://dbpedia.org/page/Fieldbus> ;
     sto:hasISA95Level sto:DeviceLevel ;
     sto:hasOfficialResource <http://www.fieldbus.org/> ;
@@ -5844,14 +5575,6 @@ sto:OMG a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dbont:formationYear "1989-01-01"^^xsd:gYear ;
     dbont:headquarter <http://dbpedia.org/resource/Needham,_Massachusetts> ;
     dbont:motto "We Set the Standard" ;
-    dbont:wikiPageExternalLink <http://adm.omg.org>,
-        <http://swa.omg.org>,
-        <http://www.it-cisq.org/>,
-        <http://www.omg.org>,
-        <http://www.omg.org/contacts/hoffman.htm>,
-        <http://www.omg.org/hot-topics/index.htm>,
-        <http://www.omg.org/mda/>,
-        <http://www.omg.org/uml-certification/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/American_Airlines>,
         <http://dbpedia.org/resource/Apple_Computer>,
         <http://dbpedia.org/resource/Architecture-driven_modernization>,
@@ -5940,9 +5663,8 @@ sto:OMG a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q252733>,
         <http://www.wikidata.org/entity/Q252733>,
         <http://yago-knowledge.org/resource/Object_Management_Group> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Object_Management_Group?oldid=734349043> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Object_Management_Group> ;
     foaf:homepage <http://www.omg.org> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Object_Management_Group> ;
     foaf:name "Object Management Group"@en ;
     sto:abbreviation "OMG" ;
     sto:formationDate "1989-01-01"^^xsd:date ;
@@ -6036,16 +5758,6 @@ sto:ANSI a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dbont:language <http://dbpedia.org/resource/English_language> ;
     dbont:membership "125,000 companies and 3.5 million professionals"@en ;
     dbont:purpose "National standards" ;
-    dbont:wikiPageExternalLink <http://ansidotorg.blogspot.com>,
-        <http://publicaa.ansi.org/sites/apdl/Documents/News%20and%20Publications/Links%20Within%20Stories/ANSI%20-%20A%20Historical%20Overview.pdf>,
-        <http://publicaa.ansi.org/sites/apdl/Documents/Standards%20Activities/American%20National%20Standards/Procedures,%20Guides,%20and%20Forms/2009%20ANSI%20Essential%20Requirements%20and%20ANS%20related%20procedures%20in%20effect%20in%202009/2009%20ANSI%20Essential%20Requirements%200109.doc>,
-        <http://publicaa.ansi.org/sites/apdl/Documents/Standards%20Activities/Critical%20Issues%20Papers/Open-Stds.pdf>,
-        <http://webstore.ansi.org/>,
-        <http://www.ansi.org>,
-        <http://www.ansi.org/>,
-        <http://www.ansi.org/about_ansi/introduction/history.aspx?menuid=1>,
-        <http://www.ansi.org/about_ansi/introduction/introduction.aspx?menuid=1>,
-        <http://www.standardsportal.org/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/ANSI_ASC_X12>,
         <http://dbpedia.org/resource/ANSI_ASC_X9>,
         <http://dbpedia.org/resource/ANSI_C>,
@@ -6151,9 +5863,8 @@ sto:ANSI a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q180003>,
         <http://www.wikidata.org/entity/Q180003>,
         <http://yago-knowledge.org/resource/American_National_Standards_Institute> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/American_National_Standards_Institute?oldid=739692936> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/American_National_Standards_Institute> ;
     foaf:homepage <http://www.ansi.org/> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/American_National_Standards_Institute> ;
     foaf:name "American National Standards Institute"@en ;
     sto:abbreviation "ANSI" ;
     sto:formationDate "1918-05-14"^^xsd:date ;
@@ -6198,14 +5909,6 @@ sto:ISA a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "ISA - The International Society of Automation est une association à but non lucratif qui s'adresse aux professionnels de l'automatisation et à la supervision des procédés industriels."@fr,
         "De Instrumentation, Systems, and Automation Society (ISA) is een Amerikaanse organisatie die zich bezighoudt met de standaardisering van instrumentatie, ontwerp en andere technische toepassingen. Hiernaast wil de organisatie in het algemeen nieuwe technologieën bekendmaken en toegepast krijgen in alle industrieën. De ISA is opgericht in 1945 toen een groep van 18 organisaties voor instrumentatie de behoefte zag aan een Amerikaans landelijk platform voor standaardisatie en instrumentatie. Op 28 april werd de oprichting een feit in de stad Pittsburgh in Pennsylvania."@nl,
         "International Society of Automation (сокр. ISA, рус. международная ассоциация автоматизации) до 2008 года называвшаяся The Instrumentation, Systems, and Automation Society — глобальная некоммерческая ассоциация, основным направлением деятельности которой является разработка стандартов в области промышленной автоматизации. Изначально, после своего создания, называлась «Instrument Society of America». Больше известна просто под аббревиатурой ISA."@ru ;
-    dbont:wikiPageExternalLink <http://automation.isa.org>,
-        <http://www.automationfederation.org/>,
-        <http://www.isa.org/Content/NavigationMenu/Products_and_Services/Certification3/Certified_Automation_Professional1/Certified_Automation_Professional.htm>,
-        <http://www.isa100wci.org/>,
-        <http://www.isadistrito4.org.br/>,
-        <http://www.isasecure.org/Home.aspx>,
-        <http://www.us-cert.gov/control_systems/csstandards.html>,
-        <https://www.isa.org/standards-and-publications/isa-standards/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/ANSI>,
         <http://dbpedia.org/resource/ANSI/ISA-95>,
         <http://dbpedia.org/resource/Acronym>,
@@ -6277,8 +5980,7 @@ sto:ISA a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q253955>,
         <http://www.wikidata.org/entity/Q253955>,
         <http://yago-knowledge.org/resource/International_Society_of_Automation> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/International_Society_of_Automation?oldid=739555722> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/International_Society_of_Automation> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/International_Society_of_Automation> ;
     sto:abbreviation "ISA" ;
     sto:formationDate "1945-04-28"^^xsd:date ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/International_Society_of_Automation> ;
@@ -6367,12 +6069,6 @@ sto:W3C a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dbont:numberOfStaff "62"^^xsd:nonNegativeInteger ;
     dbont:purpose "Developing protocols and guidelines that ensure long-term growth for the Web." ;
     dbont:type <http://dbpedia.org/resource/Standards_organization> ;
-    dbont:wikiPageExternalLink <http://www.alistapart.com/articles/readspec>,
-        <http://www.w3.org>,
-        <http://www.w3.org/Consortium/>,
-        <http://www.w3.org/Consortium/Process/>,
-        <http://www.w3.org/History/>,
-        <http://www.w3.org/TR/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/ARPANET>,
         <http://dbpedia.org/resource/Beihang_University>,
         <http://dbpedia.org/resource/CERN>,
@@ -6484,9 +6180,8 @@ sto:W3C a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q37033>,
         <http://www.wikidata.org/entity/Q37033>,
         <http://yago-knowledge.org/resource/World_Wide_Web_Consortium> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/World_Wide_Web_Consortium?oldid=744907249> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/World_Wide_Web_Consortium> ;
     foaf:homepage <http://www.w3.org> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/World_Wide_Web_Consortium> ;
     foaf:name "World Wide Web Consortium"@en ;
     sto:abbreviation "W3C" ;
     sto:formationDate "1994-10-01"^^xsd:date ;
@@ -6539,11 +6234,6 @@ sto:ETSI a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "Europejski Instytut Norm Telekomunikacyjnych (ang. European Telecommunications Standards Institute, ETSI) – niezależny instytut standaryzacyjny. Podstawowym zadaniem ETSI jest opracowywanie norm niezbędnych do stworzenia europejskiego rynku telekomunikacyjnego."@pl,
         "O European Telecommunications Standards Institute (ETSI) é um instituto europeu cujo objetivo é definir padrões que permitam ao mercado europeu funcionar como um todo ao nível das telecomunicações. Formado pela Comissão Europeia em 1998, inclui fabricantes e operadores."@pt,
         "European Telecommunications Standards Institute (рус. Европейский институт по стандартизации в области телекоммуникаций, сокр. ETSI, произносится этси) — независимая, некоммерческая организация по стандартизации в телекоммуникационной промышленности (изготовители оборудования и операторы сетей) в Европе. ETSI были успешно стандартизированы система сотовой связи GSM и система профессиональной мобильной радиосвязи TETRA. ETSI является одним из создателей 3GPP. ETSI был создан CEPT в 1988 году и был официально признан Европейской Комиссией и секретариатом EFTA. Расположенный в Софии Антиполис (Франция), ETSI официально ответственен за стандартизацию информационных и телекоммуникационных технологий в пределах Европы. В ETSI входят более 800 членов из 64 стран мира, включая производителей оборудования, операторов связи, администрации, сервисных провайдеров, исследователей и пользователей — фактически, все ключевые игроки в мире информационных технологий. В 2005, бюджет ETSI превысил 20 миллионов евро, со вкладами, прибывающими от членов, коммерческих действий, таких как продажа документов, контрактной работы и партнёрского финансирования. Из этого приблизительно 40 % идут к эксплуатационным расходам, и остающиеся 60 % используется на рабочие программы, включая центры компетентности и специальные проекты."@ru ;
-    dbont:wikiPageExternalLink <http://portal.etsi.org>,
-        <http://portal.etsi.org/>,
-        <http://www.etsi.org/>,
-        <http://www.etsi.org/news-events/news/762-2014-03-etsi-launches-industry-group-on-embedded-common-interface-standards-to-ease-digital-content-distribution-and-consumption>,
-        <http://www.sbs-sme.eu/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/3GPP>,
         <http://dbpedia.org/resource/British_Standards_Institution>,
         <http://dbpedia.org/resource/CAdES_(computing)>,
@@ -6620,9 +6310,8 @@ sto:ETSI a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q899383>,
         <http://yago-knowledge.org/resource/ETSI>,
         <http://yago-knowledge.org/resource/European_Telecommunications_Standards_Institute> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ETSI?oldid=701005106> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ETSI> ;
     foaf:homepage <http://www.etsi.org/> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/ETSI> ;
     sto:abbreviation "ETSI"@en ;
     sto:formationDate "1988-01-01"^^xsd:date ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/ETSI> ;
@@ -6666,23 +6355,6 @@ sto:IEC_62541 a <http://dbpedia.org/class/yago/Abstraction100002137>,
 *  OPC UA Part12 Discovery 
 *  OPC UA Part13 Aggregates Standard OPC Unified Architecture (OPC UA), jest wynikiem wieloletniej współpracy liderów przemysłowych, których celem było stworzenie otwartego standardu wymiany informacji w systemach zarządzania procesem w sposób bogatszy i pełniejszy, zorientowany usługowo i bezpieczny w porównaniu do aktualnie wykorzystywanych standardów bazujących na platformie DCOM. Ten standard to odpowiedź na fundamentalne potrzeby mapowania i wymiany rzeczywistych informacji w sposób zorientowany obiektowo. Nowy standard został opracowany tak, by nie wiązać go z żadną istniejącą technologią komunikacyjną, specyfikacja przewiduje udostępnianie usług na różne sposoby. Twórcy OPC UA zdają sobie sprawę, że to co nowoczesne dziś, za kilka lat może już wyjść z użycia. Aktualnie specyfikacja przewiduje możliwość wykorzystania jednego z dwóch sposobów komunikacji i jednocześnie pozostawia furtkę, by w przyszłości dodanie innych było możliwe. Pierwszym sposobem jest udostępnienie danych poprzez web serwisy, drugim natomiast są binarne strumienie danych. OPC UA ma dwoistą naturę, tzn. jest zorientowana obiektowo i usługowo jednocześnie. Natura zorientowano obiektowa powoduje, że OPC UA może być wykorzystywane do wielu celów w warstwie procesowej i zapewnia wsparcie dla zaawansowanych struktur danych i elastyczny model danych. Natura zorientowana usługowo zapewnia lepsze wsparcie w dziedzinie przenośności na różnych platformach, lepszy dostęp i bezpieczeństwo."""@pl,
         "OPC Unified Architecture (англ. Унифицированная архитектура OPC) — спецификация, определяющая передачу данных в промышленных сетях и взаимодействие устройств в них. Разработана промышленным консорциумом OPC Foundation и значительно отличается от его предшествующих спецификаций. Первая версия Унифицированной архитектуры OPC была выпущена после 3 лет работ над спецификацией и еще 1 года прототипирования."@ru ;
-    dbont:wikiPageExternalLink <http://freeopcua.github.io/>,
-        <http://node-opcua.github.io/>,
-        <http://open62541.org/>,
-        <http://open62541.org/doc/>,
-        <http://teslascada.com>,
-        <http://www.commsvr.com/UAModelDesigner/Index.aspx>,
-        <http://www.embeddedlabs.com/serverstack.html>,
-        <http://www.inductiveautomation.com/products/ignitionopc>,
-        <http://www.opcconnect.com/ua.php>,
-        <http://www.opcfoundation.org>,
-        <http://www.openopcua.org/>,
-        <http://www.prosysopc.com>,
-        <http://www.unified-automation.com>,
-        <http://www.woopsa.org>,
-        <http://www.youtube.com/watch?v=pYOQA4atlRI>,
-        <https://github.com/digitalpetri/opc-ua-sdk>,
-        <https://www.rtinsights.com/dds-opc-ua-industrial-iot-standards/> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/.NET_Framework>,
         <http://dbpedia.org/resource/ANSI_C>,
         <http://dbpedia.org/resource/ARM_Holdings>,
@@ -6733,8 +6405,7 @@ sto:IEC_62541 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q623244>,
         <http://www.wikidata.org/entity/Q623244>,
         <http://yago-knowledge.org/resource/OPC_Unified_Architecture> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/OPC_Unified_Architecture?oldid=745311957> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/OPC_Unified_Architecture> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/OPC_Unified_Architecture> ;
     rami:hasRAMIHierarchyLevel rami:ConnectedWorld,
         rami:ControlDevice,
         rami:Enterprise,
@@ -6788,11 +6459,6 @@ sto:M2M a <http://dbpedia.org/class/yago/Abstraction100002137>,
         "Machine-to-Machine (M2M) (em português máquina a máquina) refere-se a tecnologias que permitem tanto sistemas com fio quanto sem fio a se comunicarem com outros dispositivos que possuam a mesma habilidade. M2M usa um dispositivo (como um sensor ou medidor) para capturar um evento (como temperatura, nível de estoque, etc), que é enviado através de uma rede (sem fio, com fio ou híbrida) para uma aplicação (programa), que transforma o evento capturado em informação útil (por exemplo, itens que precisam ser rearmazenados). Isto é obtido com o uso da telemetria, a linguagem que as máquinas usam para comunicar entre si. Tal comunicação foi originalmente obtida com uma rede remota de equipamentos transmitindo informação de volta para um centralizador a fim de ser analisada, podendo ser posteriormente roteada para um sistema computacional, por exemplo um computador pessoal. Entretanto, comunicações modernas M2M expandiram-se além da conexão ponto-a-ponto e mudaram para sistemas de rede que transmitem dados para equipamentos pessoais. A expansão das redes sem fio em todo o mundo tornou mais fácil o estabelecimento da comunicação M2M e reduziu a quantidade de energia e tempo necessários para transmitir informação entre equipamentos. Essas redes também abrem um leque de novas oportunidade de negócios e conectam os consumidores aos fabricantes em termos de disponibilidade de novos produtos. Nos últimos anos, o SMS tornou-se um crescente e importante mecanismo de transmissão que representa um tipo de comunicação M2M, com a onipresença do GSM e o relativo baixo custo do SMS como vantagem. Preocupações surgiram em relação à confiabilidade do SMS como um canal M2M, entretanto o crescimento da SS7 direta conectou gateways de SMS, que pode oferecer melhor confiabilidade e também a habilidade de confirmar o recebimento, reduzindo as preocupações citadas anteriormente."@pt,
         "Межмашинное взаимодействие (машинно-машинное взаимодействие, англ. Machine-to-Machine, M2M) — общее название технологий, которые позволяют машинам обмениваться информацией друг с другом, или же передавать её в одностороннем порядке. Это могут быть проводные и беспроводные системы мониторинга датчиков или каких-либо параметров устройств (температура, уровень запасов, местоположение и т. д.). К примеру, банкоматы или платёжные терминалы могут автоматически передавать информацию по GSM-сетям, а также если у них закончилась чековая бумага или наличность, или же наоборот, что наличности слишком много и требуется приезд инкассаторов. M2M также активно используется в системах безопасности и охраны, вендинге, системах здравоохранения, промышленных телеметрических системах (производство, энергетика, ЖКХ и др.) и системах позиционирования подвижных объектов на основе систем ГЛОНАСС/GPS. Одним из подклассов M2M является межмашинное взаимодействие с использованием мобильных решений, для него также может использоваться аббревиатура M2M (англ. Mobile-to-Mobile)."@ru,
         "機器對機器（英语：Machine to machine，常縮寫爲M2M），意爲機器設備之間在無需人爲干預的情形下，直接透過網路溝通而自行完成任務的一個模式或系統。舉例來說，一個設備上的電子溫度計或庫存感測器將所偵測到的數據直接傳送到後臺電腦上的軟體，該軟體可根據該數據將所需採取的行動以指令的方式傳回到該設備上。這樣來回的溝通方式在以前都必須先透過中轉才能取得相應的服務；而且，傳統的方式也比較耗能。 現在更多的機器對機器通訊已經轉變爲將一個將資料傳送到個人應用裝置的網路系統。全世界TCP/IP網路的普及使得機器對機器通訊更快、更簡單，而且更省電，因而也帶來不少商機。"@zh ;
-    dbont:wikiPageExternalLink <http://bb-smartworx.com/iot-modern-m2m-guide/>,
-        <http://carre-strauss.com/documents/IoT_Roadmap.pdf>,
-        <http://carre-strauss.com/documents/Smarter_Intervention_In_Complex_Systems.pdf>,
-        <http://web.cs.ucdavis.edu/~liu/paper/ToN2013FASA-huasen.pdf>,
-        <http://www.gsm-modem.de/M2M/wp-content/uploads/2014/04/IoT-M2M-Cookbook-Harald_excerpt.pdf> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/3GPP>,
         <http://dbpedia.org/resource/AT&T>,
         <http://dbpedia.org/resource/Abica>,
@@ -6929,8 +6595,7 @@ sto:M2M a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q251072>,
         <http://www.wikidata.org/entity/Q251072>,
         <http://yago-knowledge.org/resource/Machine_to_machine> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Machine_to_machine?oldid=742510736> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Machine_to_machine> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Machine_to_machine> ;
     sto:domainName "Machine to machine Communication"@en ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Machine_to_machine> ;
     sto:hasWikidataEntity <http://www.wikidata.org/entity/Q251072> ;
@@ -6966,7 +6631,7 @@ sto:Industrial_Automation a skos:Concept,
         <http://dbpedia.org/resource/Category:Industrial_computing>,
         <http://dbpedia.org/resource/Category:Production_and_manufacturing> ;
     skos:prefLabel "Industrial automation"@en ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Category:Industrial_automation?oldid=669157428> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Category:Industrial_automation> ;
     sto:domainName "Industrial Automation"@en ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Category:Industrial_automation> ;
     sto:hasWikidataEntity <http://www.wikidata.org/entity/Q8547780> ;
@@ -7045,17 +6710,6 @@ sto:ISO a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dbont:membership "[[#Membership"@en ;
     dbont:purpose "International standardization" ;
     dbont:type <http://dbpedia.org/resource/Non-governmental_organization> ;
-    dbont:wikiPageExternalLink <http://cdb.iso.org>,
-        <http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html>,
-        <http://web.mit.edu/iandeseminar/Papers/Fall2006/Yates.pdf>,
-        <http://web.mit.edu/iandeseminar/index2006.html>,
-        <http://www.iso.org/iso/2012_friendship_among_equals.pdf>,
-        <http://www.iso.org/iso/search/extendedsearchstandards.htm?formKeyword=&displayForm=true&published=true>,
-        <http://www.jtc1.org/>,
-        <http://www.tra-cd.com>,
-        <https://tracert.memberclicks.net/personnel-certification>,
-        <https://web.archive.org/web/20100922210249/http:/web.mit.edu/iandeseminar/Papers/Fall2006/Yates.pdf>,
-        <https://web.archive.org/web/20121026060448/http:/www.iso.org/iso/2012_friendship_among_equals.pdf> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/AP_Stylebook>,
         <http://dbpedia.org/resource/ASTM_International>,
         <http://dbpedia.org/resource/American_National_Standards_Institute>,
@@ -7215,8 +6869,7 @@ sto:ISO a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q15028>,
         <http://yago-knowledge.org/resource/ISO_13>,
         <http://yago-knowledge.org/resource/International_Organization_for_Standardization> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/International_Organization_for_Standardization?oldid=743802541> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/International_Organization_for_Standardization> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/International_Organization_for_Standardization> ;
     foaf:name "International Organization for Standardization"@en ;
     sto:abbreviation "ISO" ;
     sto:belongsTo dbr:Switzerland ;
@@ -7298,28 +6951,6 @@ sto:IEC a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dbont:purpose "Standardization for electrical technology, electronic and related." ;
     dbont:status "Active" ;
     dbont:type <http://dbpedia.org/resource/Non-governmental_organization> ;
-    dbont:wikiPageExternalLink <http://iecee.org>,
-        <http://iecre.org>,
-        <http://std.iec.ch/glossary>,
-        <http://std.iec.ch/iec60050>,
-        <http://std.iec.ch/iec60061>,
-        <http://std.iec.ch/iec60617>,
-        <http://tc100.iec.ch>,
-        <http://tc17.iec.ch>,
-        <http://tc3.iec.ch>,
-        <http://tc4.iec.ch>,
-        <http://tc56.iec.ch>,
-        <http://tc57.iec.ch>,
-        <http://tc86.iec.ch>,
-        <http://www.ansi.org/standards_activities/iec_programs/overview.aspx?menuid=3>,
-        <http://www.electropedia.org>,
-        <http://www.graphical-symbols.info/equipment>,
-        <http://www.iec.ch>,
-        <http://www.iec.ch/dyn/www/f?p=103:6:0>,
-        <http://www.iecex.org>,
-        <http://www.iecq.org>,
-        <http://www.kats.go.kr>,
-        <https://webstore.iec.ch> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/AENOR>,
         <http://dbpedia.org/resource/AFNOR>,
         <http://dbpedia.org/resource/Albania>,
@@ -7515,9 +7146,8 @@ sto:IEC a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q193858>,
         <http://www.wikidata.org/entity/Q193858>,
         <http://yago-knowledge.org/resource/International_Electrotechnical_Commission> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/International_Electrotechnical_Commission?oldid=736357966> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/International_Electrotechnical_Commission> ;
     foaf:homepage <http://www.iec.ch/dyn/www/f?p=103:6:0> ;
-    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/International_Electrotechnical_Commission> ;
     foaf:name "International Electrotechnical Commission"@en ;
     sto:abbreviation "IEC" ;
     sto:formationDate "1906-06-26"^^xsd:date ;

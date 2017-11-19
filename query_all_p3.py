@@ -1,7 +1,30 @@
 from rdflib import Graph, RDFS, Literal, BNode, URIRef
 from rdflib.namespace import XSD
 from SPARQLWrapper import SPARQLWrapper, JSON
-    
+import requests
+
+# --- CONSTANTS --- #
+# types of data that can be met while parsing results from DBpedia
+obj_types = ['uri', 'literal', 'typed-literal', 'bnode']
+# URLs of predicates to exclude from final .ttl file
+excl_pred = [
+  'http://dbpedia.org/ontology/thumbnail', 
+  'http://dbpedia.org/ontology/wikiPageID',
+  'http://dbpedia.org/ontology/wikiPageRevisionID',
+  'http://dbpedia.org/ontology/wikiPageExternalLink',
+  'http://purl.org/voc/vrank#hasRank',
+  'http://xmlns.com/foaf/0.1/depiction',
+  'http://xmlns.com/foaf/0.1/isPrimaryTopicOf'
+]
+# prefixes for some of URLs
+prefixes = [
+  { 'prefix': 'dbont', 'url': 'http://dbpedia.org/ontology/' },
+  { 'prefix': 'dbprop', 'url': 'http://dbpedia.org/property/' },
+  { 'prefix': 'nsprov', 'url': 'http://www.w3.org/ns/prov#' },
+  { 'prefix': 'vocvr', 'url': 'http://purl.org/voc/vrank#' },
+  { 'prefix': 'lingg', 'url': 'http://purl.org/linguistics/gold/' }
+]
+
 # initializing an RDF graph based on STO ontology
 g = Graph()
 g.parse('sto.ttl', format='turtle')
@@ -17,17 +40,6 @@ sto_query = """
   }
 """
 
-obj_types = ['uri', 'literal', 'typed-literal', 'bnode']
-excl_pred = [
-  'http://dbpedia.org/ontology/thumbnail', 
-  'http://dbpedia.org/ontology/wikiPageID',
-  'http://dbpedia.org/ontology/wikiPageRevisionID',
-  'http://dbpedia.org/ontology/wikiPageExternalLink',
-  'http://purl.org/voc/vrank#hasRank',
-  'http://xmlns.com/foaf/0.1/depiction',
-  'http://xmlns.com/foaf/0.1/isPrimaryTopicOf'
-  ]
-update_num = 0
 for row in g.query(sto_query):
   # extracting the name of the standard
   resource = row[1].split('/')[4]
@@ -64,9 +76,16 @@ for row in g.query(sto_query):
       res_pred = URIRef(result['pred']['value'])
       res_obj_val = result['obj']['value']
       res_obj_type = result['obj']['type']
-      
-      # Types: uri / literal / typed-literal / bnode
+      # types: uri, literal, typed-literal, bnode
       if res_obj_type == 'uri':
+        if result['pred']['value'] == 'http://www.w3.org/ns/prov#wasDerivedFrom' and '?oldid' in res_obj_val:
+          new_url = res_obj_val[:res_obj_val.find('?oldid')]
+          request = requests.get(new_url)
+          # status codes: 1xx - informational, 2xx - success, 3xx - redirection, 4xx - client error, 5xx - server error
+          if request.status_code == 200:
+            res_obj_val = new_url
+          else:
+            print('---' + new_url + ' DOES NOT RESPOND---')
         g.add([row[0], res_pred, URIRef(res_obj_val)])
       elif res_obj_type == 'literal':
         if 'xml:lang' in result['obj']:
@@ -83,11 +102,9 @@ for row in g.query(sto_query):
       else:
         print('---UNKNOWN OBJECT TYPE FOR ' + row[1] + '---')
 
-# exporting updated graph to a new .ttl file
-g.bind('dbont', 'http://dbpedia.org/ontology/')
-g.bind('dbprop', 'http://dbpedia.org/property/')
-g.bind('nsprov', 'http://www.w3.org/ns/prov#')
-g.bind('vocvr', 'http://purl.org/voc/vrank#')
-g.bind('lingg', 'http://purl.org/linguistics/gold/')
+# adding understandable prefixes for some of URLs
+for el in prefixes:
+  g.bind(el['prefix'], el['url'])
 
+# exporting updated graph to a new .ttl file
 g.serialize(destination='sto-updated.ttl', format='turtle')
