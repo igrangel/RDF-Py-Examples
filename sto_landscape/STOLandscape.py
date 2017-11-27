@@ -2,6 +2,7 @@
 """
 
 from rdflib import Graph, Literal, BNode, URIRef
+from rdflib.namespace import RDF
 from SPARQLWrapper import SPARQLWrapper, JSON
 import requests
 
@@ -71,10 +72,14 @@ class Ontology(object):
         """
         self.graph.remove([sub, pred, obj])
 
-    def check(self, sub, pred, obj):
-        """Returns a boolean value that denotes whether the triple is in
-          ontology or not.
+    def check(self, sub, pred=None, obj=None):
+        """Returns True if triple is in ontology and False o/w.
+        By default (with pred and obj not specified) checks if it is a sto:Standard.
         """
+        sub = URIRef('https://w3id.org/i40/sto#' + sub)
+        if not pred and not obj:
+            pred = RDF.type
+            obj = URIRef('https://w3id.org/i40/sto#Standard')
         if (sub, pred, obj) in self.graph:
             return True
         else:
@@ -91,7 +96,7 @@ class Ontology(object):
         return self.graph.query(query)
 
     def enrich(self, sub, source):
-        """Enriches the ontology based on the subject and all corresponding triples.
+        """Enriches the ontology based on existing subject and its triples from other source.
         """
         for triple in source:
             pred = triple['pred']['value']
