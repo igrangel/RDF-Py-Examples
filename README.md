@@ -13,7 +13,7 @@ Repository consists of:
 3) Standard Ontology in the Turtle format.
 
 ## Code Style
-It is highly recommended to use [VS Code](https://code.visualstudio.com/) as a code editor for Python development working on this project. It automatically fetches linting from the library `pylint` helping to develop the code uniformaly.
+It is highly recommended to use [VS Code](https://code.visualstudio.com/) as a code editor for Python development working on this project along with the extension, called `Python`. It automatically fetches linting from the library `pylint` helping to develop the code uniformaly.
 
 ## License
 MIT License. Copyright (c) 2017 i40-Tools.
