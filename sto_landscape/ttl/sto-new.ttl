@@ -162,7 +162,7 @@ sto:BBF_TR-069 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1351784>,
         <http://www.wikidata.org/entity/Q1351784>,
         <http://yago-knowledge.org/resource/TR-069> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/TR-069> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/TR-069?oldid=726688827> ;
     sto:developer sto:BBF ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/TR-069> ;
     sto:hasOfficialResource <https://www.broadband-forum.org/standards-and-software/technical-specifications/tr-069-files-tools> ;
@@ -229,7 +229,7 @@ sto:ETSI_ULE a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q17146026>,
         <http://www.wikidata.org/entity/Q17146026>,
         <http://yago-knowledge.org/resource/ULE_-_Ultra_Low_Energy> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ULE_-_Ultra_Low_Energy> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ULE_-_Ultra_Low_Energy?oldid=601212016> ;
     sto:developer sto:ETSI ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/ULE_-_Ultra_Low_Energy> ;
     sto:hasOfficialResource <http://www.etsi.org/technologies-clusters/technologies/dect/dect-ule> ;
@@ -254,7 +254,7 @@ sto:IEC_14443 a sto:Standard ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/International_Organization_for_Standardization> ;
     rdfs:comment "The ISO/IEC 14443 standard is a four-part international standard for contact-less smart cards operating at 13.56 MHz in close proximity (~10cm) with a reader antenna. This ISO standard describes the modulation and transmission protocols between card and reader to create interoperability for contact-less smart card products. There are two main communication protocols supported by the ISO/IEC 14443 standard, they are addressed as Type A and Type B. Most High Frequency (13.56 MHz) proximity tags are using these guidelines for their communication."@en ;
     owl:sameAs sto:ISO_14443 ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO?oldid=530584969> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/ISO/IEC_14443> ;
     sto:hasOfficialResource <https://www.iso.org/standard/70170.html> ;
     sto:hasTag "Identification cards -- Contactless integrated circuit cards -- Proximity cards"@en ;
@@ -401,7 +401,7 @@ sto:IEC_61508 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1060017>,
         <http://www.wikidata.org/entity/Q1060017>,
         <http://yago-knowledge.org/resource/IEC_61508> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61508> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61508?oldid=745288506> ;
     rami:hasAdminShellSubmodel rami:Safety ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/IEC_61508> ;
     sto:hasOfficialResource <http://www.iec.ch/functionalsafety/> ;
@@ -448,7 +448,7 @@ sto:IEC_62264 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q1653426>,
         <http://yago-knowledge.org/resource/IEC_62264> ;
     skos:altLabel "B2MML" ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_62264> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_62264?oldid=738530835> ;
     rami:hasRAMIITLayer rami:Functional ;
     sto:developer sto:IEC ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/IEC_62264> ;
@@ -523,7 +523,7 @@ sto:IEC_62424 a <http://dbpedia.org/class/yago/Abbreviation107091587>,
         <http://wikidata.dbpedia.org/resource/Q1022724>,
         <http://www.wikidata.org/entity/Q1022724>,
         <http://yago-knowledge.org/resource/CAEX> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/CAEX> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/CAEX?oldid=681828591> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/CAEX> ;
     sto:hasOfficialResource <https://webstore.iec.ch/publication/25442> ;
     sto:hasTag "CAEX"@en ;
@@ -853,7 +853,7 @@ sto:ISO_20922 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q10322548>,
         <http://www.wikidata.org/entity/Q10322548>,
         <http://yago-knowledge.org/resource/MQ_Telemetry_Transport> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/MQTT> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/MQTT?oldid=742422589> ;
     sto:developer sto:IBM,
         sto:OASIS ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/MQTT> ;
@@ -1137,7 +1137,7 @@ sto:ISO_PAS_17506 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q603967>,
         <http://www.wikidata.org/entity/Q603967>,
         <http://yago-knowledge.org/resource/COLLADA> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/COLLADA> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/COLLADA?oldid=737333192> ;
     sto:developer sto:ISO ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/COLLADA> ;
     sto:hasOfficialResource <https://www.iso.org/standard/59902.html> ;
@@ -1183,7 +1183,7 @@ sto:KATS a dbont:Organisation,
         <http://rdf.freebase.com/ns/m.0jwz2l4>,
         <http://wikidata.dbpedia.org/resource/Q16094554>,
         <http://www.wikidata.org/entity/Q16094554> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Korean_Agency_for_Technology_and_Standards> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Korean_Agency_for_Technology_and_Standards?oldid=570808450> ;
     foaf:homepage <http://www.kats.go.kr> ;
     sto:abbreviation "KATS"@de ;
     sto:belongsTo dbr:South_Korea ;
@@ -1258,7 +1258,7 @@ sto:MTConnect a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q6718422>,
         <http://www.wikidata.org/entity/Q6718422>,
         <http://yago-knowledge.org/resource/MTConnect> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/MTConnect> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/MTConnect?oldid=727445294> ;
     sto:developer sto:MTConnect_Institute ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/MTConnect> ;
     sto:hasISA95Level sto:DeviceLevel ;
@@ -1413,7 +1413,7 @@ sto:ModBus a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1135322>,
         <http://www.wikidata.org/entity/Q1135322>,
         <http://yago-knowledge.org/resource/Modbus> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Modbus> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Modbus?oldid=743230451> ;
     rami:hasRAMIITLayer rami:Integration ;
     sto:hasDBpediaResource <http://dbpedia.org/page/Modbus> ;
     sto:hasISA95Level sto:SCADALevel ;
@@ -1674,7 +1674,7 @@ sto:NIST a dbont:Agent,
         <http://rdf.freebase.com/ns/m.05hhw>,
         <http://wikidata.dbpedia.org/resource/Q176691>,
         <http://www.wikidata.org/entity/Q176691> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology?oldid=735125128> ;
     foaf:homepage <http://www.nist.gov/> ;
     foaf:name "National Institute of Standards and Technology (NIST)"@en ;
     sto:abbreviation "NIST" ;
@@ -1720,7 +1720,7 @@ sto:ODVA a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q7096000>,
         <http://www.wikidata.org/entity/Q7096000>,
         <http://yago-knowledge.org/resource/Open_DeviceNet_Vendors_Association> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ODVA_(company)> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ODVA_(company)?oldid=735373463> ;
     sto:abbreviation "ODVA" ;
     sto:formationDate "1995-01-01"^^xsd:date ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/ODVA_(company)> ;
@@ -1823,7 +1823,7 @@ sto:OMG_DDS a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q1149607>,
         <http://yago-knowledge.org/resource/Data_Distribution_Service>,
         <http://yago-knowledge.org/resource/Data_distribution_service> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Data_Distribution_Service> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Data_Distribution_Service?oldid=742227385> ;
     foaf:homepage <http://portals.omg.org/dds/> ;
     sto:hasDBpediaResource <http://dbpedia.org/page/Data_Distribution_Service> ;
     sto:hasISA95Level sto:DeviceLevel ;
@@ -1961,7 +1961,7 @@ sto:SysML a <http://dbpedia.org/class/yago/Artifact100021939>,
         <http://wikidata.dbpedia.org/resource/Q2117885>,
         <http://www.wikidata.org/entity/Q2117885>,
         <http://yago-knowledge.org/resource/Systems_Modeling_Language> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Systems_Modeling_Language> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Systems_Modeling_Language?oldid=740496028> ;
     sto:developer sto:OMG ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Systems_Modeling_Language> ;
     sto:hasOfficialResource <http://sysml.org/>,
@@ -2068,7 +2068,7 @@ sto:W3C_RIF a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1857202>,
         <http://www.wikidata.org/entity/Q1857202>,
         <http://yago-knowledge.org/resource/Rule_Interchange_Format> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Rule_Interchange_Format> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Rule_Interchange_Format?oldid=744971867> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Rule_Interchange_Format> ;
     sto:hasOfficialResource <https://www.w3.org/TR/rif-overview/> ;
     sto:hasTag "RIF"@en ;
@@ -2221,7 +2221,7 @@ sto:W3C_SPARQL a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q54871>,
         <http://www.wikidata.org/entity/Q54871>,
         <http://yago-knowledge.org/resource/SPARQL> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/SPARQL> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/SPARQL?oldid=732596660> ;
     foaf:name "SPARQL"@en ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/SPARQL> ;
     sto:hasOfficialResource <https://www.w3.org/SPARQL> ;
@@ -2567,7 +2567,7 @@ sto:ASAM a dbont:Agent,
         <http://rdf.freebase.com/ns/m.063_vfh>,
         <http://wikidata.dbpedia.org/resource/Q743638>,
         <http://www.wikidata.org/entity/Q743638> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Association_for_Standardisation_of_Automation_and_Measuring_Systems> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Association_for_Standardisation_of_Automation_and_Measuring_Systems?oldid=719544369> ;
     foaf:homepage <http://www.asam.net/> ;
     foaf:name "Association for Standardisation of Automation and Measuring Systems"@en ;
     sto:abbreviation "ASAM" ;
@@ -3186,7 +3186,7 @@ sto:IBM a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q37156>,
         <http://www4.wiwiss.fu-berlin.de/wikicompany/resource/IBM>,
         <http://yago-knowledge.org/resource/IBM> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IBM> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IBM?oldid=744295472> ;
     foaf:homepage <http://www.ibm.com/us-en/> ;
     foaf:name "International Business Machines Corporation"@en ;
     sto:abbreviation "IBM" ;
@@ -3256,7 +3256,7 @@ sto:IEC_61131 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1275526>,
         <http://www.wikidata.org/entity/Q1275526>,
         <http://yago-knowledge.org/resource/IEC_61131> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61131> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61131?oldid=738528954> ;
     rami:hasRAMIHierarchyLevel rami:ControlDevice,
         rami:Station,
         rami:WorkCenter ;
@@ -3298,7 +3298,7 @@ sto:IEC_61511 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q5970200>,
         <http://www.wikidata.org/entity/Q5970200>,
         <http://yago-knowledge.org/resource/IEC_61511> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61511> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61511?oldid=676783327> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/IEC_61511> ;
     sto:hasOfficialResource <https://webstore.iec.ch/publication/24241> ;
     sto:hasTag "Functional safety - Safety instrumented systems for the process industry sector"@en ;
@@ -3355,7 +3355,7 @@ sto:IEC_61512 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1512301>,
         <http://www.wikidata.org/entity/Q1512301>,
         <http://yago-knowledge.org/resource/ISA-88> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISA-88> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISA-88?oldid=631483159> ;
     rami:hasRAMIHierarchyLevel rami:ControlDevice,
         rami:Product,
         rami:Station,
@@ -3411,7 +3411,7 @@ sto:IEC_61804 a dbont:Language,
         <http://rdf.freebase.com/ns/m.0k0gc81>,
         <http://wikidata.dbpedia.org/resource/Q1206769>,
         <http://www.wikidata.org/entity/Q1206769> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Device_Description_Language> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Device_Description_Language?oldid=630631916> ;
     foaf:homepage <http://www.eddl.org/> ;
     rami:hasAdminShellSubmodel rami:Configuration ;
     rami:hasRAMIHierarchyLevel rami:ControlDevice,
@@ -3509,7 +3509,7 @@ sto:IEC_61850 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q168160>,
         <http://www.wikidata.org/entity/Q168160>,
         <http://yago-knowledge.org/resource/IEC_61850> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61850> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61850?oldid=738529810> ;
     sto:hasDBpediaResource <http://dbpedia.org/page/IEC_61850> ;
     sto:hasOfficialResource <https://webstore.iec.ch/publication/4550> ;
     sto:hasWikidataEntity <https://www.wikidata.org/wiki/Q168160> ;
@@ -3562,7 +3562,7 @@ sto:IEC_62061 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q16976659>,
         <http://www.wikidata.org/entity/Q16976659>,
         <http://yago-knowledge.org/resource/IEC_62061> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_62061> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_62061?oldid=738529743> ;
     rami:hasAdminShellSubmodel rami:Safety ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/IEC_62061> ;
     sto:hasOfficialResource <https://webstore.iec.ch/publication/22797> ;
@@ -3633,7 +3633,7 @@ sto:ISA-95 a sto:Standard ;
     dbont:wikiPageRedirects <http://dbpedia.org/resource/American_National_Standards_Institute> ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/American_National_Standards_Institute> ;
     rdfs:comment "ANSI/ISA-95, or ISA-95 as it is more commonly referred, is an international standard from the International Society of Automation for developing an automated interface between enterprise and control systems. This standard has been developed for global manufacturers. It was developed to be applied in all industries, and in all sorts of processes, like batch processes, continuous and repetitive processes.There are 5 parts of the ISA-95 standard.ISA-95 Models"@en ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ANSI> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ANSI?oldid=600958629> ;
     sto:developer sto:ANSI,
         sto:ISA ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/ANSI/ISA-95> ;
@@ -3702,7 +3702,7 @@ sto:ISO_13849 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1275552>,
         <http://www.wikidata.org/entity/Q1275552>,
         <http://yago-knowledge.org/resource/ISO_13849> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO_13849> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO_13849?oldid=668045442> ;
     rami:hasAdminShellSubmodel rami:Safety ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/ISO_13849> ;
     sto:hasOfficialResource <http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=69883> ;
@@ -3780,7 +3780,7 @@ sto:ISO_19439 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q3146921>,
         <http://www.wikidata.org/entity/Q3146921>,
         <http://yago-knowledge.org/resource/ISO_19439> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO_19439> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO_19439?oldid=703509741> ;
     rami:hasRAMIITLayer rami:Business ;
     sto:hasDBpediaResource <http://dbpedia.org/page/ISO_19439> ;
     sto:hasISA95Level sto:EnterpriseLevel ;
@@ -3843,7 +3843,7 @@ sto:MESA a dbont:Settlement,
         <http://rdf.freebase.com/ns/m.02pgwbl>,
         <http://wikidata.dbpedia.org/resource/Q1891847>,
         <http://www.wikidata.org/entity/Q1891847> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Manufacturing_Enterprise_Solutions_Association> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Manufacturing_Enterprise_Solutions_Association?oldid=712821595> ;
     sto:abbreviation "MESA" ;
     sto:formationDate "1992-01-01"^^xsd:date ;
     sto:hasDBpediaResource <http://dbpedia.org/page/Manufacturing_Enterprise_Solutions_Association> ;
@@ -3983,7 +3983,7 @@ sto:OPC_Foundation a dbont:Agent,
         <http://rdf.freebase.com/ns/m.063_vfh>,
         <http://wikidata.dbpedia.org/resource/Q743638>,
         <http://www.wikidata.org/entity/Q743638> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Association_for_Standardisation_of_Automation_and_Measuring_Systems> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Association_for_Standardisation_of_Automation_and_Measuring_Systems?oldid=719544369> ;
     foaf:homepage <http://www.asam.net/> ;
     foaf:name "Association for Standardisation of Automation and Measuring Systems"@en ;
     sto:abbreviation "OPC" ;
@@ -4236,7 +4236,7 @@ sto:SE a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www4.wiwiss.fu-berlin.de/wikicompany/resource/Schneider_Electric>,
         <http://yago-knowledge.org/resource/Sarel>,
         <http://yago-knowledge.org/resource/Schneider_Electric> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Schneider_Electric> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Schneider_Electric?oldid=744384039> ;
     sto:abbreviation "SE" ;
     sto:formationDate "1936-01-01"^^xsd:date ;
     sto:hasDBpediaResource <http://dbpedia.org/page/Schneider_Electric> ;
@@ -4265,7 +4265,7 @@ sto:VDMA a <http://dbpedia.org/class/yago/Abstraction100002137>,
     rdfs:comment "The Mechanical Engineering Industry Association (Verband Deutscher Maschinen- und Anlagenbau – VDMA) has its headquarters in Frankfurt am Main, Germany, and represents around 3,200 members, making it the largest industry association in Europe. The Association represents the interests of the predominantly medium-sized companies in the mechanical engineering industry towards policymakers and society, as well as towards business, the scientific community, public authorities and the media. With more than one million employees and a turnover of around EUR 218 billion (2015), mechanical and plant engineering is Germany’s largest employer in the industrial sector.In addition, VDMA sees itself as a platform that provides its member companies with various networks where they can discuss technological challenges, interdisciplinary issues and many other topics." ;
     owl:sameAs <http://rdf.freebase.com/ns/m.04hzd28>,
         <http://yago-knowledge.org/resource/VDMA> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/VDMA> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/VDMA?oldid=741604943> ;
     sto:abbreviation "VDMA" ;
     sto:formationDate "1892-11-15"^^xsd:date ;
     sto:hasDBpediaResource <ttp://dbpedia.org/resource/VDMA> ;
@@ -4454,7 +4454,7 @@ sto:W3C_OWL a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q826165>,
         <http://www.wikidata.org/entity/Q826165>,
         <http://yago-knowledge.org/resource/Web_Ontology_Language> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Web_Ontology_Language> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Web_Ontology_Language?oldid=722785423> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Web_Ontology_Language> ;
     sto:hasOfficialResource <https://www.w3.org/OWL/> ;
     sto:hasTag "OWL"@en ;
@@ -4553,7 +4553,7 @@ sto:BBF a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q922023>,
         <http://www.wikidata.org/entity/Q922023>,
         <http://yago-knowledge.org/resource/Broadband_Forum> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Broadband_Forum> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Broadband_Forum?oldid=711485997> ;
     foaf:name "Broadband Forum"@en ;
     sto:abbreviation "BBF" ;
     sto:formationDate "2008-01-01"^^xsd:date ;
@@ -4761,7 +4761,7 @@ sto:ETSI_DECT a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q1224749>,
         <http://www.wikidata.org/entity/Q1224749>,
         <http://yago-knowledge.org/resource/Digital_Enhanced_Cordless_Telecommunications> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Digital_Enhanced_Cordless_Telecommunications> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Digital_Enhanced_Cordless_Telecommunications?oldid=739559987> ;
     sto:developer sto:ETSI ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Digital_Enhanced_Cordless_Telecommunications> ;
     sto:hasOfficialResource <http://www.etsi.org/technologies-clusters/technologies/dect> ;
@@ -4802,7 +4802,7 @@ sto:IEC_61499 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q188109>,
         <http://www.wikidata.org/entity/Q188109>,
         <http://yago-knowledge.org/resource/IEC_61499> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61499> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/IEC_61499?oldid=744913607> ;
     rami:hasRAMIHierarchyLevel rami:ControlDevice,
         rami:FieldDevice ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/IEC_61499> ;
@@ -4902,7 +4902,7 @@ sto:IEC_62714 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q431851>,
         <http://yago-knowledge.org/resource/AutomationML> ;
     skos:altLabel "AML"@en ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/AutomationML> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/AutomationML?oldid=673745347> ;
     rami:hasAdminShellSubmodel rami:Engineering ;
     rami:hasRAMIHierarchyLevel rami:ControlDevice,
         rami:FieldDevice,
@@ -4968,7 +4968,7 @@ sto:ISO_13584 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q5974206>,
         <http://www.wikidata.org/entity/Q5974206>,
         <http://yago-knowledge.org/resource/ISO_13584> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO_13584> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO_13584?oldid=544613175> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/ISO_13584> ;
     sto:hasOfficialResource <https://webstore.iec.ch/publication/5380%0Ahttp://www.iso.org/iso/catalogue_detail.htm?csnumber=43423> ;
     sto:hasTag "Industrial automation systems and integration"@en ;
@@ -5312,7 +5312,7 @@ sto:W3C_RDF a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q54872>,
         <http://www.wikidata.org/entity/Q54872>,
         <http://yago-knowledge.org/resource/Resource_Description_Framework> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Resource_Description_Framework> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Resource_Description_Framework?oldid=744183063> ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Resource_Description_Framework> ;
     sto:hasOfficialResource <https://www.w3.org/RDF/> ;
     sto:hasTag "RDF"@en ;
@@ -5484,7 +5484,7 @@ sto:IEC_61158 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q1141640>,
         <http://yago-knowledge.org/resource/Fieldbus>,
         <http://yago-knowledge.org/resource/IEC_61158> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Fieldbus> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Fieldbus?oldid=742124333> ;
     sto:hasDBpediaResource <http://dbpedia.org/page/Fieldbus> ;
     sto:hasISA95Level sto:DeviceLevel ;
     sto:hasOfficialResource <http://www.fieldbus.org/> ;
@@ -5663,7 +5663,7 @@ sto:OMG a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q252733>,
         <http://www.wikidata.org/entity/Q252733>,
         <http://yago-knowledge.org/resource/Object_Management_Group> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Object_Management_Group> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Object_Management_Group?oldid=734349043> ;
     foaf:homepage <http://www.omg.org> ;
     foaf:name "Object Management Group"@en ;
     sto:abbreviation "OMG" ;
@@ -5863,7 +5863,7 @@ sto:ANSI a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q180003>,
         <http://www.wikidata.org/entity/Q180003>,
         <http://yago-knowledge.org/resource/American_National_Standards_Institute> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/American_National_Standards_Institute> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/American_National_Standards_Institute?oldid=739692936> ;
     foaf:homepage <http://www.ansi.org/> ;
     foaf:name "American National Standards Institute"@en ;
     sto:abbreviation "ANSI" ;
@@ -5980,7 +5980,7 @@ sto:ISA a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q253955>,
         <http://www.wikidata.org/entity/Q253955>,
         <http://yago-knowledge.org/resource/International_Society_of_Automation> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/International_Society_of_Automation> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/International_Society_of_Automation?oldid=739555722> ;
     sto:abbreviation "ISA" ;
     sto:formationDate "1945-04-28"^^xsd:date ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/International_Society_of_Automation> ;
@@ -6180,7 +6180,7 @@ sto:W3C a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q37033>,
         <http://www.wikidata.org/entity/Q37033>,
         <http://yago-knowledge.org/resource/World_Wide_Web_Consortium> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/World_Wide_Web_Consortium> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/World_Wide_Web_Consortium?oldid=744907249> ;
     foaf:homepage <http://www.w3.org> ;
     foaf:name "World Wide Web Consortium"@en ;
     sto:abbreviation "W3C" ;
@@ -6310,7 +6310,7 @@ sto:ETSI a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q899383>,
         <http://yago-knowledge.org/resource/ETSI>,
         <http://yago-knowledge.org/resource/European_Telecommunications_Standards_Institute> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ETSI> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ETSI?oldid=701005106> ;
     foaf:homepage <http://www.etsi.org/> ;
     sto:abbreviation "ETSI"@en ;
     sto:formationDate "1988-01-01"^^xsd:date ;
@@ -6405,7 +6405,7 @@ sto:IEC_62541 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q623244>,
         <http://www.wikidata.org/entity/Q623244>,
         <http://yago-knowledge.org/resource/OPC_Unified_Architecture> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/OPC_Unified_Architecture> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/OPC_Unified_Architecture?oldid=745311957> ;
     rami:hasRAMIHierarchyLevel rami:ConnectedWorld,
         rami:ControlDevice,
         rami:Enterprise,
@@ -6595,7 +6595,7 @@ sto:M2M a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q251072>,
         <http://www.wikidata.org/entity/Q251072>,
         <http://yago-knowledge.org/resource/Machine_to_machine> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Machine_to_machine> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Machine_to_machine?oldid=742510736> ;
     sto:domainName "Machine to machine Communication"@en ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Machine_to_machine> ;
     sto:hasWikidataEntity <http://www.wikidata.org/entity/Q251072> ;
@@ -6631,7 +6631,7 @@ sto:Industrial_Automation a skos:Concept,
         <http://dbpedia.org/resource/Category:Industrial_computing>,
         <http://dbpedia.org/resource/Category:Production_and_manufacturing> ;
     skos:prefLabel "Industrial automation"@en ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Category:Industrial_automation> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Category:Industrial_automation?oldid=669157428> ;
     sto:domainName "Industrial Automation"@en ;
     sto:hasDBpediaResource <http://dbpedia.org/resource/Category:Industrial_automation> ;
     sto:hasWikidataEntity <http://www.wikidata.org/entity/Q8547780> ;
@@ -6869,7 +6869,7 @@ sto:ISO a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://www.wikidata.org/entity/Q15028>,
         <http://yago-knowledge.org/resource/ISO_13>,
         <http://yago-knowledge.org/resource/International_Organization_for_Standardization> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/International_Organization_for_Standardization> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/International_Organization_for_Standardization?oldid=743802541> ;
     foaf:name "International Organization for Standardization"@en ;
     sto:abbreviation "ISO" ;
     sto:belongsTo dbr:Switzerland ;
@@ -7146,7 +7146,7 @@ sto:IEC a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://wikidata.dbpedia.org/resource/Q193858>,
         <http://www.wikidata.org/entity/Q193858>,
         <http://yago-knowledge.org/resource/International_Electrotechnical_Commission> ;
-    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/International_Electrotechnical_Commission> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/International_Electrotechnical_Commission?oldid=736357966> ;
     foaf:homepage <http://www.iec.ch/dyn/www/f?p=103:6:0> ;
     foaf:name "International Electrotechnical Commission"@en ;
     sto:abbreviation "IEC" ;
