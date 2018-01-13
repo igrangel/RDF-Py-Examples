@@ -28,10 +28,10 @@ def main():
         """
         dbpedia_result = DBpedia().query(dbpedia_query)
 
-        sto = set_blacklist(sto)
+        # sto = set_blacklist(sto)
         sto.enrich(subject, dbpedia_result)
         sto = set_prefixes(sto)
-        sto.export('sto-new')
+        sto.export('ttl/sto-all.ttl')
 
 def set_blacklist(sto):
     """Setter of ontology black list.
