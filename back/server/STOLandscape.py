@@ -60,7 +60,7 @@ class Ontology(object):
     def export(self, filename):
         """Saves generated ontology as a turtle file.
         """
-        self.graph.serialize(destination='ttl/'+filename+'.ttl', format='turtle')
+        self.graph.serialize(destination=filename, format='turtle')
 
     def add(self, sub, pred, obj):
         """Adds triple to ontology.
@@ -101,6 +101,8 @@ class Ontology(object):
         for triple in source:
             pred = triple['pred']['value']
             if pred not in self.blacklist:
+                if sub is None:
+                    sub = URIRef(triple['sub']['value'])
                 pred = URIRef(pred)
                 obj = triple['obj']
                 obj_val = obj['value']

@@ -1,0 +1,112 @@
+.s-body{ margin: 0; }
+
+.s-wrapper { height: calc(100vh - 50px); }
+
+.s-top-menu {
+  background-color: lightseagreen;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+
+#s-legend {
+  cursor: pointer;
+  display: none;
+  flex-direction: row;
+  padding: 0 10px 0 6px;
+}
+
+#s-img-close, #s-img-menu {
+  align-self: center;
+  display: none;
+  height: 28px;
+  width: 28px;
+}
+
+.s-menu-els { display: flex; }
+
+.s-menu-el-wr {
+  align-self: center;
+  color: white;
+  font-size: 20px;  
+  cursor: pointer;
+  padding: 13px;
+}
+.s-menu-el-wr:hover, .s-curr-p { background-color: #218c86; }
+
+.s-menu-el { text-decoration: none; z-index: 0; }
+
+.s-main {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+}
+
+.s-logo {
+  align-self: center;
+  color: white;
+  font-size: 26px;
+  position: absolute;
+  right: 20px;
+}
+
+.s-logo-link {
+  color: white;
+  text-decoration: none;
+}
+
+#s-side-menu { display: none; }
+
+.s-content {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  padding: 0 20px;
+}
+
+.s-span { font-size: 20px; }
+
+.s-button {
+  background-color: lightseagreen;
+  border: 1px solid lightseagreen;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+@media (max-width: 1024px) {
+  #s-side-menu {
+    background-color: white;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 52px);
+    margin-left: -302px;
+    width: 300px;
+    position: absolute;
+
+    -webkit-transition: margin 0.2s ease-in-out;
+    -moz-transition: margin 0.2s ease-in-out;
+    -o-transition: margin 0.2s ease-in-out;
+    transition: margin 0.2s ease-in-out;
+  }
+  
+  .s-side-menu-el { text-decoration: none; }
+  
+  .s-side-menu-el-wr {
+    color: black;
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+
+  .s-side-menu-el-wr:hover, .s-curr-m { background-color: #eee; }
+  .s-menu-els { display: none; }
+
+  #s-legend { display: flex; }
+
+  #s-img-menu { display: initial; }
+}

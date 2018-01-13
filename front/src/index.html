@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Standard Ontology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="s-body">
+    <div class="s-wrapper">
+      <div class="s-top-menu">
+        <div id="s-legend" onclick="legendClick()">
+          <img id="s-img-close" src="img/close.png" />
+          <img id="s-img-menu" src="img/menu.png" />
+        </div>
+        <div class="s-menu-els">
+          <a class="s-menu-el" href="/"><div class="s-menu-el-wr s-curr-p">Main</div></a>
+          <a class="s-menu-el" href="/editor"><div class="s-menu-el-wr">Editor</div></a>
+          <a class="s-menu-el" href="/viewer"><div class="s-menu-el-wr">Viewer</div></a>
+        </div>
+        <span class="s-logo"><a class="s-logo-link" href="/">Standard Ontology</a></span>
+      </div>
+      <div class="s-main">
+        <div id="s-side-menu">
+          <a class="s-side-menu-el" href="/"><div class="s-side-menu-el-wr s-curr-m">Main</div></a>
+          <a class="s-side-menu-el" href="/editor"><div class="s-side-menu-el-wr">Editor</div></a>
+          <a class="s-side-menu-el" href="/viewer"><div class="s-side-menu-el-wr">Viewer</div></a>
+        </div>
+
+        <div class="s-content">
+          <span style="line-height: 30px; font-size: 20px;">
+            <b style="font-size: 30px;">
+              <a style="color: rgb(0, 90, 255); text-decoration: none;" target="_blank" href="https://www.researchgate.net/publication/318208930_The_Industry_40_Standards_Landscape_from_a_Semantic_Integration_Perspective">Standard Ontology</a>
+            </b>
+            aims to describe characteristics of standards for Smart Factories and their relations.
+          </span>
+          <h2>Why?</h2>
+          <div style="height: 1px; background-color: #aaa; width: 100%; margin-top: -22px;"></div>
+          <span style="line-height: 30px;">
+            New technological era changes the conception of industry in the modern society more and more. Manufacturing systems become faster, smarter and more powerful than ever. One of the main recent trends in this area is the application of modern IT concepts, such as Internet of Things, Cyber-physical Systems and many more, summed up together as Industry 4.0. New approach aims to create so-called Smart Factories, i.e. to provide a new way of production line automation and integration of all parts of the global manufacture. 
+            Standards play a big role in the workflow of modern organizations. They provide rules, guidelines or characteristics for activities or their results, aimed at the achievement of the optimum degree of order in a given context [1]. Collaboration and exchanging of production data among industry entities still can be considered as a big issue because companies have to spend a lot of time and efforts on manual control of these processes. One of the ways to represent this approach is as a semantic landscape of the standards used by different parts of any manufacturer system.  Developing such a landscape can be considered as a quite challenging task because of the amount of different standards and the complexity of distinguishing their interconnections.                
+          </span>
+          <h2>What?</h2>
+          <div style="height: 1px; background-color: #aaa; width: 100%; margin-top: -22px;"></div>
+          <span style="line-height: 30px;">  
+            In order to solve the problem of automatic standard integration, a Standard Ontology (STO) was introduced [2]. The aim of STO is to describe information about Standards and their relations between different entities in the area of Industry 4.0 and Internet of things in a semantic way. By now, different organizations, production lines and sometimes even countries have developed their own way of aligning commonly used standards in one architecture. Good examples can be Reference Architecture Model for Industry 4.0 (RAMI4.0) [3] and The National Institute of Standards and Technology standards landscape (ISA 95) [4]. The architectures mentioned above describe almost same ideas in different definitions and thus there is a large room for improvements in terms of their interconnection.
+          </span>
+          <h2>How?</h2>
+          <div style="height: 1px; background-color: #aaa; width: 100%; margin-top: -22px;"></div>
+          <span style="line-height: 30px;">
+            One of the ways of enriching the ontology is to use some third-party sources that provide an access to structured data in the area of our interest. DBpedia can be considered as a reliable source of the structured data which provides a large number of ways of working with the system. The amount of information stored in this knowledgebase is incredible and gives an opportunity to conduct a large study on the knowledge related to manufacture systems. In order to simplify “mining” of the DBpedia, a web interface has been introduced with which it is easy to query any data from DBpedia, push it right away to the STO and check the result.              
+          </span>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

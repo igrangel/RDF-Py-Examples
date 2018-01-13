@@ -1,0 +1,9 @@
+name: SampleServer
+dependencies:
+- python=3.6
+- pip:
+    - Flask
+    - gevent
+    - rdflib
+    - SPARQLWrapper
+    - git+https://github.com/ansrivas/pylogging.git

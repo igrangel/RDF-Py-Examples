@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Standard Ontology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/editor.css" />
+  </head>
+  <body class="s-body">
+    <div class="s-wrapper">
+      <div class="s-top-menu">
+        <div id="s-legend" onclick="legendClick()">
+          <img id="s-img-close" src="img/close.png" />
+          <img id="s-img-menu" src="img/menu.png" />
+        </div>
+        <div class="s-menu-els">
+          <a class="s-menu-el" href="/"><div class="s-menu-el-wr">Main</div></a>
+          <a class="s-menu-el" href="/editor"><div class="s-menu-el-wr s-curr-p">Editor</div></a>
+          <a class="s-menu-el" href="/viewer"><div class="s-menu-el-wr">Viewer</div></a>
+        </div>
+        <span class="s-logo"><a class="s-logo-link" href="/">Standard Ontology</a></span>
+      </div>
+      <div class="s-main">
+        <div id="s-side-menu">
+          <a class="s-side-menu-el" href="/"><div class="s-side-menu-el-wr">Main</div></a>
+          <a class="s-side-menu-el" href="/editor"><div class="s-side-menu-el-wr s-curr-m">Editor</div></a>
+          <a class="s-side-menu-el" href="/viewer"><div class="s-side-menu-el-wr">Viewer</div></a>
+        </div>
+
+        <div class="s-content">
+          <h2><u style="cursor: pointer;" onclick="addTripleSlider()">Add Triple</u></h2>
+          <div style="display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap; align-items: center;">
+            <div>subj: <input type="text" id="subj" /></div> 
+            <div>pred: <input type="text" id="pred" /></div>
+            <div>obj: <input type="text" id="obj" /></div>
+            <button onclick="addTriple()" style="height: 30px;">Add triple to STO</button>
+          </div>
+          <h2><u style="cursor: pointer;" onclick="querySlider()">Query</u></h2>
+          <div class="query-form">
+            <select id="ontology" onchange="ontologyChange()">
+              <option value="sto">Standard Ontology</option>
+              <option value="dbp">DBpedia</option>
+            </select>
+            <div style="display: flex; flex-direction: row;">
+              <textarea id="query" rows="10" cols="45" name="text" class="query-textarea"></textarea>
+              <div class="fav-block">
+                <b>Last 10 queries:</b>
+                <span id="queryStack"></span>
+              </div>
+            </div>
+            <button onclick="sendQuery()">send query</button>
+          </div>
+          <img src="img/spinner.gif" id="spinner" class="spinner" />
+          <div id="queryResult" class="query-result"></div>
+          <div id="queryResultInfo" class="query-result-info">
+            <span>number of rows: <span id="rowsNum">0</span></span>
+            <span>number of cols: <span id="colsNum">0</span></span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/editor.js"></script>
+  </body>
+</html>
