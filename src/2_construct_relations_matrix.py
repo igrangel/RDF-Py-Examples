@@ -155,7 +155,8 @@ def mtx_to_dep(mtx, sub_list, prop_list):
     #np.savetxt("wheel/names.txt", names.astype(str), delimiter=", ", fmt="%s")
     #np.savetxt("wheel/data.txt", data.astype(int), delimiter=", ", fmt="%s")
     text_file = open("wheel/names.txt", "w")
-    text_file.write(np.array2string(names.astype(str), separator=', ', max_line_width=np.inf))
+    names_txt = np.array2string(names.astype(str), separator=', ', max_line_width=np.inf)
+    text_file.write(names_txt.replace('\'', '"'))
     text_file.close()
 
     text_file = open("wheel/data.txt", "w")
