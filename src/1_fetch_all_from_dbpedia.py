@@ -8,7 +8,7 @@ def main():
     Describes abstract algorithm of the ontology enriching.
     """
 
-    sto = Ontology('ttl/sto_test.ttl', 'STO')
+    sto = Ontology('ttl/sto.ttl', 'STO')
     sto_query = """
         PREFIX sto: <https://w3id.org/i40/sto#>
         SELECT ?sub ?dbPediaResource WHERE {
@@ -31,7 +31,7 @@ def main():
         sto = set_blacklist(sto)
         sto.enrich(subject, dbpedia_result)
         sto = set_prefixes(sto)
-        sto.export('ttl/sto_test_all.ttl')
+        sto.export('ttl/sto_all.ttl')
 
 def set_blacklist(sto):
     """Setter of ontology black list.
@@ -47,6 +47,7 @@ def set_blacklist(sto):
     #sto.blacklist.add('http://xmlns.com/foaf/0.1/isPrimaryTopicOf')
     #sto.blacklist.add('http://www.w3.org/2000/01/rdf-schema#comment')
     #sto.blacklist.add('http://dbpedia.org/ontology/abstract')
+    sto.blacklist.add('http://purl.org/voc/vrank#hasRank')
     return sto
 
 def set_prefixes(sto):

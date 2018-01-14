@@ -143,6 +143,7 @@ sto:ASME_Y1441 a owl:NamedIndividual,
         <http://dbpedia.org/resource/Model-based_definition>,
         <http://dbpedia.org/resource/United_States_Department_of_Defense> ;
     dcterms:subject <http://dbpedia.org/resource/Category:American_Society_of_Mechanical_Engineers> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "ASME Y14.41 establishs requirements for model-based definition upon CAD software and those who use CAD software to create product definition within the 3D model."@en,
         "ASME Y14.41 is a standard published by American Society of Mechanical Engineers (ASME) to establish requirements for model-based definition upon CAD software and those who use CAD software to create product definition within the 3D model. ASME issued the first version of this industrial standard on Aug 15, 2003 as ASME Y14.41-2003. It was immediately adopted by several industrial organizations, as well as the Department of Defense (DOD). ASME Y14.41 was revised and republished in May 2012 as ASME Y14.41-2012."@en ;
     owl:sameAs <http://rdf.freebase.com/ns/m.0ftb_2>,
@@ -204,6 +205,7 @@ sto:B2MML a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Manufacturing>,
         <http://dbpedia.org/resource/Category:Supply_chain_management> ;
     lingg:hypernym <http://dbpedia.org/resource/Implementation> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "لغة الترميز من الأعمال إلى التصنيع (Business To Manufacturing Markup Language B2MML) هي تطبيق للغة XML على متطلبات مجموعة المعايير آي أس ايه 95 ANSI/ISA-95. تتكون هذه اللغة من مجموعة من مخططات XML المكتوبة باستخدام لغة (XSD) من رابطة الشبكة العالمية (World Wide Web Consortium), والتي تنفذ نماذج البيانات حسب معيار آي أس ايه 95."@ar,
         "Die Business To Manufacturing Markup Language (B2MML) ist eine XML-Implementierung der ANSI/ISA 95 Standard-Familie (ISA-95), international bekannt unter der Bezeichnung ISO/IEC 62264. B2MML besteht aus einem Satz von Definitionen der ISA-95 Datentypen in Form von XML Schemata. B2MML ist als gemeinsames Datenformat für die Kopplung zwischen Enterprise Resource Planning (ERP) und Materialwirtschaft (supply chain) zur Fertigungsebene ausgelegt."@de,
         "B2MML or Business To Manufacturing Markup Language is an XML implementation of the ANSI/ISA-95 family of standards (ISA-95)"@en,
@@ -326,6 +328,7 @@ sto:BBF_TR-069 a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dcterms:subject <http://dbpedia.org/resource/Category:Digital_subscriber_line>,
         <http://dbpedia.org/resource/Category:Internet_Standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Specification> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "TR-069 ist ein Protokoll zum Datenaustausch zwischen dem Server eines Kommunikationanbieters und einem damit verbundenen Endgerät beim Kunden. Ein typischer Anwendungsfall ist die Fernkonfiguration von DSL-Routern durch einen Breitbandanbieter. Technisch gesehen handelt es sich um ein bidirektionales SOAP-Protokoll für die HTTP-basierte Kommunikation zwischen Kundengeräten (CPEs = Customer Premises Equipment) und Auto-Configuration-Servern (ACS). Es ist daher auch bekannt als CPE WAN Management Protocol (CWMP)."@de,
         "Digital Enhanced Cordless Telecommunications (DECT™) is the ETSI standard for short-range cordless communications, which can be adapted for many applications and can be used over unlicensed frequency allocations world-wide."@en,
         "TR-069 (Technical Report 069) is a technical specification that defines an application layer protocol for remote management of end-user devices. It was published by the Broadband Forum and entitled CPE WAN Management Protocol (CWMP)."@en,
@@ -479,6 +482,7 @@ sto:BPEL a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Workflow_technology>,
         <http://dbpedia.org/resource/Category:XML-based_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Language> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Die WS-Business Process Execution Language (BPEL) ist eine XML-basierte Sprache zur Beschreibung von Geschäftsprozessen, deren einzelne Aktivitäten durch Webservices implementiert sind. WS-BPEL ist Teil der sogenannten WS-*-Spezifikationen als industrieller Standard von OASIS. Die im Jahr 2002 von IBM, BEA Systems und Microsoft eingeführte Sprache wird zur Beschreibung der Orchestrierung von Webservices verwendet. Die Beschreibung selbst wird ebenfalls in Form eines Webservice bereitgestellt und kann als solcher verwendet werden."@de,
         "The Web Services Business Process Execution Language (WS-BPEL), commonly known as BPEL (Business Process Execution Language), is an OASIS standard executable language for specifying actions within business processes with web services. Processes in BPEL export and import information by using web service interfaces exclusively."@en,
         "The Web Services Business Process Execution Language (WS-BPEL), commonly known as BPEL Business Process Execution Language, is a standard executable language for specifying actions within business processes with web services."@en,
@@ -645,6 +649,7 @@ sto:BPMN a owl:NamedIndividual,
         <http://dbpedia.org/resource/Category:Specification_languages>,
         <http://dbpedia.org/resource/Category:Workflow_technology> ;
     lingg:hypernym <http://dbpedia.org/resource/Representation> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Die Business Process Model and Notation (BPMN, deutsch Geschäftsprozessmodell und -notation) ist eine grafische Spezifikationssprache in der Wirtschaftsinformatik und im Prozessmanagement. Sie stellt Symbole zur Verfügung, mit denen Fach-, Methoden- und Informatikspezialisten Geschäftsprozesse und Arbeitsabläufe modellieren und dokumentieren können."@de,
         "Business Process Model and Notation  is a graphical representation for specifying business processes in a business process model."@en,
         "Business Process Model and Notation (BPMN) is a graphical representation for specifying business processes in a business process model. Business Process Management Initiative (BPMI) developed BPMN, which has been maintained by the Object Management Group since the two organizations merged in 2005. Version 2.0 of BPMN was released in January 2011, at which point the name was adapted to Business Process Model and Notation as execution semantics were also introduced alongside the notational and diagramming elements."@en,
@@ -738,6 +743,7 @@ sto:ETSI_ULE a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Zigbee> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Mobile_telecommunications_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Standard> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "DECT Ultra Low Energy (DECT ULE) is a technology based on DECT, and intended for Machine-to-Machine communications such as Home and Industrial automation. The main characteristics of the technology are ultra-low power consumption (much lower than IEEE 802.11) and wider coverage (much wider than IEEE 802.15 and Bluetooth Low Energy)."@en,
         "ULE - Ultra Low Energy is a wireless communication standard, which is used to create wireless sensor and actuator networks. The primary application areas of ULE based devices are home automation, home security, climate control. ULE originated from the DECT technology (thus it is often referred to as DECT ULE). In May 2013 ETSI released the specification of the ULE standard (Technical Specification TS 102 939-01). The ULE technology is promoted by the ULE Alliance, a non-profit organization, located in Bern, Switzerland."@en ;
     owl:sameAs <http://rdf.freebase.com/ns/m.0_fnyh7>,
@@ -764,6 +770,7 @@ sto:IEC_14443 a owl:NamedIndividual,
     dbont:wikiPageRedirects <http://dbpedia.org/resource/International_Organization_for_Standardization> ;
     dbont:wikiPageRevisionID 530584969 ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/International_Organization_for_Standardization> ;
+    vocvr:hasRank _:nodeID://b8888912 ;
     rdfs:comment "The ISO/IEC 14443 standard is a four-part international standard for contact-less smart cards operating at 13.56 MHz in close proximity (~10cm) with a reader antenna. This ISO standard describes the modulation and transmission protocols between card and reader to create interoperability for contact-less smart card products. There are two main communication protocols supported by the ISO/IEC 14443 standard, they are addressed as Type A and Type B. Most High Frequency (13.56 MHz) proximity tags are using these guidelines for their communication."@en ;
     owl:sameAs sto:ISO_14443 ;
     nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO?oldid=530584969> ;
@@ -844,6 +851,7 @@ sto:IEC_42010 a owl:NamedIndividual,
     dbont:wikiPageRedirects <http://dbpedia.org/resource/International_Organization_for_Standardization> ;
     dbont:wikiPageRevisionID 530584969 ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/International_Organization_for_Standardization> ;
+    vocvr:hasRank _:nodeID://b8888912 ;
     rdfs:comment "ISO/IEC/IEEE 42010:2011 defines requirements on the description of system, software and enterprise architectures. It aims to standardise the practice of architecture description by defining standard terms, presenting a conceptual foundation for expressing, communicating and reviewing architectures and specifying requirements that apply to architecture descriptions, architecture frameworks and architecture description languages."@en ;
     skos:note "The IIRA is based in this standards" ;
     nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ISO?oldid=530584969> ;
@@ -927,6 +935,7 @@ sto:IEC_60364 a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dcterms:subject <http://dbpedia.org/resource/Category:Electric_power_distribution>,
         <http://dbpedia.org/resource/Category:IEC_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Commission> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Electrical Installations for Buildings is the International Electrotechnical Commission's international standard on electrical installations of buildings"@en,
         "IEC 60364 Electrical Installations for Buildings is the International Electrotechnical Commission's international standard on electrical installations of buildings. This standard is an attempt to harmonize national wiring standards in an IEC standard. The latest versions of many European wiring regulations (e.g., BS 7671 in the UK) follow the section structure of IEC 60364 very closely, but contain additional language to cater for historic national practice and to simplify field use and determination of compliance by electrical tradesmen and inspectors. National codes and site guides are meant to attain the common objectives of IEC 60364, and provide rules in a form that allows for guidance of persons installing and inspecting electrical systems."@en,
         "IEC 60364は建築電気設備に関するIEC規格である。構成は英語版記事の通り。 日本においては、翻訳JISがJIS C 0364(改定にあわせてJIS C 60364に移行中)シリーズとして制定されている。 IEC 60364の適用範囲は、公称電圧交流1000V以下、直流1500V以下と規定されているが、日本国内では電気設備技術基準の解釈第272条第1項により、低圧の需要設備に限り、同第3条から第271条の規定に変わり、IEC 60364で施設することができるとされている。ただし、同項ただし書きに電気事業者と直接に接続する場合、接地方式を同一にするよう定められており、このばあいは、事実上TT接地方式に限られることになる。 同条第2項では、第3条から第271条の規定との混用が禁じられている。 同条第3項では、IEC 60364の規定にかかわらず、IECに相当規格のない、配線用遮断器、漏電遮断器、CVケーブルについては、電安法適合品、JIS規格品の使用を認めている。 なお同条では、適用可能規格を制定年も含めて指定しており注意が必要である。 実務上の指針として、「IEC 60364 建築電気設備 設計・施工ガイド 電気設備の国際化のために」(ISBN 4-9902110-0-6)が出されている。"@ja ;
@@ -999,6 +1008,7 @@ sto:IEC_60870 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Supervisory_control_and_data_acquisition> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Electric_power>,
         <http://dbpedia.org/resource/Category:IEC_standards> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Die IEC 60870 -International Electrotechnical Commission- beschreibt einen allgemeinen, offenen Kommunikationsstandard für die industrielle Automation, die in den Bereichen der Infrastrukturautomation (Schaltanlagenleittechnik, Fernwirktechnik, Netzleittechnik) angewendet wird. Das Protokoll stellt zwar einen universellen Standard dar, lässt jedoch einen großen Spielraum für spezifische Applikationen. In Deutschland ist die IEC 60870 als DIN-Norm DIN EN 60870 veröffentlicht."@de,
         "In electrical engineering and power system automation, the IEC 60870 series define systems used for telecontrol (supervisory control and data acquisition)"@en,
         "In electrical engineering and power system automation, the International Electrotechnical Commission 60870 standards define systems used for telecontrol (supervisory control and data acquisition). Such systems are used for controlling electric power transmission grids and other geographically widespread control systems. By use of standardized protocols, equipment from many different suppliers can be made to interoperate. IEC standard 60870 has six parts, defining general information related to the standard, operating conditions, electrical interfaces, performance requirements, and data transmission protocols. The 60870 standards are developed by IEC Technical Committee 57 (Working Group 03)."@en,
@@ -1065,6 +1075,7 @@ sto:IEC_61334 a <http://dbpedia.org/class/yago/Artifact100021939>,
     dcterms:subject <http://dbpedia.org/resource/Category:Networking_standards>,
         <http://dbpedia.org/resource/Category:Wide_area_networks> ;
     lingg:hypernym <http://dbpedia.org/resource/Standard> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "IEC 61334 , known as Distribution automation using distribution line carrier systems, is a standard for low-speed reliable power line communications by electricity meters, water meters and SCADA."@en,
         "IEC 61334 , known as Distribution automation using distribution line carrier systems, is a standard for low-speed reliable power line communications by electricity meters, water meters and SCADA.It is also known as spread frequency shift keying (S-FSK) and was formerly known as IEC 1334 before IEC's most recent renumbering. It is actually a series of standards describing the researched physical environment of power lines, a well-adapted physical layer, a workable low-power media access layer, and a management interface. Related standards use the physical layer (e.g. Internet Protocol over S-FSK), but not the higher layers."@en ;
     owl:sameAs <http://rdf.freebase.com/ns/m.06w41xt>,
@@ -1129,6 +1140,7 @@ sto:IEC_61400 a <http://dbpedia.org/class/yago/Artifact100021939>,
         <http://dbpedia.org/resource/Category:IEC_standards>,
         <http://dbpedia.org/resource/Category:Wind_turbines> ;
     lingg:hypernym <http://dbpedia.org/resource/Standard> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Die IEC 61400 ist ein internationale Norm für Windenergieanlagen, die von der Internationalen Elektrotechnischen Kommission (IEC) veröffentlicht wird."@de,
         "IEC 61334 , known as Distribution automation using distribution line carrier systems, is a standard for low-speed reliable power line communications by electricity meters, water meters and SCADA."@en,
         "IEC 61400 is an International Standard published by the International Electrotechnical Commission regarding wind turbines."@en ;
@@ -1202,6 +1214,7 @@ sto:IEC_61508 a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dcterms:subject <http://dbpedia.org/resource/Category:Electrical_standards>,
         <http://dbpedia.org/resource/Category:IEC_standards>,
         <http://dbpedia.org/resource/Category:Safety> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Die IEC 61508 ist eine internationale Norm zur Entwicklung von elektrischen, elektronischen und programmierbaren elektronischen (E/E/PE) Systemen, die eine Sicherheitsfunktion ausführen. Sie wird von der International Electrotechnical Commission (IEC) herausgegeben."@de,
         "Functional safety is a concept applicable across all industry sectors. It is fundamental to the enabling of complex technology used for safety-related systems. It provides the assurance that the safety-related systems will offer the necessary risk reduction required to achieve safety for the equipment. The oil and gas industry, nuclear plants and the machinery sector, to name but a few, all rely heavily on functional safety to achieve safety for the equipment giving rise to the hazards."@en,
         "IEC 61508 is an international standard published by the International Electrotechnical Commission of rules applied in industry. It is titled Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems (E/E/PE, or E/E/PES). The standard covers the complete safety life cycle, and may need interpretation to develop sector specific standards. It has its origins in the process control industry. The safety life cycle has 16 phases which roughly can be divided into three groups as follows: All phases are concerned with the safety function of the system."@en,
@@ -1255,6 +1268,7 @@ sto:IEC_62264 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:IEC_standards>,
         <http://dbpedia.org/resource/Category:Systems_engineering> ;
     lingg:hypernym <http://dbpedia.org/resource/Standard> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "آي إي سي 62264 (IEC 62264) هو معيار دولي من اللجنة الدولية للتقانة الكهربائية يتعلق بتكامل نظام مراقبة المؤسسات. ويستند هذا المعيار على معيار آي أس ايه-95 (ANSI/ISA-95) الصادر من الجمعية الدولية للأتمتة ISA والمعهد القومي الأمريكي للمعايير."@ar,
         "IEC 62264 ist eine internationale Normenreihe über die Integration von Unternehmens-EDV und Leitsystemen. Die Norm wurde vom SC 65A System Aspects derInternational Electrotechnical Commission (IEC) erarbeitet. Basis der Norm ist die ISA-95 Spezifikation."@de,
         "Enterprise-control system integration - Models and terminology"@en,
@@ -1333,6 +1347,7 @@ sto:IEC_62424 a <http://dbpedia.org/class/yago/Abbreviation107091587>,
     dcterms:subject <http://dbpedia.org/resource/Category:Computer_file_formats>,
         <http://dbpedia.org/resource/Category:Industry-specific_XML-based_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Format> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "CAEX (Computer Aided Engineering Exchange) ist ein neutrales Datenformat zur Speicherung hierarchischer Objektinformationen. Die ursprüngliche Intention für die Entwicklung von CAEX war das Fehlen eines einheitlichen und eingeführten Datenaustauschformates zwischen den Gewerken der Verfahrens- und Prozessleittechnikplanung. Mittels CAEX kann z. B. die hierarchische Anlagenstruktur abgebildet werden, die auf einer gewissen Abstraktionsebene aus verkoppelten und parametrisierten Modulen und Komponenten besteht. CAEX ermöglicht das Speichern dieser Module und Komponenten mit Hilfe des Objektansatzes. Es unterstützt explizit Konzepte wie Kapselung, Klassen, Klassenbibliotheken, Instanzen, Instanzhierarchien, Vererbung, Relationen, Attribute und Schnittstellen. CAEX basiert auf XML und ist als "@de,
         "CAEX (Computer Aided Engineering Exchange) is a neutral data format that allows storage of hierarchical object information, e.g. the hierarchical architecture of a plant. On a certain abstraction level, a plant consists in modules or components that are interconnected. CAEX allows storage of those modules or components by means of objects. Object oriented concepts as encapsulation, classes, class libraries, instances, instance hierarchies, inheritance, relations, attributes and interfaces are explicitly supported. CAEX bases on XML and is defined as XML schema (xsd file). The original intention of developing CAEX was the industrial lack of a common and established data exchange between process engineering tools and process control engineering tools. However, CAEX can be applied to all type"@en,
         "CAEX (Computer Aided Engineering Exchange) is a neutral data format that allows storage of hierarchical object information, e.g. the hierarchical architecture of a plant. On a certain abstraction level, a plant consists in modules or components that are interconnected. CAEX allows storage of those modules or components by means of objects. Object oriented concepts as encapsulation, classes, class libraries, instances, instance hierarchies, inheritance, relations, attributes and interfaces are explicitly supported. CAEX bases on XML and is defined as XML schema (xsd file). The original intention of developing CAEX was the industrial lack of a common and established data exchange between process engineering tools and process control engineering tools. However, CAEX can be applied to all types of static object information, e.g. plant topologies, document topologies, product topologies, petri nets, but also for non-technical applications like phylogenetic trees."@en ;
@@ -1399,6 +1414,7 @@ sto:IEC_62591 a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dcterms:subject <http://dbpedia.org/resource/Category:Wireless_networking>,
         <http://dbpedia.org/resource/Category:Wireless_sensor_network> ;
     lingg:hypernym <http://dbpedia.org/resource/Technology> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Industrial networks - Wireless communication network and communication profiles."@en,
         "WirelessHART is a wireless sensor networking technology based on the Highway Addressable Remote Transducer Protocol (HART). Developed as a multi-vendor, interoperable wireless standard, WirelessHART was defined for the requirements of process field device networks."@en,
         "WirelessHART или IEC 62591 — сетевая технология для беспроводных устройств на базе протокола HART (Highway Addressable Remote Transducer Protocol)."@ru ;
@@ -1738,6 +1754,7 @@ sto:ISO_20922 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Message-oriented_middleware>,
         <http://dbpedia.org/resource/Category:Network_protocols>,
         <http://dbpedia.org/resource/Category:Telemetry> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Message Queue Telemetry Transport (MQTT) ist ein offenes Nachrichten-Protokoll für Machine-to-Machine-Kommunikation (M2M), das die Übertragung von Telemetrie-Daten in Form von Nachrichten zwischen Geräten ermöglicht, trotz hoher Verzögerungen oder beschränkten Netzwerken. Entsprechende Geräte reichen von Sensoren und Aktoren, Mobiltelefonen, Eingebetteten Systemen in Fahrzeugen oder Laptops bis zu voll entwickelten Rechnern. Das Protokoll wurde von Andy Stanford-Clark von IBM und Arlen Nipper von Cirrus Link Solutions entwickelt."@de,
         "ISO/IEC 20922:2016 is a Client Server publish/subscribe messaging transport protocol. It is light weight, open, simple, and designed so as to be easy to implement. These characteristics make it ideal for use in many situations, including constrained environments such as for communication in Machine to Machine (M2M) and Internet of Things (IoT) contexts where a small code footprint is required and/or network bandwidth is at a premium."@en,
         "MQTT (formerly MQ Telemetry Transport) is an ISO standard (ISO/IEC PRF 20922) publish-subscribe-based \"lightweight\" messaging protocol for use on top of the TCP/IP protocol. It is designed for connections with remote locations where a \"small code footprint\" is required or the network bandwidth is limited. The publish-subscribe messaging pattern requires a message broker. The broker is responsible for distributing messages to interested clients based on the topic of a message. Andy Stanford-Clark and Arlen Nipper of Cirrus Link Solutions authored the first version of the protocol in 1999."@en,
@@ -1858,6 +1875,7 @@ sto:ISO_50001 a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dcterms:subject <http://dbpedia.org/resource/Category:Energy_economics>,
         <http://dbpedia.org/resource/Category:ISO_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Specification> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "أيزو 50001 (بالإنجليزية: ISO 50001 - الاسم الكامل: ISO 50001:2011 نظم إدارة الطاقة - المتطلبات مع توجيه للاستخدام) هي مواصفات ومعايير تم إنشاؤها من قبل المنظمة الدولية للمعايير (ISO) لنظام إدارة الطاقة في حزيران/ يونيو 2011. يحدد المعيار متطلبات إنشاء وتنفيذ وصيانة وتحسين نظام إدارة الطاقة، والذي يهدف إلى تمكين الشركات من اتباع أسلوب منهجي في تحقيق التحسين المستمر لأداء الطاقة، بما في ذلك كفاءة الطاقة، وأمن الطاقة، واستخدام الطاقة واستهلاكها. وهو معيار يهدف إلى مساعدة هذه الشركات للحد من استخدام الطاقة لديها، وبالتالي تكاليف الطاقة وانبعاثات الغازات المسببة للاحتباس الحراري."@ar,
         "Die ISO 50001 ist eine weltweit gültige Norm der International Organization for Standardization (ISO), die Organisationen und Unternehmen beim Aufbau eines systematischen Energiemanagements unterstützen soll; sie kann auch zum Nachweis eines mit der Norm übereinstimmenden Energiemanagementsystems durch eine Zertifizierung dienen. Sie wurde im Juni 2011 von der Internationalen Organisation für Normung (ISO) veröffentlicht. In Deutschland wurde am 24. April 2012 die DIN EN 16001 zurückgezogen und durch die im Dezember 2011 als DIN EN ISO 50001 veröffentlichte Norm ersetzt."@de,
         "Energy management systems – Requirements with guidance for use is a specification created by the International Organization for Standardization (ISO) for an energy management system."@en,
@@ -2018,6 +2036,7 @@ sto:ISO_9000 a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dcterms:subject <http://dbpedia.org/resource/Category:ISO_standards>,
         <http://dbpedia.org/resource/Category:Quality>,
         <http://dbpedia.org/resource/Category:Quality_management> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "الايزو 9000 ISO هي عائلة معايير أساسية عالمية ، تتضمن مجموعة من المعايير ضمن نظام إدارة الجودة. ومقاييس الايزو 9000 ISO تصدرها وتحتفظ بها المنظمة الدولية لتوحيد المقاييس. وتقوم بإدارتها \"مصلحة الاعتماد والتصديق\" المختصة في البلاد المختلفة. يتم تحديث القواعد المتبعة فيها بحسب المتطلبات التي يتفق عليها دوليا طبقا للتطور التكنولوجي وتطور المعرفة و الخبرة. وهي توجيهات للتطبيق في المؤسسات والشركات بغرض تحسين الجودة."@ar,
         "Eine Qualitätsmanagementnorm beschreibt, welchen Anforderungen das Managementsystem eines Unternehmens genügen muss, um einem bestimmten Standard bei der Umsetzung des Qualitätsmanagements zu entsprechen. Es kann sowohl informativ für die Umsetzung innerhalb eines Unternehmens als auch zum Nachweis bestimmter Standards gegenüber Dritten dienen. Der Nachweis wird durch einen Zertifizierungsprozess mit anschließender Ausstellung eines zeitlich befristeten Zertifikates durch unabhängige Zertifizierungsstellen erbracht."@de,
         "The ISO 9000 family of quality management systems standards is designed to help organizations ensure that they meet the needs of customers and other stakeholders while meeting statutory and regulatory requirements related to a product or program."@en,
@@ -2263,6 +2282,7 @@ sto:ISO_PAS_17506 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Graphics_standards>,
         <http://dbpedia.org/resource/Category:XML-based_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Format> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "COLLADA (COLLAborative Design Activity) soll als ein XML-basiertes offenes Austauschformat für Daten zwischen verschiedenen 3D-Programmen etabliert werden. Dabei geht es nicht nur um die Weitergabe von Modellen und Texturen, auch Einstellungen und angewandte Veränderungsschritte sollen so von einem Programm zum anderen übermittelt werden können.An der Entwicklung und Spezifikation des Formates sind verschiedene Hersteller von 3D-Programmen beteiligt. Aber auch Communitys, wie die um das Open Source-Programm Blender, wurden eingeladen das Format zu unterstützen und zu erweitern."@de,
         "COLLADA (COLLAborative Design Activity) is an interchange file format for interactive 3D applications. It is managed by the nonprofit technology consortium, the Khronos Group, and has been adopted by ISO as a publicly available specification, ISO/PAS 17506. COLLADA defines an open standard XML schema for exchanging digital assets among various graphics software applications that might otherwise store their assets in incompatible file formats. COLLADA documents that describe digital assets are XML files, usually identified with a .dae (digital asset exchange) filename extension."@en,
         "ISO-PAS 17506-2012 describes the COLLADA schema. COLLADA is a COLLAborative Design Activity that defines an XML-based schema to enable 3D authoring applications to freely exchange digital assets without loss of information, enabling multiple software packages to be combined into extremely powerful tool chains."@en,
@@ -2324,6 +2344,7 @@ sto:KATS a dbont:Organisation,
         <http://dbpedia.org/resource/Standards_organization> ;
     dcterms:subject <http://dbpedia.org/resource/Category:ISO_member_bodies> ;
     lingg:hypernym <http://dbpedia.org/resource/Organization> ;
+    vocvr:hasRank [ ] ;
     dul:isMemberOf sto:IEC,
         sto:ISO ;
     rdfs:comment "Korean Agency for Technology and Standards (KATS) is the government standards organization for South Korea. It is part of the Ministry of Knowledge Economy. KATS is a member of the International Organization for Standardization (ISO), as well as the International Electrotechnical Commission ."@en,
@@ -2418,6 +2439,7 @@ sto:MTConnect a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Industrial_computing>,
         <http://dbpedia.org/resource/Category:Industry-specific_XML-based_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Industry> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "MTConnect is a manufacturing industry standard to facilitate the organized retrieval of process information from numerically controlled machine tools. The initiative began as a result of lectures given by David Edstrom of Sun Microsystems and Dr. David Patterson, Professor of Computer Science at the University of California, Berkeley (UCB) at the 2006 annual meeting of the Association for Manufacturing Technology (AMT) membership. The two lectures, “How the Internet’s Participation Age Will Drive Dramatic Changes in the Machine Tool Industry” & “Creating A Thriving American Manufacturing Base In The 21st Century America” described the need for an open communication standard to enable Internet connectivity to manufacturing equipment. Initial development of the standard was carried out by a "@en,
         "MTConnect is a protocol designed for the exchange of data between shop floor equipment and software applications used for monitoring and data analysis. MTConnect is referred to as a read-only standard, meaning that it only defines the extraction (reading) of data from control devices, not the writing of data to a control device. Freely available, open standards are used for all aspects of MTConnect. Data from shop floor devices is presented in XML format, and is retrieved from information providers, called Agents, using Hypertext Transfer Protocol (HTTP) as the underlying transport protocol. MTConnect provides a RESTful interface, which means the interface is stateless. No session must be established to retrieve data from an MTConnect Agent, and no logon or logoff sequence is required (unless overlying security protocols are added which do). Lightweight Directory Access Protocol (LDAP) is recommended for discovery services."@en ;
     owl:sameAs <http://rdf.freebase.com/ns/m.09rwzs8>,
@@ -2562,6 +2584,7 @@ sto:ModBus a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Industrial_computing>,
         <http://dbpedia.org/resource/Category:Network_protocols> ;
     lingg:hypernym <http://dbpedia.org/resource/Protocol> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Das Modbus-Protokoll ist ein Kommunikationsprotokoll, das auf einer Master/Slave- bzw. Client/Server-Architektur basiert. Es wurde 1979 von Gould-Modicon für die Kommunikation mit seinen speicherprogrammierbaren Steuerungen ins Leben gerufen. In der Industrie hat sich der Modbus zu einem De-facto-Standard entwickelt, da es sich um ein offenes Protokoll handelt. Seit 2007 ist die Version Modbus TCP Teil der Norm IEC 61158."@de,
         """Modbus is a serial communications protocol originally published by Modicon (now Schneider Electric) in 1979 for use with its programmable logic controllers (PLCs). Simple and robust, it has since become a de facto standard communication protocol, and it is now a commonly available means of connecting industrial electronic devices. The main reasons for the use of Modbus in the industrial environment are: 
 *  developed with industrial applications in mind 
@@ -2853,6 +2876,7 @@ sto:NIST a dbont:Agent,
         <http://dbpedia.org/resource/Category:Standards_organizations>,
         <http://dbpedia.org/resource/Category:United_States_Department_of_Commerce_agencies> ;
     lingg:hypernym <http://dbpedia.org/resource/Laboratory> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "المعهد الوطني للمعايير والتقنية (نيست) (بالإنجليزية: NIST)، المعروف بين عام 1901 وعام 1988 بالمكتب الوطني للمعايير، وهو مختبر معايير القياس وهي وكالة غير اعتيادية لإدارة التجارة في الولايات المتحدة. ومهمة المعهد الرسمية هي: «لتشجيع الابتكار بالولايات المتحدة والقدرة التنافسية الصناعية من خلال تطوير علم القياس والمعايير والقنيات في السبل التي تعزز الأمن الاقتصادي وتحسين نوعية الحياة.»"@ar,
         "Das National Institute of Standards and Technology (NIST, deutsch Nationales Institut für Standards und Technologie) ist eine Bundesbehörde der Vereinigten Staaten mit Sitz in Gaithersburg (Maryland). Der frühere Name der Behörde war von 1901 bis 1988 National Bureau of Standards (NBS). Die Position des Behördenleiters (Director) wird derzeit von Willie E. May besetzt."@de,
         "The National Institute of Standards and Technology (NIST) is a measurement standards laboratory, and a non-regulatory agency of the United States Department of Commerce."@en,
@@ -2940,6 +2964,7 @@ sto:ODVA a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Michigan>,
         <http://dbpedia.org/resource/U.S.A> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Computer_network_organizations> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Founded in 1995, ODVA is a global association whose members comprise the world’s leading automation companies. ODVA’s mission is to advance open, interoperable information and communication technologies in industrial automation. ODVA recognizes its media independent network protocol, the Common Industrial Protocol or “CIP” — and the network adaptations of CIP — EtherNet/IP, DeviceNet, CompoNet and ControlNet — as its core technology and the primary common interest of its membership. For future interoperability of production systems and the integration of the production systems with other systems, ODVA embraces the adoption of commercial-off-the-shelf (COTS) and standard, unmodified Internet and Ethernet technologies as a guiding principle wherever possible. This principle is exemplified by EtherNet/IP — the world’s number one industrial Ethernet network."@en,
         "ODVA, Inc. (formerly Open DeviceNet Vendors Association, Inc.) was founded in 1995 and is a global trade and standard development organization whose members are suppliers of devices for industrial automation application. To qualify for membership in ODVA, applicants must be an entity that makes and sells products using ODVA technologies. ODVA is a US 501(c)6 corporation incorporated in the state of Wisconsin. Its headquarters are in Ann Arbor, Michigan U.S.A. It also has conformance test service providers in North America, China, Germany and Japan."@en ;
     owl:sameAs <http://rdf.freebase.com/ns/m.0fd5jg>,
@@ -3053,6 +3078,7 @@ sto:OMG_DDS a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dcterms:subject <http://dbpedia.org/resource/Category:Computer_standards>,
         <http://dbpedia.org/resource/Category:Message-oriented_middleware> ;
     lingg:hypernym <http://dbpedia.org/resource/Middleware> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Der Data Distribution Service (DDS) ist ein Standard, der von der Object Management Group spezifiziert wurde."@de,
         "The Data Distribution Service for Real-Time Systems (DDS) is an Object Management Group (OMG) machine-to-machine middleware \"m2m\" standard that aims to enable scalable, real-time, dependable, high-performance and interoperable data exchanges between publishers and subscribers. DDS addresses the needs of applications like financial trading, air-traffic control, smart grid management, and other big data applications. The standard is used in applications such as smartphone operating systems, transportation systems and vehicles, software-defined radio, and by healthcare providers. DDS may also be used in certain implementations of the Internet of Things."@en,
         "The Data Distribution Service for real-time systems (DDS) is an Object Management Group (OMG) machine-to-machine (sometimes called middleware) standard that aims to enable scalable, real-time, dependable, high-performance and interoperable data exchanges using a publish–subscribe pattern. DDS addresses the needs of applications like financial trading, air-traffic control, smart grid management, and other big data applications. The standard is used in applications such as smartphone operating systems, transportation systems and vehicles, software-defined radio, and by healthcare providers. DDS was promoted for use in the Internet of things."@en,
@@ -3157,6 +3183,7 @@ sto:SCOR a <http://dbpedia.org/class/yago/Assistant109815790>,
     dcterms:subject <http://dbpedia.org/resource/Category:Business_models>,
         <http://dbpedia.org/resource/Category:Supply_chain_management> ;
     lingg:hypernym <http://dbpedia.org/resource/Model> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Das Supply-Chain-Operations-Reference-Modell (SCOR) wurde zur Beschreibung aller unternehmensinternen und unternehmensübergreifenden Geschäftsprozesse vom Supply-Chain Council, einer unabhängigen US-amerikanischen Non-Profit-Organisation, entworfen. Die Idee, eine Standard-Methode zu entwickeln, die alle Gesichtspunkte einer Supply Chain (Lieferkette) analysieren und beschreiben kann, wurde Anfang 1996 von zwei Bostoner Unternehmensberatungen, Pittiglio Rabin Todd & McGrath (PRTM) und AMR Research, entwickelt. Zunächst wurde das Supply Chain Council mit damals 69 Mitgliedern gegründet. So entstand die erste Version des Supply-Chain-Operation-Reference-Modells, welches im Herbst 1996 erstmals auf den Markt gebracht wurde. Seit 2014 ist das Supply Chain Council Teil von APICS."@de,
         "APICS Supply Chain Operations Reference."@en,
         "Supply Chain Operations Reference (SCOR) model is a process reference model developed and endorsed by the Supply Chain Council as the cross-industry, standard diagnostic tool for supply chain management, according to the APICS Dictionary (14th ed.). The SCOR model describes the business activities associated with satisfying a customer's demand, which include plan, source, make, deliver, and return. Use of the model includes analyzing the current state of a company's processes and goals, quantifying operational performance, and comparing company performance to benchmark data. SCOR has developed a set of metrics for supply chain performance, and Supply Chain Council members have formed industry groups to collect best practices information that companies can use to elevate their supply chain "@en,
@@ -3293,6 +3320,7 @@ sto:SysML a <http://dbpedia.org/class/yago/Artifact100021939>,
         <http://dbpedia.org/resource/Category:Systems_engineering>,
         <http://dbpedia.org/resource/Category:Unified_Modeling_Language> ;
     lingg:hypernym <http://dbpedia.org/resource/Language> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Die Systems Modeling Language (OMG SysML) ist eine grafische, auf UML 2 basierende, standardisierte Modellierungssprache. Ihre Anwendung findet sie im Bereich Systems Engineering für die Modellierung verschiedener komplexer Systeme. Die Menge der in SysML definierten Diagramme besteht aus einer Untermenge von Diagrammen, die sich aus in UML 2 definierten Diagrammen ableiten lassen, ergänzt durch SysML-spezifische Diagramme. Es werden Struktur- und Verhaltensdiagramme unterschieden (siehe Grafik). Dem Anforderungsdiagramm als SysML-spezifischem Diagrammtyp kommt eine Einzelrolle zu."@de,
         "The OMG Systems Modeling Language™ (OMG SysML™) is a general-purpose graphical modeling language for specifying, analyzing, designing, and verifying complex systems that may include hardware, software, information, personnel, procedures, and facilities. In particular, the language provides graphical representations with a semantic foundation for modeling system requirements, behavior, structure, and parametrics, which is used to integrate with other engineering analysis models. It represents a subset of UML 2 with extensions needed to satisfy the requirements of the UML™ for Systems Engineering RFP as indicated in Figure 1. SysML leverages the OMG XML Metadata Interchange (XMI®) to exchange modeling data between tools, and is also intended to be compatible with the evolving ISO 10303-233 systems engineering data interchange standard."@en,
         "The Systems Modeling Language (SysML) is a general-purpose modeling language for systems engineering applications. It supports the specification, analysis, design, verification and validation of a broad range of systems and systems-of-systems. SysML was originally developed by an open source specification project, and includes an open source license for distribution and use. SysML is defined as an extension of a subset of the Unified Modeling Language (UML) using UML's profile mechanism."@en,
@@ -3414,6 +3442,7 @@ sto:W3C_RIF a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Semantic_Web>,
         <http://dbpedia.org/resource/Category:World_Wide_Web> ;
     lingg:hypernym <http://dbpedia.org/resource/Recommendation> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Das Rule Interchange Format (kurz RIF) ist eine Empfehlung des W3C im Kontext des Semantischen Webs. Regeln werden im Semantischen Web benutzt, um Wissen zu formalisieren. Damit ein Programm mit ihnen umgehen kann, müssen die Regeln in einer genau definierten Regelbeschreibungssprache beschrieben werden. Von diesen Beschreibungssprachen gibt es mehrere, und RIF dient dazu, Regeln aus diesen Sprachen in andere zu übersetzen. Eng mit RIF verbunden sind die Standards OWL und RDF. Die Arbeitskommission für diesen Standard wurde am 7. November 2005 gegründet und das Format am 22. Juni 2010 als Standard verabschiedet."@de,
         "The Rule Interchange Format (RIF) is a W3C Recommendation. RIF is part of the infrastructure for the semantic web, along with (principally) SPARQL, RDF and OWL. Although originally envisioned by many as a \"rules layer\" for the semantic web, in reality the design of RIF is based on the observation that there are many \"rules languages\" in existence, and what is needed is to exchange rules between them. "@en,
         "The Rule Interchange Format (RIF) is a W3C Recommendation. RIF is part of the infrastructure for the semantic web, along with (principally) SPARQL, RDF and OWL. Although originally envisioned by many as a \"rules layer\" for the semantic web, in reality the design of RIF is based on the observation that there are many \"rules languages\" in existence, and what is needed is to exchange rules between them. RIF includes three dialects, a Core dialect which is extended into a Basic Logic Dialect (BLD) and Production Rule Dialect (PRD)."@en,
@@ -3569,6 +3598,7 @@ sto:W3C_SPARQL a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Web_services>,
         <http://dbpedia.org/resource/Category:World_Wide_Web_Consortium_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Language> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "SPARQL (تلفظ سباركل ) هي لغة استعلام RDF، وهي اختصار عودي لـ SPARQL Protocol and RDF Query Language (بروتوكول سباركل ولغة استعلام RDF)."@ar,
         "SPARQL  ist eine graphenbasierte Abfragesprache für RDF. Der Name ist ein rekursives Akronym für SPARQL Protocol And RDF Query Language. Die RDF Data Access Working Group (DAWG) des World Wide Web Consortium trieb die Entwicklung und Standardisierung von SPARQL voran. Im April 2006 wurde SPARQL als Candidate Recommendation anerkannt, im Oktober 2006 ist es jedoch wieder zum Working Draft zurückgestuft worden. Seit Juni 2007 lag SPARQL erneut als Candidate Recommendation des W3C vor. Am 15. Januar 2008 wurde SPARQL endgültig vom W3C als Recommendation freigegeben. Seit dem 21 März 2013 ist die W3C Recommendation für SPARQL 1.1 veröffentlicht worden. SPARQL ist der Nachfolger mehrerer Abfragesprachen (z. B. RDF Query Language, RDQL), die ebenfalls auf RDF-Daten zugreifen."@de,
         "SPARQL (pronounced \"sparkle\", a recursive acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a semantic query language for databases, able to retrieve and manipulate data stored in Resource Description Framework (RDF) format. It was made a standard by the RDF Data Access Working Group (DAWG) of the World Wide Web Consortium, and is recognized as one of the key technologies of the semantic web. On 15 January 2008, SPARQL 1.0 became an official W3C Recommendation, and SPARQL 1.1 in March, 2013."@en,
@@ -3737,6 +3767,7 @@ sto:ebXML a <http://dbpedia.org/class/yago/Abbreviation107091587>,
         <http://dbpedia.org/resource/Category:XML-based_standards>,
         <http://dbpedia.org/resource/Category:XML_markup_languages> ;
     lingg:hypernym <http://dbpedia.org/resource/Family> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "ebXML steht für Electronic Business using XML, d. h. XML für elektronische Geschäftsprozesse. ebXML ist eine 1999 gestartete, gemeinsame Initiative von UN/CEFACT und OASIS. Ziel der Initiative ist die Entwicklung eines technischen Rahmens zur Nutzung von XML für elektronische Geschäftsprozesse sowie eine Senkung der Eintrittsbarrieren für klein- und mittelständische Unternehmen (KMU) und Entwicklungsländer. ebXML steht in Konkurrenz zu anderen XML basierten Standards, wie z. B. RosettaNet. Stufe 90.20 : Internationaler Standard mit periodischer Beobachtung"@de,
         "Electronic Business using eXtensible Markup Language, commonly known as e-business XML, or ebXML (pronounced ee-bee-ex-em-el, [i'bi,eks,em'el]) as it is typically referred to, is a family of XML based standards sponsored by OASIS and UN/CEFACT whose mission is to provide an open, XML-based infrastructure that enables the global use of electronic business information in an interoperable, secure, and consistent manner by all trading partners. The ebXML architecture is a unique set of concepts; part theoretical and part implemented in the existing ebXML standards work."@en,
         "Electronic Business using eXtensible Markup Language, commonly known as e-business XML, or ebXML is a family of XML based standards whose mission is to provide an open, XML-based infrastructure that enables the global use of electronic business information in an interoperable, secure, and consistent manner by all trading partners."@en,
@@ -3991,6 +4022,7 @@ sto:APICS a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Professional_associations_based_in_the_United_States>,
         <http://dbpedia.org/resource/Category:Standards_organizations> ;
     lingg:hypernym <http://dbpedia.org/resource/Organization> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "APICS – The Association for Operations Management (ursprünglich American Production and Inventory Control Society) ist eine 1957 in den USA gegründete Organisation zur Verbesserung der Wettbewerbsfähigkeit der amerikanischen Industrieunternehmen. Sie ist vergleichbar mit dem deutschen REFA-Verband. Die Übersetzung des Mission Statements nennt die Ziele der APICS: – APICS"@de,
         "APICS is a professional association for supply chain management and a provider of research, education and certification programs. APICS has 45,000 members and more than 300 channel partners in 100 countries."@en,
         "American Production and Inventory Control Society."@en,
@@ -4118,6 +4150,7 @@ sto:ASAM a dbont:Agent,
     dcterms:subject <http://dbpedia.org/resource/Category:Automotive_standards>,
         <http://dbpedia.org/resource/Category:Professional_associations_based_in_Germany> ;
     lingg:hypernym <http://dbpedia.org/resource/Association> ;
+    vocvr:hasRank _:nodeID://b25846833 ;
     rdfs:comment "Die Association for Standardisation of Automation and Measuring Systems (ASAM e. V.) ist ein eingetragener Verein nach deutschem Recht. Seine Mitglieder sind überwiegend globalagierende Fahrzeughersteller, Zulieferer und Ingenieursdienstleister der Automobilindustrie. Der Verein koordiniert die Entwicklung von technischen Standards, die in Projektgruppen durch Experten seiner Mitgliedsunternehmen entwickelt werden. Der ASAM verfolgt die Vision, dass sämtliche Werkzeuge einer Entwicklungsprozesskette miteinander verbunden werden können und ein durchgehender Datenaustausch möglich ist. Die Standards definieren Protokolle, Dateiformate und Application Programming Interfaces (APIs) für die Softwareentwicklung und das Testen von Kfz-Steuergeräten. Eine Vielzahl von gängigen Werkzeugen im Bereic"@de,
         "Association for Standardization of Automation and Measuring Systems or ASAM is an incorporated association under German law. Its members are primarily international car manufacturers, suppliers and engineering service providers from the automotive industry. The association coordinates the development of technical standards, which are developed by working groups composed of experts from its member companies. ASAM pursues the vision that the tools of a development process chain can be freely interconnected and allow a seamless exchange of data. The standards define protocols, data models, file formats and application programming interfaces (APIs) for the use in the development and testing of automotive electronic control units. A large amount of popular tools in the areas of simulation, meas"@en,
         "Association for Standardization of Automation and Measuring Systems or ASAM is an incorporated association under German law. Its members are primarily international car manufacturers, suppliers and engineering service providers from the automotive industry. The association coordinates the development of technical standards, which are developed by working groups composed of experts from its member companies. ASAM pursues the vision that the tools of a development process chain can be freely interconnected and allow a seamless exchange of data. The standards define protocols, data models, file formats and application programming interfaces (APIs) for the use in the development and testing of automotive electronic control units. A large amount of popular tools in the areas of simulation, measurement, calibration and test automation are compliant to ASAM standards. Compliance shall guarantee interoperability of tools from different vendors, allow data exchange without the need for converters, and facilitate the exchange of unambiguous specification between customers and suppliers."@en,
@@ -4293,6 +4326,7 @@ sto:ASME a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Mechanical_engineering_organizations>,
         <http://dbpedia.org/resource/Category:Organizations_established_in_1880> ;
     lingg:hypernym <http://dbpedia.org/resource/Association> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "25بك المحتوى هنا ينقصه الاستشهاد بمصادر. يرجى إيراد مصادر موثوق بها. أي معلومات غير موثقة يمكن التشكيك بها وإزالتها. (فبراير 2016) الجمعية الأمريكية للمهندسين الميكانيكيين (بالإنجليزية: American Society of Mechanical Engineers) ويطلق عليها اختصارًا (بالإنجليزية: ASME). هي جمعية أمريكية متخصصة في مجال الهندسة الميكانيكية وما يتعلق بها. تأسست عام 1880 إثر حوادث انفجار متعددة لغلايات البخار."@ar,
         "Die American Society of Mechanical Engineers (ASME) ist ein Berufsverband der Maschinenbauingenieure in den USA. Der Verband mit Sitz in New York City wurde 1880 gegründet und umfasst rund 130.000 Mitglieder (Stand 2013). Außerhalb der USA unterhält ASME Büros in Belgien, China und Indien (Stand 2015). Der Verband konzentriert sich auf Die ASME ist in 37 Fachgesellschaften untergliedert, z. B. für Flugzeugbau, Werkstofftechnik, Nanotechnologie, (Kern-)Kraftwerkstechnik, Eisenbahntechnik, Wärmeübertragung, Strömungsmechanik, Druckbehälter- und Rohrleitungstechnik."@de,
         "The American Society of Mechanical Engineers (ASME) is a professional association that, in its own words, \"promotes the art, science, and practice of multidisciplinary engineering and allied sciences around the globe\" via \"continuing education, training and professional development, codes and standards, research, conferences and publications, government relations, and other forms of outreach.\" ASME is thus an engineering society, a standards organization, a research and development organization, a lobbying organization, a provider of training and education, and a nonprofit organization. Founded as an engineering society focused on mechanical engineering in North America, ASME is today multidisciplinary and global."@en,
@@ -4916,6 +4950,7 @@ sto:IBM a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Storage_Area_Network_companies>,
         <http://dbpedia.org/resource/Category:Technology_companies_established_in_1911> ;
     lingg:hypernym <http://dbpedia.org/resource/Technology> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "International Business Machines Corporation (commonly referred to as IBM) is an American multinational technology and consulting corporation, with corporate headquarters in Armonk, New York. IBM manufactures and markets computer hardware, middleware and software, and offers infrastructure, hosting and consulting services in areas ranging from mainframe computers to nanotechnology.On August 6, 2015, IBM announced that it will buy Merge Healthcare Inc for $1 billion.",
         "25بك المحتوى هنا ينقصه الاستشهاد بمصادر. يرجى إيراد مصادر موثوق بها. أي معلومات غير موثقة يمكن التشكيك بها وإزالتها. (أكتوبر 2016) آي بي إم (بالإنجليزية: IBM) هي شركة عالمية متعددة الجنسيات تعمل في مجال تصنيع وتطوير الحواسيب والبرمجيات. كلمة IBM هي اختصار(بالإنجليزية: International Business Machines) تزاول شركة آي بي إم نشاطها منذ سنة 1911م ومقرها مدينة ارمونك في نيويورك،الولايات المتحدة الأمريكية."@ar,
         "Die International Business Machines Corporation (IBM) ist ein US-amerikanisches IT- und Beratungsunternehmen mit Sitz in Armonk im US-Bundesstaat New York. IBM ist eines der weltweit führenden Unternehmen für Hardware, Software und Dienstleistungen im IT-Bereich sowie eines der größten Beratungsunternehmen. Gemessen am Umsatz ist das Unternehmen der weltweit drittgrößte Softwarehersteller. Aktuell beschäftigt IBM weltweit knapp 380.000 Mitarbeiter, in Deutschland schätzte die Amerikanische Handelskammer in Deutschland (amcham) die Anzahl 2013 auf 22.000."@de,
@@ -5013,6 +5048,7 @@ sto:IEC_61131 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:IEC_standards>,
         <http://dbpedia.org/resource/Category:Programmable_logic_controllers> ;
     lingg:hypernym <http://dbpedia.org/resource/IEC> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Die Europäische Norm EN 61131, die auf der internationalen Norm IEC 61131 basiert, befasst sich mit den Grundlagen Speicherprogrammierbarer Steuerungen. Eine objektorientierte Weiterentwicklung für verteilte Steuerungen ist die EN 61499."@de,
         "IEC 61131 is an IEC standard for programmable controllers. It was known as IEC 1131 before the change in numbering system by IEC. The parts of the IEC 61131 standard are prepared and maintained working group 7, programmable control systems, of subcommittee SC 65B of Technical Committee TC65 of the IEC."@en,
         "IEC 61131 es un conjunto de normas e informes técnicos publicados por la Comisión Electrotécnica Internacional con el objetivo de estandarizar los  autómatas programables."@es,
@@ -5064,6 +5100,7 @@ sto:IEC_61511 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Industrial_processes>,
         <http://dbpedia.org/resource/Category:Manufacturing>,
         <http://dbpedia.org/resource/Category:Safety> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "IEC 61511 is a technical standard which sets out practices in the engineering of systems that ensure the safety of an industrial process through the use of instrumentation."@en,
         "IEC 61511 is a technical standard which sets out practices in the engineering of systems that ensure the safety of an industrial process through the use of instrumentation. Such systems are referred to as Safety Instrumented Systems. The title of the standard is \"Functional safety - Safety instrumented systems for the process industry sector\"."@en ;
     owl:sameAs <http://rdf.freebase.com/ns/m.0bghcv>,
@@ -5120,6 +5157,7 @@ sto:IEC_61512 a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dcterms:subject <http://dbpedia.org/resource/Category:ANSI_standards>,
         <http://dbpedia.org/resource/Category:Manufacturing> ;
     lingg:hypernym <http://dbpedia.org/resource/Control> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "آي أس ايه 88 (ISA-88) أو اختصارا أس 88 (S88) هو اختصار لمعيار المعهد القومي الأمريكي للمعايير ANSI/ISA-88 المتعلق بعملية السيطرة على معالجة دفعات الإنتاج, وهو فلسفة التصميم لوصف المعدات والإجراءات. أنه ليس معيارا للبرمجيات حيث أنه ينطبق أيضا على العمليات اليدوية. وتمت الموافقة عليه من قبل الجمعية الدولية للأتمتة ISA في عام 1995 وتم تحديثه في العام 2010. واعتمدت نسخته الأصلية من قبل اللجنة الدولية للتقانة الكهربائية IEC في عام 1997 وأصدرت كمعيار آي إي سي 61512-1 (IEC 61512-1)."@ar,
         "ANSI/ISA-88 ist eine Norm für die chargenorientierte Fahrweise (Batch Control), die häufig als S88 oder SP88 bezeichnet wird. Sie ist eine Designphilosophie für Software, Ausrüstung und den Verfahrensablauf. Teil 1 wurde 1995 durch ISA freigegeben. ISA-88 wurde durch die IEC als IEC 61512 übernommen. Die Norm ist in Deutschland als DIN-Norm DIN EN 61512 veröffentlicht. Basierend auf ISA-88 existiert mit ISA-95 auch eine Norm für die Unternehmens- und Betriebsleitebene."@de,
         "Batch control - Models and terminology"@en,
@@ -5184,6 +5222,7 @@ sto:IEC_61804 a dbont:Language,
         <http://dbpedia.org/resource/Siemens> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Automation> ;
     lingg:hypernym <http://dbpedia.org/resource/Language> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Device Description Language (DDL; deutsch Gerätebeschreibungssprache) ist eine formale Sprache zur Beschreibung der Bedienung und Parametrierung von Geräten der Prozess- und Fertigungsautomatisierung."@de,
         "Device Description Language (DDL) is the formal language describing the service and configuration of field devices for process and factory automation."@en,
         "Function blocks (FB) for process control - Overview of system aspects "@en ;
@@ -5281,6 +5320,7 @@ sto:IEC_61850 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:IEC_standards>,
         <http://dbpedia.org/resource/Category:Smart_grid> ;
     lingg:hypernym <http://dbpedia.org/resource/Communication> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "المعيار آي إي سي 61850: شبكات والأنظمة الاتصالات في المحطات الفرعية (بالإنجليزية: IEC 61850:Communication networks and systems in substations) هو معيار من اللجنة الكهروتقنية الدولية لتصميم أنظمة الأتمتة وهو جزء من عمل اللجنة الفنية. نماذج البيانات المجردة المحددة في IEC 61850 يمكن تعيينها إلى عدد من البروتوكولات. التعيينات الحالية في هذا المعيار يمكنها التعامل مع مواصفات رسالة التصنيع والأحداث العمومية الشيئية في المحطة الفرعية وعينات قياس القيم المأخوذة وقريباً خدمات ويب. ويمكن لهذه البروتوكولات العمل على شبكات TCP / IP أو الشبكات المحلية الفرعية باستخدام إيثرنت عالية السرعة للحصول على أوقات الاستجابة اللازمة أجهزة الوقاية أدنى أربعة ميلي ثانية."@ar,
         """Die Norm IEC 61850 der International Electrotechnical Commission (IEC) beschreibt ein allgemeines Übertragungsprotokoll für die Schutz- und Leittechnik in elektrischen Schaltanlagen der Mittel- und Hochspannungstechnik (Stationsautomatisierung). Die Normenreihe definiert vor allem: 
 *  allgemeine Festlegungen für Schaltanlagen, 
@@ -5349,6 +5389,7 @@ sto:IEC_62061 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:IEC_standards>,
         <http://dbpedia.org/resource/Category:Safety> ;
     lingg:hypernym <http://dbpedia.org/resource/Implementation> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "IEC/EN 62061, ”Safety of machinery: Functional safety of electrical, electronic and programmable electronic control systems,” is the machinery specific implementation of  IEC/EN 61508. It provides requirements that are applicable to the system level design of all types of machinery safety-related electrical control systems and also for the design of non-complex subsystems or devices. The risk assessment results in a risk reduction strategy which in turn, identifies the need for safety-related control functions. These functions must be documented and must include:"@en,
         "provides requirements that are applicable to the system level design of all types of machinery safety-related electrical control systems and also for the design of non-complex subsystems or devices."@en ;
     owl:sameAs <http://rdf.freebase.com/ns/m.0y4t503>,
@@ -5554,6 +5595,7 @@ sto:ISO_10303 a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dcterms:subject <http://dbpedia.org/resource/Category:CAD_file_formats>,
         <http://dbpedia.org/resource/Category:ISO_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/ISO> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "STEP (STandard for the Exchange of Product model data) ist ein Standard zur Beschreibung von Produktdaten. Er umfasst neben den physischen auch funktionale Aspekte eines Produktes. STEP ist formal in der ISO-Norm 10303 definiert. Aufgrund der Standardisierung ist er für den Datenaustausch zwischen verschiedenen Systemen geeignet. Innerhalb von STEP können Produktdateninformationen des gesamten Lebenszyklus abgebildet werden. Somit eignet er sich für viele verschiedene Anwendungsbereiche bzw. -systeme wie beispielsweise Computer-aided design (CAD), Computer-aided manufacturing (CAM), Produktdatenmanagement (PDM), Digital Mock-Up (DMU) und computer-aided engineering (CAE).Hierfür werden sogenannte Applikationsprotokolle für die verschiedensten Anwendungsbereiche zur Verfügung gestellt, wie z"@de,
         "ISO 10303 is an ISO standard for the computer-interpretable representation and exchange of product manufacturing information. Its official title is: Automation systems and integration — Product data representation and exchange. It is known informally as \"STEP\", which stands for \"Standard for the Exchange of Product model data\".ISO 10303 can represent 3D objects in Computer-aided design (CAD) and related information."@en,
         "Standard for the Exchange of Product model data. ISO 10303 can represent 3D objects in Computer-aided design (CAD) and related information."@en,
@@ -5620,6 +5662,7 @@ sto:ISO_13849 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Verification_and_validation> ;
     dcterms:subject <http://dbpedia.org/resource/Category:ISO_standards>,
         <http://dbpedia.org/resource/Category:Safety_codes> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Die Norm EN ISO 13849 ist eine sicherheitsspezifische Norm, welche sich mit Gestaltungsleitsätzen zu sicherheitsbezogenen Teilen von Steuerungen beschäftigt. Der Teil 1 definiert allgemeine Gestaltungsleitsätze, Teil 2 beschreibt die Validierung."@de,
         """ISO 13849 is a safety standard which deals with safety-related design principles of employed control systems to establish different safety Performance Levels (PL). It replaced EN 954-1 in December 2011. 
 *  Part 1 defines the general principles for design.  
@@ -5708,6 +5751,7 @@ sto:ISO_19439 a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dcterms:subject <http://dbpedia.org/resource/Category:Enterprise_modelling>,
         <http://dbpedia.org/resource/Category:ISO_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Standard> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "ISO 19439:2006 Enterprise integration—Framework for enterprise modelling, is an international standard for enterprise modelling and enterprise integration developed by the International Organization for Standardization, based on CIMOSA and GERAM."@en,
         "Provides a unified conceptual basis for model-based enterprise engineering that enables consistency, convergence and interoperability of the various modelling methodologies and supporting tools."@en,
         "La norme ISO 19439 spécifie un framework se conformant aux exigences d'ISO 15704. Elle sert de base commune pour identifier et coordonner le développement de normes (dont la norme ISO 19440) pour la modélisation d'entreprise, plus particulièrement autour du concept de CIM. Elle se définit autour de trois axes principaux :"@fr ;
@@ -5858,6 +5902,7 @@ sto:OPC_Foundation a dbont:Agent,
     dcterms:subject <http://dbpedia.org/resource/Category:Automotive_standards>,
         <http://dbpedia.org/resource/Category:Professional_associations_based_in_Germany> ;
     lingg:hypernym <http://dbpedia.org/resource/Association> ;
+    vocvr:hasRank _:nodeID://b25846833 ;
     rdfs:comment "Die Association for Standardisation of Automation and Measuring Systems (ASAM e. V.) ist ein eingetragener Verein nach deutschem Recht. Seine Mitglieder sind überwiegend globalagierende Fahrzeughersteller, Zulieferer und Ingenieursdienstleister der Automobilindustrie. Der Verein koordiniert die Entwicklung von technischen Standards, die in Projektgruppen durch Experten seiner Mitgliedsunternehmen entwickelt werden. Der ASAM verfolgt die Vision, dass sämtliche Werkzeuge einer Entwicklungsprozesskette miteinander verbunden werden können und ein durchgehender Datenaustausch möglich ist. Die Standards definieren Protokolle, Dateiformate und Application Programming Interfaces (APIs) für die Softwareentwicklung und das Testen von Kfz-Steuergeräten. Eine Vielzahl von gängigen Werkzeugen im Bereic"@de,
         "Association for Standardization of Automation and Measuring Systems or ASAM is an incorporated association under German law. Its members are primarily international car manufacturers, suppliers and engineering service providers from the automotive industry. The association coordinates the development of technical standards, which are developed by working groups composed of experts from its member companies. ASAM pursues the vision that the tools of a development process chain can be freely interconnected and allow a seamless exchange of data. The standards define protocols, data models, file formats and application programming interfaces (APIs) for the use in the development and testing of automotive electronic control units. A large amount of popular tools in the areas of simulation, meas"@en,
         "Is an industry consortium that creates and maintains standards for open connectivity of industrial automation devices and systems, such as industrial control systems and process control generally"@en,
@@ -6110,6 +6155,7 @@ sto:SE a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Schneider_Electric>,
         <http://dbpedia.org/resource/Category:Societates_Europaeae> ;
     lingg:hypernym <http://dbpedia.org/resource/Corporation> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "شنايدر إليكتريك (بالفرنسية: Schneider Electric S.A) هي شركة فرنسية عالمية تأسست عام 1836 من قبل الأخوين أوجین وأدولف شنايدر."@ar,
         "Schneider Electric SA ist ein börsennotierter Elektrotechnik-Konzern, der in den Gebieten elektrische Energieverteilung und industrielle Automation tätig ist. Das Unternehmen hat seinen Sitz in Rueil-Malmaison bei Paris und ist in 190 Ländern vertreten."@de,
         "Schneider Electric SE is a European multinational corporation that specializes in energy management and automation solutions, spanning hardware, software, and services. Native of France, the company is headquartered in Rueil-Malmaison and is also based at the World Trade Center of Grenoble with offices throughout the world. A Fortune Global 500 company, Schneider Electric is publicly traded on the Euronext Exchange and is a component of the Euro Stoxx 50 stock market index. In FY2015 the company posted revenues of €26.6 billion."@en,
@@ -6161,6 +6207,7 @@ sto:UN-CEFACT a owl:NamedIndividual,
     dbont:wikiPageRedirects <http://dbpedia.org/resource/United_Nations> ;
     dbont:wikiPageRevisionID 718869239 ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/United_Nations> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "UN/CEFACT is the United Nations Centre for Trade Facilitation and Electronic Business. It was established as an intergovernmental body of the United Nations Economic Commission for Europe (UNECE) in 1996 and evolved from UNECE’s long tradition of work in trade facilitation."@en ;
     nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/UN?oldid=718869239> ;
     foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/UN> ;
@@ -6190,6 +6237,7 @@ sto:VDMA a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dbont:wikiPageRevisionID 741604943 ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/Mechanical_Engineering_Industry_Association> ;
     lingg:hypernym <http://dbpedia.org/resource/Association> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "The Mechanical Engineering Industry Association (Verband Deutscher Maschinen- und Anlagenbau – VDMA) has its headquarters in Frankfurt am Main, Germany, and represents around 3,200 members, making it the largest industry association in Europe. The Association represents the interests of the predominantly medium-sized companies in the mechanical engineering industry towards policymakers and society, as well as towards business, the scientific community, public authorities and the media. With more than one million employees and a turnover of around EUR 218 billion (2015), mechanical and plant engineering is Germany’s largest employer in the industrial sector.In addition, VDMA sees itself as a platform that provides its member companies with various networks where they can discuss technological challenges, interdisciplinary issues and many other topics." ;
     owl:sameAs <http://rdf.freebase.com/ns/m.04hzd28>,
         <http://yago-knowledge.org/resource/VDMA> ;
@@ -6369,6 +6417,7 @@ sto:W3C_OWL a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:World_Wide_Web_Consortium_standards>,
         <http://dbpedia.org/resource/Category:XML-based_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Family> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Die Web Ontology Language (kurz OWL) ist eine Spezifikation des World Wide Web Consortiums (W3C), um Ontologien anhand einer formalen Beschreibungssprache erstellen, publizieren und verteilen zu können. Es geht darum, Termini einer Domäne und deren Beziehungen formal so zu beschreiben, dass auch Software (z. B. Agenten) die Bedeutung verarbeiten („verstehen“) kann. OWL ist somit ein wesentlicher Bestandteil der Semantic-Web-Initiative von Tim Berners-Lee. OWL basiert technisch auf der RDF-Syntax und historisch auf DAML+OIL und geht dabei über die Ausdrucksmächtigkeit von RDF-Schema weit hinaus. Zusätzlich zu RDF und RDF-Schema werden weitere Sprachkonstrukte eingeführt, die es erlauben, Ausdrücke ähnlich der Prädikatenlogik zu formulieren."@de,
         "The W3C Web Ontology Language (OWL) is a Semantic Web language designed to represent rich and complex knowledge about things, groups of things, and relations between things. OWL is a computational logic-based language such that knowledge expressed in OWL can be exploited by computer programs, e.g., to verify the consistency of that knowledge or to make implicit knowledge explicit. OWL documents, known as ontologies, can be published in the World Wide Web and may refer to or be referred from other OWL ontologies. OWL is part of the W3C’s Semantic Web technology stack, which includes RDF, RDFS, SPARQL, etc."@en,
         "The W3C Web Ontology Language (OWL) is a Semantic Web language designed to represent rich and complex knowledge about things, groups of things, and relations between things. OWL is a computational logic-based language such that knowledge expressed in OWL can be exploited by computer programs, e.g., to verify the consistency of that knowledge or to make implicit knowledge explicit. OWL documents, known as ontologies, can be published in the World Wide Web and may refer to or be referred from other OWL ontologies. OWL is part of the W3C’s Semantic Web technology stack, which includes RDF, RDFS, SPARQL, etc. "@en,
@@ -6499,6 +6548,7 @@ sto:BBF a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Digital_television>,
         <http://dbpedia.org/resource/Category:Technology_consortia> ;
     lingg:hypernym <http://dbpedia.org/resource/Consortium> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Das Broadband Forum (bis 2008 DSL Forum) ist ein weltweites Konsortium von ca. 200 Unternehmen aus den unterschiedlichsten Bereichen der Telekommunikations- und IT-Branche. Es wurde 1994 gegründet und dient als Plattform, um den im Breitbandmarkt tätigen Unternehmen eine Möglichkeit zu geben, gemeinsame Standards zu erarbeiten. Aus dieser Zusammenarbeit entstanden verschiedene Standardisierungen für ADSL, SHDSL, VDSL, ADSL2+ und VDSL2. Sitz des Sekretariats ist Fremont, Kalifornien."@de,
         "The Broadband Forum is a non-profit industry consortium dedicated to developing broadband network specifications. Members include telecommunications networking and service provider companies, broadband device and equipment vendors, consultants and independent testing labs (ITLs). Service provider members are primarily wire-line service providers (non-mobile) telephone companies."@en,
         "寬頻論壇（2008年6月17日前作DSL論壇）是由全球約200多個分屬電信、資訊科技產業的公司組成的跨國組織。會員包含有線服務業者、寬頻設備業者、諮詢機構、獨立的測試實驗室（independent testing labs，ITLs）等。 寬頻論壇成立於1994年，並且為寬頻市場的公司之交流平台。其主要目的是來建立有關數位用戶迴路（DSL）通訊產品（如傳輸）的新標準，如ADSL、SHDSL、VDSL、ADSL2+、VDSL2等。 寬頻論壇自2004年起，擴展其組織內有關最後一哩的技術工作，包含光纖等。"@zh ;
@@ -6712,6 +6762,7 @@ sto:ETSI_DECT a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Mobile_telecommunications_standards>,
         <http://dbpedia.org/resource/Category:Software-defined_radio> ;
     lingg:hypernym <http://dbpedia.org/resource/Standard> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Digital Enhanced Cordless Telecommunications (DECT, ursprünglich Digital European Cordless Telephony, im Volksmund „dekt“ ausgesprochen) ist ein internationaler Standard für Telekommunikation mittels Funktechnik, besonders für Schnurlostelefone. DECT ist eine Marke vom European Telecommunications Standards Institute (ETSI) mit umfangreichen Spezifikationen."@de,
         "Digital Enhanced Cordless Telecommunications (DECT) is the ETSI standard for short-range cordless communications, which can be adapted for many applications and can be used over unlicensed frequency allocations world-wide."@en,
         "Digital Enhanced Cordless Telecommunications (Digital European Cordless Telecommunications), usually known by the acronym DECT, is a standard primarily used for creating cordless telephone systems. It originated in Europe, where it is the universal standard, replacing earlier cordless phone standards, such as 900 MHz CT1 and CT2."@en,
@@ -6789,6 +6840,7 @@ sto:IEC_61499 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/State_diagram_(UML)>,
         <http://dbpedia.org/resource/VCR> ;
     dcterms:subject <http://dbpedia.org/resource/Category:IEC_standards> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Die Europäische Norm EN 61499 bzw. internationale Norm IEC 61499, befasst sich mit Funktionsbausteinen für industrielle Prozessmess- und -steuerungssysteme. Sie ist auch als DIN-Norm für Deutschland gültig und wurde erstmals 2005 veröffentlicht. Die Spezifikation IEC 61499 bzw. EN 61499 definiert ein generisches Modell für verteilte Steuerungssysteme und basiert auf der IEC 61131 bzw. EN 61131. Neben dem Standard selbst werden die Konzepte des IEC-61499-Standards in den Büchern von Lewis und Zoitl  sowie Vyatkin  detailliert beschrieben."@de,
         "Function Blocks - Architecture Related Applications http://www.eclipse.org/4diac/ (sourceforge.net/projects/oooneida-fbench/) http://timeme.io/  not accepted by the Industry yet. http://www.holobloc.com/Proposed for IEC to overcome the restricctions of IEC 61131"@en,
         "The international standard IEC 61499, addressing the topic of function blocks for industrial process measurement and control systems, was initially published in 2005. The specification of IEC 61499 defines a generic model for distributed control systems and is based on the IEC 61131 standard. The concepts of IEC 61499 are also explained by Lewis and Zoitl  as well as Vyatkin."@en ;
@@ -6841,6 +6893,7 @@ sto:ISA-95 a owl:NamedIndividual,
     dbont:wikiPageRedirects <http://dbpedia.org/resource/American_National_Standards_Institute> ;
     dbont:wikiPageRevisionID 600958629 ;
     dbont:wikiPageWikiLink <http://dbpedia.org/resource/American_National_Standards_Institute> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "ANSI/ISA-95, or ISA-95 as it is more commonly referred, is an international standard from the International Society of Automation for developing an automated interface between enterprise and control systems. This standard has been developed for global manufacturers. It was developed to be applied in all industries, and in all sorts of processes, like batch processes, continuous and repetitive processes.There are 5 parts of the ISA-95 standard.ISA-95 Models"@en ;
     nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/ANSI?oldid=600958629> ;
     foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/ANSI> ;
@@ -6895,6 +6948,7 @@ sto:ISO_13584 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/VDA> ;
     dcterms:subject <http://dbpedia.org/resource/Category:ISO_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Systems> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "ISO 13584 is a series of International Standards for the computer-sensible representation and exchange of parts library data. The objective is to provide a mechanism capable of transferring parts library data, independent from any particular system. The nature of this description makes it suitable not only for the exchange of files containing parts libraries, but also as a basis for implementing and sharing databases of parts library data, and archiving"@en,
         """The official title of ISO 13584 is Industrial automation systems and integration - Parts library, with the acronym PLIB. PLIB is developed and maintained by the ISO technical committee TC 184, Technical Industrial automation systems and integration, sub-committee SC4 Industrial data. See also ISO 10303. PLIB consists of these parts: PLIB and IEC 61360 Component Data Dictionary are using the same datamodel. External links: 
 *  PLIB home page 
@@ -7218,6 +7272,7 @@ sto:W3C_RDF a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:XML>,
         <http://dbpedia.org/resource/Category:XML-based_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Family> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "25بك المحتوى هنا ينقصه الاستشهاد بمصادر. يرجى إيراد مصادر موثوق بها. أي معلومات غير موثقة يمكن التشكيك بها وإزالتها. (فبراير 2016) إطار توصيف الموارد هو مجموعة من معايير رابطة الشبكة العالمية(W3C) التي صممت بداية كبيانات وصفية لنماذج بيانات. بدأ استخدامها كمنهج لعام لوصف المفاهيم، أو نمذجة المعلومات الموجودة في موارد الوب باستخدام أشكال قواعد (Syntax) متنوعة. يسمح RDF بالتوافق بين بعض التطبيقات التي تتبادل معلومات غير رسمية و غير مرتبة على شبكة الإنترنت و ذلك عبر ترميز الوثائق غير المنظمة، وتوفير واجهة للتطبيقات و للوثائق المنظمة (مثل قواعد البيانات، GED، الخ)."@ar,
         "Das Resource Description Framework (RDF, engl. sinngemäß „System zur Beschreibung von Ressourcen“) bezeichnet eine technische Herangehensweise im Internet zur Formulierung logischer Aussagen über beliebige Dinge (Ressourcen). Ursprünglich wurde RDF vom World Wide Web Consortium (W3C) als Standard zur Beschreibung von Metadaten konzipiert. Mittlerweile gilt RDF als ein grundlegender Baustein des Semantischen Webs. RDF ähnelt den klassischen Methoden zur Modellierung von Konzepten wie UML-Klassendiagramme und Entity-Relationship-Modell. Im RDF-Modell besteht jede Aussage aus den drei Einheiten Subjekt, Prädikat und Objekt, wobei eine Ressource als Subjekt mit einer anderen Ressource oder lediglich einem Wert (Literal) als Objekt näher beschrieben wird. Mit einer weiteren Ressource als Prädik"@de,
         "RDF is a standard model for data interchange on the Web."@en,
@@ -7418,6 +7473,7 @@ sto:IEC_61158 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Production_and_manufacturing>,
         <http://dbpedia.org/resource/Category:Serial_buses> ;
     lingg:hypernym <http://dbpedia.org/resource/Family> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Ein Feldbus ist ein Bussystem, das in einer Anlage Feldgeräte wie Messfühler (Sensoren) und Stellglieder (Aktoren) zwecks Kommunikation mit einem Automatisierungsgerät verbindet. Wenn mehrere Kommunikationsteilnehmer ihre Nachrichten über dieselbe Leitung senden, dann muss festgelegt sein, wer (Kennung) was (Messwert, Befehl) wann (Initiative) sagt. Hierfür gibt es normierte Protokolle."@de,
         "Fieldbus is the name of a family of industrial computer network protocols used for real-time distributed control, standardized as IEC 61158. A complex automated industrial system such as manufacturing assembly line usually needs a distributed control system an organized hierarchy of controller systems to function. In this hierarchy, there is usually a Human Machine Interface (HMI) at the top, where an operator can monitor or operate the system. This is typically linked to a middle layer of programmable logic controllers (PLC) via a non-time-critical communications system (e.g. Ethernet). At the bottom of the control chain is the fieldbus that links the PLCs to the components that actually do the work, such as sensors, actuators, electric motors, console lights, switches, valves and contactors"@en,
         "Fieldbus is the name of a family of industrial computer network protocols used for real-time distributed control, standardized as IEC 61158. A complex automated industrial system — such as manufacturing assembly line — usually needs a distributed control system—an organized hierarchy of controller systems—to function. In this hierarchy, there is usually a Human Machine Interface (HMI) at the top, where an operator can monitor or operate the system. This is typically linked to a middle layer of programmable logic controllers (PLC) via a non-time-critical communications system (e.g. Ethernet). At the bottom of the control chain is the fieldbus that links the PLCs to the components that actually do the work, such as sensors, actuators, electric motors, console lights, switches, valves and con"@en,
@@ -7530,6 +7586,7 @@ sto:MESA a dbont:Settlement,
         <http://dbpedia.org/resource/Trade_association> ;
     dcterms:subject <http://dbpedia.org/resource/Category:MES_software> ;
     lingg:hypernym <http://dbpedia.org/resource/Community> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Die Manufacturing Enterprise Solutions Accociation (MESA) ist ein US-amerikanischer Industrieverband mit Sitz in Chandler (Arizona). Der von Softwareunternehmen 1992 gegründete Verband will Geschäftsprozesse im produzierenden Gewerbe durch die Verbesserung bestehender Anwendungen und die Einführung neuer Informationssysteme verbessern. Dabei spielen die vertikale und horizontale Integration von Informationssystemen eine wesentliche Rolle."@de,
         "Manufacturing Enterprise Solutions Association International (MESA, aka MESA International)  is a global, nonprofit community of manufacturing companies, information technology hardware and software suppliers, system integrators, consulting service providers, analysts, editors, academics and students. The shared goal of MESA members is to improve business results and production operations through optimized application and implementation of information technology and best management practices."@en,
         "The Manufacturing Enterprise Solutions Association International is a global community of manufacturers, producers, industry leaders, and solution providers who are focused on driving business results from manufacturing information."@en,
@@ -7694,6 +7751,7 @@ sto:OASIS a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Web_services>,
         <http://dbpedia.org/resource/Category:XML_organizations> ;
     lingg:hypernym <http://dbpedia.org/resource/Consortium> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Die Organization for the Advancement of Structured Information Standards (OASIS) ist eine internationale,nicht-gewinnorientierte Organisation, die sich mit der Weiterentwicklung von E-Business- und Webservice-Standards beschäftigt. Bekannte Standards der OASIS sind u. a. OpenDocument und DocBook."@de,
         "The Organization for the Advancement of Structured Information Standards (OASIS) is a global nonprofit consortium that works on the development, convergence, and adoption of standards for security, Internet of Things, energy, content technologies, emergency management, and other areas."@en,
         "OASIS, acrónimo de Organization for the Advancement of Structured Information Standards (Organización para el Avance de Estándares de Información Estructurada, en idioma castellano), es un consorcio internacional sin fines de lucro que se orienta al desarrollo, la convergencia y la adopción de los estándares de comercio electrónico y servicios web. Los miembros del consorcio deciden cómo y qué trabajó se realiza mediante un proceso abierto y democrático. El trabajo técnico se lleva a cabo en categorías tales como: Energía, Servicios Web, Comercio electrónico, Internet de las cosas, Seguridad, Leyes y Gobierno, Cadena de Suministro, Administración de Computación, Focos de Aplicación, Document-Centric, Procesamiento XML, Conformance/Interop y Dominios Industriales, entre otras áreas."@es,
@@ -7925,6 +7983,7 @@ sto:ANSI a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Standards_organizations>,
         <http://dbpedia.org/resource/Category:Technical_specifications> ;
     lingg:hypernym <http://dbpedia.org/resource/Organization> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "25بك المحتوى هنا ينقصه الاستشهاد بمصادر. يرجى إيراد مصادر موثوق بها. أي معلومات غير موثقة يمكن التشكيك بها وإزالتها. (فبراير 2016) المعهد الوطني الأمريكي للمقَأيِس (بالإنجليزية: The American National Standards Institute) ويختصر بANSI، هو الجهة المسئولة عن إصدار توثيق وعمل النسخ القياسية للغات البرمجة المختلفة ومواصفاتها وتوحيد استخدامها على مستوى العالم. وقد تم انشائها سنة 1918 م."@ar,
         "Das American National Standards Institute ist eine private, gemeinnützige, amerikanische Organisation zur Koordinierung der Entwicklung freiwilliger Normen in den Vereinigten Staaten. Sitz der Organisation ist Washington, D.C. Das jährliche Budget ergibt sich aus dem Verkauf von Publikationen, Mitgliederbeiträgen, Zertifizierungsleistungen, gebührenpflichtigen Programmen und internationalen Standardisierungsvorhaben. Auch wird der Lichtstrom von digitalen Projektoren in ANSI-Lumen gemessen."@de,
         "The American National Standards Institute (ANSI, /ˈænsi/ AN-see) is a private non-profit organization that oversees the development of voluntary consensus standards for products, services, processes, systems, and personnel in the United States. The organization also coordinates U.S. standards with international standards so that American products can be used worldwide."@en,
@@ -8224,6 +8283,7 @@ sto:CAD a owl:NamedIndividual,
         <http://dbpedia.org/resource/Category:Design_engineering>,
         <http://dbpedia.org/resource/Category:Free_computer-aided_design_software> ;
     lingg:hypernym <http://dbpedia.org/resource/Use> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "25بك المحتوى هنا ينقصه الاستشهاد بمصادر. يرجى إيراد مصادر موثوق بها. أي معلومات غير موثقة يمكن التشكيك بها وإزالتها. (فبراير 2016) التصميم بمساعدة الحاسوب (CAD) هو أحد التكنولوجيات التي تعتمد على الحاسوب في رسم الإظهار. تُستخدم التقنية في العديد من المجالات منها الهندسة الصناعية والعمارة. تتميز تلك التقنية بدقة المنتج النهائي للنماذج التي يتم رسمها أو إظهارها وكذلك التنوع ما بين الرسومات ثنائية أو ثلاثية الأبعاد التي تحققها تلك التكنولوجيا. يمكن استخدام ملفات (CAD) من قبل العديد من البرمجيات و نظم الحاسوب بسهولة حيث تبنى معظم مصنعي البرمجيات الهيئة التي يستخدمها برنامج أوتوكاد و هي (DXF)."@ar,
         "Unter CAD (von engl. computer-aided design [kɔmˈpjuːtɐ ˈeɪdɪd dɪˈzaɪn], zu Deutsch rechnerunterstütztes Konstruieren) versteht man das Konstruieren eines Produkts mittels EDV. Ursprünglich wurde mit CAD die Verwendung eines Computers als Hilfsmittel beim technischen Zeichnen bezeichnet. Heute sind professionelle CAD-Anwendungen komplexe Expertensysteme für den Entwurf und die Konstruktion technischer Lösungen."@de,
         "Computer-Aided Design"@en,
@@ -8359,6 +8419,7 @@ sto:ISA a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Organizations_based_in_North_Carolina>,
         <http://dbpedia.org/resource/Category:Standards_organizations> ;
     lingg:hypernym <http://dbpedia.org/resource/Society> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "الجمعية الدولية للأتمتة، (بالإنجليزية: International Society of Automation)، واختصاراً (ISA)، هي جمعية عالمية غير ربحية، تُعنى بإصدار المعايير المتعلقة بالأتمتة، وذلك بمساعدة ما يزيد عن 30,000 عضو من أعضائها حول العالم، وذلك عن طريق تقديم الحلول الفنية، وإصدار الأبحاث والكتب، والدورات التدريبية، وإصدار الشهادات."@ar,
         "International Society of Automation (ISA) wurde als Instrument Society of America am 28. April 1945 in Pittsburgh, USA von Richard Rimbach gegründet. Die ISA hat über 28000 Mitglieder in 100 Ländern. 1949 definierte ISA den ersten Standard, RP 5.1 Instrument Flow Plan Symbols, dem seither viele weitere gefolgt sind. ISA veranstaltet zahlreiche Konferenzen und Ausstellungen, publiziert Bücher und definiert Standards."@de,
         "The International Society of Automation (ISA), formerly known as The Instrumentation, Systems, and Automation Society, is a non-profit technical society for engineers, technicians, businesspeople, educators and students, who work, study or are interested in industrial automation and pursuits related to it, such as instrumentation. It was originally known as the Instrument Society of America. The society is more commonly known by its acronym, ISA, and the society's scope now includes many technical and engineering disciplines.ISA is one of the foremost professional organizations in the world for setting standards and educating industry professionals in automation. Instrumentation and automation are some of the key technologies involved in nearly all industrialized manufacturing. Modern indu"@en,
@@ -8524,6 +8585,7 @@ sto:OMG a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dcterms:subject <http://dbpedia.org/resource/Category:Standards_organizations>,
         <http://dbpedia.org/resource/Category:Unified_Modeling_Language> ;
     lingg:hypernym <http://dbpedia.org/resource/Membership> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "The Object Management Group (OMG) is an international, open membership, not-for-profit technology standards consortium. OMG Task Forces develop enterprise integration standards for a wide range of technologies and industries. OMG modeling standards enable visual design, execution and maintenance of software and other processes. Originally aimed at standardizing distributed object-oriented systems, the company now focuses on modeling (programs, systems and business processes) and model-based standards.",
         "Die Object Management Group (OMG) ist ein 1989 gegründetes Konsortium, das sich mit der Entwicklung von Standards für die herstellerunabhängige systemübergreifende objektorientierte Programmierung beschäftigt. Der OMG gehörten zur Gründung elf Unternehmen, darunter IBM, Apple und Sun, an. Mit Microsoft trat im September 2008 ein weiterer Hauptakteur im Softwaregeschäft der OMG bei. Mittlerweile hat sie über 800 Mitglieder und entwickelt international anerkannte Standards. Der Hauptsitz befindet sich in Needham, Massachusetts, und der Zweitsitz in Austin, Texas. Von der OMG stammen"@de,
         "The Object Management Group (OMG) is an international, open membership, not-for-profit technology standards consortium. OMG Task Forces develop enterprise integration standards for a wide range of technologies and industries. OMG modeling standards enable visual design, execution and maintenance of software and other processes. Originally aimed at standardizing distributed object-oriented systems, the company now focuses on modeling (programs, systems and business processes) and model-based standards."@en,
@@ -8736,6 +8798,7 @@ sto:W3C a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Web_services>,
         <http://dbpedia.org/resource/Category:World_Wide_Web_Consortium> ;
     lingg:hypernym <http://dbpedia.org/resource/Organization> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "25بك المحتوى هنا ينقصه الاستشهاد بمصادر. يرجى إيراد مصادر موثوق بها. أي معلومات غير موثقة يمكن التشكيك بها وإزالتها. (مارس 2016) رابطة الشبكة العالمية (بالإنجليزية: World Wide Web Consortium) أو منظمة W3C، هي أهم منظمة دولية لوضع المعايير لشبكة الويب العالمية. وهي منظمة على شكل رابطة (كونسورتيوم) حيث منظمات اعضاء وموظفون متفرغون والعموم يعملون معا لتطوير معايير الويب. اعتبارا من اذار / مارس 2007، هناك أكثر من 400 منظمة عضو في الكونسورتيوم وهو دائما مفتوح للمنظمات جديدة للانضمام."@ar,
         "Das World Wide Web Consortium (kurz W3C) ist das Gremium zur Standardisierung der Techniken im World Wide Web. Es wurde am 1. Oktober 1994 am MIT Laboratory for Computer Science in Cambridge (Massachusetts) gegründet. Beispiele für durch das W3C standardisierte Technologien sind HTML, XHTML, XML, RDF, OWL, CSS, SVG und WCAG. Der Sitz des Deutsch-Österreichischen Büros ist seit Januar 2011 am Deutschen Forschungszentrum für Künstliche Intelligenz (DFKI) in Berlin."@de,
         "The World Wide Web Consortium (W3C) is the main international standards organization for the World Wide Web (abbreviated WWW or W3). Founded and currently led by Tim Berners-Lee, the consortium is made up of member organizations which maintain full-time staff for the purpose of working together in the development of standards for the World Wide Web. As of 2 June 2016, the World Wide Web Consortium (W3C) has 423 members. The W3C also engages in education and outreach, develops software and serves as an open forum for discussion about the Web."@en,
@@ -8848,6 +8911,7 @@ sto:IEC_62714 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Industry-specific_XML-based_standards>,
         <http://dbpedia.org/resource/Category:XML_markup_languages> ;
     lingg:hypernym <http://dbpedia.org/resource/Format> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "AutomationML (Automation Markup Language) ist ein neutrales, XML-basiertes Datenformat für die Speicherung und zum Austausch von Anlagenplanungsdaten, das als offener Standard zur Verfügung steht. Ziel der AutomationML ist der Austausch von Engineering-Daten in einer heterogenen Tool-Landschaft von modernen Engineering-Werkzeugen für verschiedene Disziplinen wie zum Beispiel Mechanisches Design, Elektrisches Design, HMI-Entwicklung, SPS-Programmierung oder Robotersteuerung."@de,
         "AutomationML (Automation Markup Language) is a neutral data format based on XML for the storage and exchange of plant engineering information, which is provided as open standard. Goal of AutomationML is to interconnect the heterogeneous tool landscape of modern engineering tools in their different disciplines, e.g. mechanical plant engineering, electrical design, HMI development, PLC, robot control."@en,
         "Engineering data exchange format for use in industrial automation systems engineering - Automation markup language - Architecture and general requirements"@en ;
@@ -9030,6 +9094,7 @@ sto:M2M a <http://dbpedia.org/class/yago/Abstraction100002137>,
     dcterms:subject <http://dbpedia.org/resource/Category:Buzzwords>,
         <http://dbpedia.org/resource/Category:Machine_to_machine>,
         <http://dbpedia.org/resource/Category:Service-oriented_(business_computing)> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "آلة إلى آلة (بالإنجليزية: Machine to Machine؛ وتختصر M2M) هو مصطلح يشير إلى التقنيات التي تتيح لكل من النظم السلكية واللاسكلية الاتصال بأنظمة أخرى لها نفس القدرة. تقنية الآلة إلى آلة تستخدم جهازًا (مثل مستشعر أو جهاز قياس) لالتقاط حدث (مثل درجة الحرارة، أو مستوى مستودع، إلى 'خره)، ثم ينقله عبر شبكة (سلكية، أو لاسكلية أو مهجنة) إلى تطبيق (برمجي)، يترجم الحدث الملتقط إلى معلومات ذات معنى (على سبيل المثال، المواد التي ينبغي إعادة تخزينها). هذا النوع من الاتصالات أجري في الأصل في وجود شبكة بعيدة من الآلات التي توصل المعلومات إلى مركز للتحليل، والتي بعد ذلك تُحول إلى نظام مثل حاسوب شخصي."@ar,
         "Machine-to-Machine (M2M) steht für den automatisierten Informationsaustausch zwischen Endgeräten wie Maschinen, Automaten, Fahrzeugen oder Containern untereinander oder mit einer zentralen Leitstelle, zunehmend unter Nutzung des Internets und den verschiedenen Zugangsnetzen, wie dem Mobilfunknetz. Eine Anwendung ist die Fernüberwachung, -kontrolle und -wartung von Maschinen, Anlagen und Systemen, die traditionell als Telemetrie bezeichnet wird. Die M2M-Technologie verknüpft dabei Informations- und Kommunikationstechnik."@de,
         "Machine to machine refers to direct communication between devices using any communications channel, including wired and wireless"@en,
@@ -9174,6 +9239,7 @@ sto:ETSI a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Telecommunications_in_Europe>,
         <http://dbpedia.org/resource/Category:Telecommunications_organizations> ;
     lingg:hypernym <http://dbpedia.org/resource/Organization> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "Das Europäische Institut für Telekommunikationsnormen (ETSI; englisch European Telecommunications Standards Institute) ist eine der drei großen Normungsorganisationen in Europa mit Sitz in Sophia Antipolis in der Nähe von Nizza, (Frankreich). ETSI ist eine gemeinnützige Organisation, welche von der Europäischen Union als Europäische Organisation für Normung anerkannt ist und das Ziel verfolgt, weltweit anwendbare Standards für die Informations- und Kommunikationstechnologien zu schaffen."@de,
         "The European Telecommunications Standards Institute (ETSI) is an independent, not-for-profit, standardization organization in the telecommunications industry (equipment makers and network operators) in Europe, headquartered in Sophia-Antipolis, France, with worldwide projection. ETSI produces globally-applicable standards for Information and Communications Technologies (ICT), including fixed, mobile, radio, converged, broadcast and internet technologies."@en,
         "The European Telecommunications Standards Institute (ETSI) is an independent, not-for-profit, standardization organization in the telecommunications industry (equipment makers and network operators) in Europe, headquartered in Sophia-Antipolis, France, with worldwide projection. ETSI produces globally-applicable standards for Information and Communications Technologies (ICT), including fixed, mobile, radio, converged, broadcast and internet technologies. ETSI is a founding partner organization of the Global Standards Collaboration initiative."@en,
@@ -9330,6 +9396,7 @@ sto:IEC_62541 a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Automation>,
         <http://dbpedia.org/resource/Category:Computer_standards> ;
     lingg:hypernym <http://dbpedia.org/resource/Protocol> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "OPC Unified Architecture, kurz OPC UA, ist ein industrielles M2M-Kommunikationsprotokoll. Als neueste aller OPC-Spezifikationen der OPC Foundation unterscheidet sich OPC UA erheblich von seinen Vorgängern, insbesondere durch die Fähigkeit, Maschinendaten (Regelgrößen, Messwerte, Parameter usw.) nicht nur zu transportieren, sondern auch maschinenlesbar semantisch zu beschreiben."@de,
         "OPC Unified Architecture (OPC UA) is an industrial M2M communication protocol for interoperability developed by the OPC Foundation. It is the successor to Open Platform Communications (OPC). Although developed by the same organization, OPC UA differs significantly from its predecessor. The Foundation's goal for this project was to provide a path forward from the original OPC communications model (namely the Microsoft Windows only process exchange COM/DCOM) to a cross-platform service-oriented architecture (SOA) for process control, while enhancing security and providing an information model."@en,
         "OPC Unified Architecture (OPC UA) bazuje na ogólnie przyjętych komunikacyjnych protokołach takich jak TCP/IP, HTTP, SOAP, co zapewnia bardzo dużą skalowalność rozwiązań implementowanych w oparciu o tę technologię. OPC Unified Architecture umożliwia przesyłanie danych za pośrednictwem różnych formatów m.in. formatu opartego na XML i formatu binarnego. Serwer OPC zbudowany w oparciu o Unified Architecture definiuje swoim klientom (zobacz klient opc) zestaw usług, jakie oferuje oraz format danych procesowych za pośrednictwem, którego ma odbywać się komunikacja. W poprzedniej wersji standardu OPC każda ze specyfikacji (np. OPC DA, OPC HDA) definiowała swoją własną przestrzeń adresową i swój własny zestaw usług. OPC Unified Architecture definiuje zunifikowaną przestrzeń adresową (ang. Address S"@pl,
@@ -9620,6 +9687,7 @@ sto:ISO a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:Standards_organizations>,
         <http://dbpedia.org/resource/Category:Technical_specifications> ;
     lingg:hypernym <http://dbpedia.org/resource/Body> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "المنظمة الدولية للمعايير (أيزو) (بالإنجليزية: International Organization for Standardization) (بالفرنسية: Organisation internationale de normalisation) (بالروسية: Международная организация по стандартизации) هي منظمة تعمل على وضع المعايير، وتضم هذه المنظمة ممثلين من عدة منظمات قومية للمعايير. تأسست هذه المنظمة في 23 شباط / فبراير 1947 وهي تصرح عن معايير تجارية وصناعية عالمية. يكمن مقر هذه المنظمة في جنيف، سويسرا.بالرغم من أن الأيزو تعرف عن نفسها كمنظمة غير حكومية، ولكن قدرتها على وضع المعايير التي تتحول عادة إلى قوانين (إما عن طريق المعاهدات أو المعايير القومية) تجعلها أكثر قوة من معظم المنظمات غير الحكومية. تؤلف منظمة الأيزو عمليا حلف ذو صلات قوية مع الحكومات."@ar,
         "Die Internationale Organisation für Normung – kurz ISO (von griechisch ἴσος isos ‚gleich‘; englisch International Organization for Standardization) – ist die internationale Vereinigung von Normungsorganisationen und erarbeitet internationale Normen in allen Bereichen mit Ausnahme der Elektrik und der Elektronik, für die die Internationale elektrotechnische Kommission (IEC) zuständig ist, und mit Ausnahme der Telekommunikation, für die die Internationale Fernmeldeunion (ITU) zuständig ist. Gemeinsam bilden diese drei Organisationen die WSC (World Standards Cooperation)."@de,
         "Is an independent, non-governmental organization, the members of which are the standards organizations of the 162 member countries. It is the world's largest developer of voluntary international standards and facilitates world trade by providing common standards between nations. Nearly twenty thousand standards have been set covering everything from manufactured products and technology to food safety, agriculture and healthcare."@en,
@@ -9926,6 +9994,7 @@ sto:IEC a <http://dbpedia.org/class/yago/Abstraction100002137>,
         <http://dbpedia.org/resource/Category:International_Electrotechnical_Commission>,
         <http://dbpedia.org/resource/Category:Standards_organizations> ;
     lingg:hypernym <http://dbpedia.org/resource/Organization> ;
+    vocvr:hasRank [ ] ;
     rdfs:comment "اللجنة الكهروتقنية الدولية (IEC) (بالإنجليزية: International Electrotechnical Commission) (بالفرنسية: Commission électrotechnique internationale)هي منظمة دولية غير حكومية غير ربحية تأسست في عام 1906 معنية بوضع ونشر معايير دولية للكهرباء والإلكترونيات والتقنيات المتعلقة بها. معايير اللجنة تغطي مجال عريض من التقنيات بدءً من توليد الطاقة الكهربائية ونقلها وتوزيعها على الأجهزة المنزلية والتجهيزات المكتبية إضافة إلى أشباه الموصلات والألياف البصريةوالبطاريات والطاقة الشمسيةوتقنية النانو والطاقة البحرية بالإضافة إلى العديد من التقنيات الأخرى."@ar,
         "Die Internationale Elektrotechnische Kommission, kurz: IEC (von englisch International Electrotechnical Commission [ˌɪntəˈnæʃənəl ɪˌlɛktɹəˈtɛknɪkəl kəˈmɪʃən]), ist eine internationale Normungsorganisation für Normen im Bereich der Elektrotechnik und Elektronik mit Sitz in Genf. Einige Normen werden gemeinsam mit der ISO (International Organization for Standardization) entwickelt."@de,
         "Is a non-profit, non-governmental international standards organization that prepares and publishes International Standards for all electrical, electronic and related technologies – collectively known as \"electrotechnology\". IEC standards cover a vast range of technologies from power generation, transmission and distribution to home appliances and office equipment, semiconductors, fiber optics, batteries, solar energy, nanotechnology and marine energy as well as many others. The IEC also manages three global conformity assessment systems that certify whether equipment, system or components conform to its International Standards."@en,
