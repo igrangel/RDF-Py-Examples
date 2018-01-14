@@ -18,20 +18,22 @@ def main():
 
     mtx, sub_list, prop_list = construct_mtx(sto.query(sto_query))
     #mtx_to_csv(mtx, sub_list, prop_list)
-    mtx, sub_list, prop_list = mtx_cleaner(mtx, sub_list, prop_list)
+    sub_list, prop_list = prefix_assign(sub_list, prop_list)
+    mtx, sub_list, prop_list = mtx_cleaner(mtx, sub_list, prop_list, False)
     mtx_to_csv(mtx, sub_list, prop_list)
+    mtx_to_dep(mtx, sub_list, prop_list)
 
 
 def construct_mtx(query_result):
+    print('--> constructing matrix...')
     sub_list = []
     prop_list = []
     mtx = np.asarray([], dtype=int)
-
     for row in query_result:
         sub = str(row[0]).encode('utf-8', 'replace')
         pred = str(row[1])
         obj = str(row[2])
-        prop = (pred + ' -- ' + obj).encode('utf-8', 'replace')
+        prop = (pred + ' -> ' + obj).encode('utf-8', 'replace')
         mtx = mtx_enrich(mtx, sub_list, prop_list, sub, prop)
     return mtx, sub_list, prop_list
 
@@ -63,9 +65,10 @@ def mtx_enrich(mtx, sub_list, prop_list, sub, prop):
 
 
 def mtx_to_csv(mtx, sub_list, prop_list):
+    print('--> saving as csv...')
     csv_mtx = np.empty((mtx.shape[0] + 1, mtx.shape[1] + 1), dtype=object)
-    csv_mtx[:, 0] = np.insert(np.asarray(sub_list), 0, ''.encode('utf-8', 'replace'))
-    csv_mtx[0, :] = np.insert(np.asarray(prop_list), 0, ''.encode('utf-8', 'replace'))
+    csv_mtx[:, 0] = np.insert(np.asarray(sub_list), 0, ''.encode('utf-8', 'replace')) #.astype(str)
+    csv_mtx[0, :] = np.insert(np.asarray(prop_list), 0, ''.encode('utf-8', 'replace')) #.astype(str)
     csv_mtx[1:, 1:] = mtx.astype(int)
     np.savetxt("foo.csv", csv_mtx, delimiter=";", fmt="%s")
 
@@ -74,19 +77,92 @@ def sum_rows(x):
     return sum(x)
 
 
-def mtx_cleaner(mtx, sub_list, prop_list):
+def mtx_cleaner(mtx, sub_list, prop_list, is_sum):
+    print('--> cleaning matrix...')
+    sub_num = 20
+    thld = 16
+
     mtx_sums = np.apply_along_axis(sum_rows, axis=0, arr=mtx)
     sort_args = mtx_sums.argsort()
     new_mtx_sums = mtx_sums[sort_args]
     new_prop_list = np.asarray(prop_list)[sort_args]
-    one_args = np.where(new_mtx_sums == 1)
-    last_one_arg = one_args[0][len(one_args[0])-1] + 1
-    mtx = np.vstack([mtx, np.zeros(mtx.shape[1])])
-    new_mtx = mtx[:, sort_args]
-    new_mtx[mtx.shape[0] - 1][:] = new_mtx_sums
-    sort_new_mtx = new_mtx[:, last_one_arg:]
-    sub_list.append('SUM')
-    return sort_new_mtx, sub_list, new_prop_list[last_one_arg:]
+    thld_args = np.where(new_mtx_sums == thld)
+    last_thld_arg = thld_args[0][len(thld_args[0])-1] + 1
+    new_mtx = mtx[0:sub_num, sort_args]
+    new_sub_list = np.asarray(sub_list)[0:sub_num]
+    if is_sum:
+        new_mtx = np.vstack([new_mtx, np.zeros(mtx.shape[1])])
+        new_mtx[new_mtx.shape[0] - 1][:] = new_mtx_sums
+        new_sub_list = np.append(new_sub_list, 'SUM')
+    sort_new_mtx = new_mtx[:, last_thld_arg:]
+    return sort_new_mtx, new_sub_list, new_prop_list[last_thld_arg:]
+
+
+def prefix_assign(sub_list, prop_list):
+    print('--> assigning prefixes...')
+    prfxs_map = np.asarray(prefix_mapping())
+    for prfx_map in prfxs_map:
+        prfx = (prfx_map[0] + ':').encode('utf-8')
+        url = prfx_map[1].encode('utf-8')
+        for sub_cnt, sub in enumerate(sub_list):
+            if url in sub:
+                sub_list[sub_cnt] = sub_list[sub_cnt].replace(url, prfx)
+        for prop_cnt, prop in enumerate(prop_list):
+            if url in prop:
+                prop_list[prop_cnt] = prop_list[prop_cnt].replace(url, prfx)
+    return sub_list, prop_list
+
+
+def prefix_mapping():
+    return [
+        ['cc', 'http://creativecommons.org/ns#'],
+        ['dbo', 'http://dbpedia.org/ontology#'],
+        ['dbo', 'http://dbpedia.org/ontology/'],
+        ['dbr', 'http://dbpedia.org/resource#'],
+        ['dbr', 'http://dbpedia.org/resource/'],
+        ['deo', 'http://purl.org/spar/deo/'],
+        ['dul', 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#'],
+        ['geo', 'http://www.geonames.org/ontology#'],
+        ['owl', 'http://www.w3.org/2002/07/owl#'],
+        ['rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'],
+        ['sto', 'https://w3id.org/i40/sto#'],
+        ['xml', 'http://www.w3.org/XML/1998/namespace'],
+        ['xsd', 'http://www.w3.org/2001/XMLSchema#'],
+        ['dc11', 'http://purl.org/dc/elements/1.1/'],
+        ['doap', 'http://usefulinc.com/ns/doap#'],
+        ['foaf', 'http://xmlns.com/foaf/0.1/'],
+        ['muto', 'http://purl.org/muto/core#'],
+        ['rami', 'https://w3id.org/i40/rami#'],
+        ['rdfs', 'http://www.w3.org/2000/01/rdf-schema#'],
+        ['skos', 'http://www.w3.org/2004/02/skos/core#'],
+        ['vann', 'http://purl.org/vocab/vann/'],
+        ['voaf', 'http://purl.org/vocommons/voaf#'],
+        ['schema', 'http://schema.org/'],
+        ['dcterms', 'http://purl.org/dc/terms/'],
+        ['dbprop', 'http://dbpedia.org/property/'],
+        ['dby', 'http://dbpedia.org/class/yago/'],
+        ['nsprov', 'http://www.w3.org/ns/prov#'],
+        ['lingg','http://purl.org/linguistics/gold/'],
+        ['wkdr','http://wikidata.dbpedia.org/resource/'],
+        ['wkde','http://www.wikidata.org/entity/']
+    ]
+
+
+def mtx_to_dep(mtx, sub_list, prop_list):
+    names = np.append(sub_list, prop_list)
+    data = np.zeros((len(names), len(names)))
+    data[:-len(prop_list), :-len(sub_list)] = mtx
+    #np.savetxt("wheel/names.txt", names.astype(str), delimiter=", ", fmt="%s")
+    #np.savetxt("wheel/data.txt", data.astype(int), delimiter=", ", fmt="%s")
+    text_file = open("wheel/names.txt", "w")
+    text_file.write(np.array2string(names.astype(str), separator=', ', max_line_width=np.inf))
+    text_file.close()
+
+    text_file = open("wheel/data.txt", "w")
+    #arr_txt = data.astype(int).tostring().decode('utf-8')
+    arr_txt = str(data.astype(int).tolist())
+    text_file.write(arr_txt) #np.array2string(data.astype(int), separator=', ')
+    text_file.close()
 
 
 if __name__ == "__main__":
