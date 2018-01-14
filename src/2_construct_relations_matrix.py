@@ -149,9 +149,10 @@ def prefix_mapping():
 
 
 def mtx_to_dep(mtx, sub_list, prop_list):
-    names = np.append(prop_list, sub_list)
+    names = np.append(sub_list, prop_list)
     data = np.zeros((len(names), len(names)))
-    data[:-len(prop_list), :-len(sub_list)] = mtx
+    data[:len(sub_list), len(sub_list):] = mtx
+    data[len(sub_list):, :len(sub_list)] = np.transpose(mtx) #np.flipud(np.rot90(mtx))
     #np.savetxt("wheel/names.txt", names.astype(str), delimiter=", ", fmt="%s")
     #np.savetxt("wheel/data.txt", data.astype(int), delimiter=", ", fmt="%s")
     text_file = open("wheel/names.txt", "w")
