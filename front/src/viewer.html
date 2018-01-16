@@ -6,33 +6,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/editor.css" />
+    <script src="js/jquery-3.2.1.min.js"></script>
   </head>
   <body class="s-body">
     <div class="s-wrapper">
-      <div class="s-top-menu">
-        <div id="s-legend" onclick="legendClick()">
-          <img id="s-img-close" src="img/close.png" />
-          <img id="s-img-menu" src="img/menu.png" />
-        </div>
-        <div class="s-menu-els">
-          <a class="s-menu-el" href="/"><div class="s-menu-el-wr">Main</div></a>
-          <a class="s-menu-el" href="/editor"><div class="s-menu-el-wr">Editor</div></a>
-          <a class="s-menu-el" href="/viewer"><div class="s-menu-el-wr s-curr-p">Viewer</div></a>
-        </div>
-        <span class="s-logo"><a class="s-logo-link" href="/">Standard Ontology</a></span>
-      </div>
+      <div id="headPC"></div>
       <div class="s-main">
-        <div id="s-side-menu">
-          <a class="s-side-menu-el" href="/"><div class="s-side-menu-el-wr">Main</div></a>
-          <a class="s-side-menu-el" href="/editor"><div class="s-side-menu-el-wr">Editor</div></a>
-          <a class="s-side-menu-el" href="/viewer"><div class="s-side-menu-el-wr s-curr-m">Viewer</div></a>
-        </div>
-
-        <iframe src="/vowl" style="width: 100%; border-width: 0;"></iframe>        
-        
+        <div id="headMobile"></div>
+        <iframe src="/vowl" style="width: 100%; border-width: 0;"></iframe>
       </div>
     </div>
-
     <script src="node_modules/axios/dist/axios.min.js"></script>
     <script src="js/main.js"></script>
   </body>

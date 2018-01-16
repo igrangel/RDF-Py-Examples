@@ -1,3 +1,9 @@
+$( document ).ready(() => {
+  menuEl = window.location.pathname.substr(1, window.location.pathname.length-1);
+  $("#headPC").load("head-pc.html", () => $('#' + menuEl + 'PC').addClass('s-curr-p'));
+  $("#headMobile").load("head-mobile.html", () => $('#'+ menuEl + 'Mobile').addClass('s-curr-m'));
+})
+
 function getRequest(url) {
   axios.get(url)
     .then(function(response) {

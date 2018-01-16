@@ -5,30 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.2.1.min.js"></script>
   </head>
   <body class="s-body">
     <div class="s-wrapper">
-      <div class="s-top-menu">
-        <div id="s-legend" onclick="legendClick()">
-          <img id="s-img-close" src="img/close.png" />
-          <img id="s-img-menu" src="img/menu.png" />
-        </div>
-        <div class="s-menu-els">
-          <a class="s-menu-el" href="/"><div class="s-menu-el-wr s-curr-p">Main</div></a>
-          <a class="s-menu-el" href="/editor"><div class="s-menu-el-wr">Editor</div></a>
-          <a class="s-menu-el" href="/viewer"><div class="s-menu-el-wr">Viewer</div></a>
-        </div>
-        <span class="s-logo"><a class="s-logo-link" href="/">Standard Ontology</a></span>
-      </div>
+      <div id="headPC"></div>
       <div class="s-main">
-        <div id="s-side-menu">
-          <a class="s-side-menu-el" href="/"><div class="s-side-menu-el-wr s-curr-m">Main</div></a>
-          <a class="s-side-menu-el" href="/editor"><div class="s-side-menu-el-wr">Editor</div></a>
-          <a class="s-side-menu-el" href="/viewer"><div class="s-side-menu-el-wr">Viewer</div></a>
-        </div>
-
+        <div id="headMobile"></div>
         <div class="s-content">
-          <span style="line-height: 30px; font-size: 20px;">
+          <span style="line-height: 30px; font-size: 20px; margin-top: 20px;">
             <b style="font-size: 30px;">
               <a style="color: rgb(0, 90, 255); text-decoration: none;" target="_blank" href="https://www.researchgate.net/publication/318208930_The_Industry_40_Standards_Landscape_from_a_Semantic_Integration_Perspective">Standard Ontology</a>
             </b>
@@ -51,10 +36,8 @@
             One of the ways of enriching the ontology is to use some third-party sources that provide an access to structured data in the area of our interest. DBpedia can be considered as a reliable source of the structured data which provides a large number of ways of working with the system. The amount of information stored in this knowledgebase is incredible and gives an opportunity to conduct a large study on the knowledge related to manufacture systems. In order to simplify “mining” of the DBpedia, a web interface has been introduced with which it is easy to query any data from DBpedia, push it right away to the STO and check the result.              
           </span>
         </div>
-        
       </div>
     </div>
-
     <script src="node_modules/axios/dist/axios.min.js"></script>
     <script src="js/main.js"></script>
   </body>
