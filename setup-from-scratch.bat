@@ -10,7 +10,7 @@ CALL npm i
 ECHO.-----Starting the server-----
 cd ..\back
 CALL conda env create -f dev_environment.yml
-CALL activate SpaceAtlas
+CALL activate websto
 python run.py
 
 ECHO ON
