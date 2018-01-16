@@ -20,8 +20,9 @@ def main():
     #mtx_to_csv(mtx, sub_list, prop_list)
     sub_list, prop_list = prefix_assign(sub_list, prop_list)
     mtx, sub_list, prop_list = mtx_cleaner(mtx, sub_list, prop_list, False)
-    mtx_to_csv(mtx, sub_list, prop_list)
-    mtx_to_dep(mtx, sub_list, prop_list)
+    subclasses(mtx, prop_list)
+    #mtx_to_csv(mtx, sub_list, prop_list)
+    #mtx_to_dep(mtx, sub_list, prop_list)
 
 
 def construct_mtx(query_result):
@@ -79,23 +80,28 @@ def sum_rows(x):
 
 def mtx_cleaner(mtx, sub_list, prop_list, is_sum):
     print('--> cleaning matrix...')
-    sub_num = 20
-    thld = 16
+    sub_num = mtx.shape[0]
+    #prop_num = 20
+    thld = 4
 
     mtx_sums = np.apply_along_axis(sum_rows, axis=0, arr=mtx)
     sort_args = mtx_sums.argsort()
     new_mtx_sums = mtx_sums[sort_args]
     new_prop_list = np.asarray(prop_list)[sort_args]
-    thld_args = np.where(new_mtx_sums == thld)
-    last_thld_arg = thld_args[0][len(thld_args[0])-1] + 1
+    is_thld = False
+    while not is_thld:
+        thld_args = np.where(new_mtx_sums == thld)
+        thld = thld + 1
+        is_thld = len(thld_args[0])
+    last_arg = thld_args[0][len(thld_args[0])-1] + 1
     new_mtx = mtx[0:sub_num, sort_args]
     new_sub_list = np.asarray(sub_list)[0:sub_num]
     if is_sum:
         new_mtx = np.vstack([new_mtx, np.zeros(mtx.shape[1])])
         new_mtx[new_mtx.shape[0] - 1][:] = new_mtx_sums
         new_sub_list = np.append(new_sub_list, 'SUM')
-    sort_new_mtx = new_mtx[:, last_thld_arg:]
-    return sort_new_mtx, new_sub_list, new_prop_list[last_thld_arg:]
+    sort_new_mtx = new_mtx[:, last_arg:]
+    return sort_new_mtx, new_sub_list, new_prop_list[last_arg:]
 
 
 def prefix_assign(sub_list, prop_list):
@@ -165,6 +171,29 @@ def mtx_to_dep(mtx, sub_list, prop_list):
     arr_txt = str(data.astype(int).tolist())
     text_file.write(arr_txt) #np.array2string(data.astype(int), separator=', ')
     text_file.close()
+
+
+def subclass(x):
+    #has_minus_one = len(np.where(x == -1)[0])
+    has_plus_one = len(np.where(x == 1)[0])
+    if has_plus_one:
+        return False
+    else:
+        return True
+
+
+def subclasses(mtx, prop_list):
+    subs_mtx = np.empty((mtx.shape[1], mtx.shape[1]), dtype=object)
+    for cnt, column in enumerate(np.transpose(mtx)):           
+        new_mtx = np.transpose(mtx) - column
+        res_vec = np.apply_along_axis(subclass, axis=1, arr=new_mtx)
+        res_vec[cnt] = False
+        subs = np.where(res_vec == True)[0]
+        subs_mtx[0][cnt] = prop_list[cnt]
+        if len(subs) > 0:
+            subs_mtx[1:len(subs)+1, cnt] = prop_list[subs]
+        subs_mtx[len(subs)+1:, cnt] = ''
+    np.savetxt("subs.csv", subs_mtx.astype(str), delimiter=";", fmt="%s")
 
 
 if __name__ == "__main__":
