@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" prefix="og: http://ogp.me/ns#">
+  <!-- Use the Source, Luke -->
+  <head>
+    <title>DependencyWheel: An Interactive Visualization Of Package Dependencies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dependencywheel.css">
+    <link href='http://fonts.googleapis.com/css?family=Rosario:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="container">
+    <div id="chart_placeholder"></div>
+  </div>
+  <script src="js/d3.v4.min.js"></script>
+  <script src="js/d3.dependencyWheel.js"></script>
+  <script src="js/composerBuilder.js"></script>
+  <script>
+    //https://raw.githubusercontent.com/i40-Tools/SemI40STOLandscape/sto-graph/src/wheel/data.txt
+    //https://raw.githubusercontent.com/i40-Tools/SemI40STOLandscape/sto-graph/src/wheel/names.txt
+    d3.json("data/data.txt", function(mtx) {
+      d3.json("data/names.txt", function(names) {
+        var data = {
+          packageNames: names,
+          matrix: mtx
+        }
+
+        var chart = d3.chart.dependencyWheel()
+          .width(1000)    // also used for height, since the wheel is in a a square
+          .margin(250)   // used to display package names
+          .padding(.02); // separating groups in the wheel
+
+        d3.select('#chart_placeholder')
+          .datum(data)
+          .call(chart);
+      })
+    })
+  </script>
+</body>
+</html>

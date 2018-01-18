@@ -58,6 +58,20 @@ def vowl():
     return app.send_static_file('vowl.html')
 
 
+@app.route('/wheel')
+def wheel():
+    """wheel route."""
+    logger.info("route: /wheel")
+    return app.send_static_file('wheel.html')
+
+
+@app.route('/notebook')
+def notebook():
+    """notebook route."""
+    logger.info("route: /notebook")
+    return app.send_static_file('notebook.html')
+
+
 @app.route('/node_modules/<path:path>')
 def send_node_modules(path):
     """Server static files from node_modules."""

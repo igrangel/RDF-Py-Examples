@@ -1,0 +1,14 @@
+h1, p, li { font-family: 'Rosario', sans-serif; }
+h1 {
+  font-size: 4em;
+  font-weight: 300;
+  letter-spacing: -2px;
+  line-height: 1em;
+  margin: 1em 0;
+}
+#chart_placeholder {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.dependencyWheel { font: 10px sans-serif; }
+form .btn-primary { margin-top: 25px; }
