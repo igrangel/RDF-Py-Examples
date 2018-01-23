@@ -1,0 +1,19 @@
+sto:hasClassification -> rami:Product;sto:hasClassification -> rami:FieldDevice;rdf:type -> dby:Group100031264;rdf:type -> dby:Communication100033020;rdf:type -> dby:YagoPermanentlyLocatedEntity;sto:hasClassification -> rami:ControlDevice;rdf:type -> dbo:Organisation;rdf:type -> owl:AnnotationProperty;rdf:type -> owl:Thing;rdf:type -> owl:Class;rdf:type -> sto:StandardOrganization;rdf:type -> dby:Standard107260623;rdf:type -> dby:SystemOfMeasurement113577171;rdf:type -> dby:Measure100033615;sto:publisher -> sto:ISO;sto:publisher -> sto:IEC;rdf:type -> dby:Abstraction100002137;rdf:type -> sto:Standard;rdf:type -> owl:NamedIndividual
+rdf:type -> owl:AnnotationProperty;rdf:type -> owl:AnnotationProperty;rdf:type -> owl:AnnotationProperty;rdf:type -> owl:AnnotationProperty;rdf:type -> owl:AnnotationProperty;sto:hasClassification -> rami:Product;rdf:type -> owl:AnnotationProperty;rdf:type -> owl:Class;rdf:type -> owl:AnnotationProperty;rdf:type -> owl:AnnotationProperty;rdf:type -> owl:AnnotationProperty;rdf:type -> owl:AnnotationProperty;rdf:type -> owl:AnnotationProperty;rdf:type -> owl:AnnotationProperty;rdf:type -> owl:AnnotationProperty;rdf:type -> owl:AnnotationProperty;rdf:type -> dby:Group100031264;sto:hasClassification -> rami:Product;sto:hasClassification -> rami:Product
+rdf:type -> owl:Class;rdf:type -> owl:Class;rdf:type -> owl:Class;rdf:type -> owl:Class;rdf:type -> owl:Class;sto:hasClassification -> rami:FieldDevice;rdf:type -> owl:Class;;rdf:type -> owl:Class;;rdf:type -> owl:Class;rdf:type -> owl:Class;rdf:type -> owl:Class;rdf:type -> owl:Class;rdf:type -> owl:Class;rdf:type -> owl:Class;rdf:type -> dby:Communication100033020;sto:hasClassification -> rami:FieldDevice;sto:hasClassification -> rami:FieldDevice
+;;;;;rdf:type -> owl:AnnotationProperty;;;;;;rdf:type -> dby:SystemOfMeasurement113577171;rdf:type -> dby:Standard107260623;rdf:type -> dby:Standard107260623;;;rdf:type -> dby:YagoPermanentlyLocatedEntity;sto:hasClassification -> rami:ControlDevice;rdf:type -> dby:Group100031264
+;;;;;rdf:type -> owl:Class;;;;;;rdf:type -> dby:Measure100033615;rdf:type -> dby:Measure100033615;rdf:type -> dby:SystemOfMeasurement113577171;;;rdf:type -> owl:AnnotationProperty;rdf:type -> owl:AnnotationProperty;rdf:type -> dby:Communication100033020
+;;;;;;;;;;;;;;;;rdf:type -> owl:Class;rdf:type -> owl:Class;rdf:type -> dby:YagoPermanentlyLocatedEntity
+;;;;;;;;;;;;;;;;rdf:type -> dby:Standard107260623;rdf:type -> dby:Standard107260623;sto:hasClassification -> rami:ControlDevice
+;;;;;;;;;;;;;;;;rdf:type -> dby:SystemOfMeasurement113577171;rdf:type -> dby:SystemOfMeasurement113577171;rdf:type -> dbo:Organisation
+;;;;;;;;;;;;;;;;rdf:type -> dby:Measure100033615;rdf:type -> dby:Measure100033615;rdf:type -> owl:AnnotationProperty
+;;;;;;;;;;;;;;;;;sto:publisher -> sto:ISO;rdf:type -> owl:Thing
+;;;;;;;;;;;;;;;;;sto:publisher -> sto:IEC;rdf:type -> owl:Class
+;;;;;;;;;;;;;;;;;;rdf:type -> sto:StandardOrganization
+;;;;;;;;;;;;;;;;;;rdf:type -> dby:Standard107260623
+;;;;;;;;;;;;;;;;;;rdf:type -> dby:SystemOfMeasurement113577171
+;;;;;;;;;;;;;;;;;;rdf:type -> dby:Measure100033615
+;;;;;;;;;;;;;;;;;;sto:publisher -> sto:ISO
+;;;;;;;;;;;;;;;;;;sto:publisher -> sto:IEC
+;;;;;;;;;;;;;;;;;;rdf:type -> dby:Abstraction100002137
+;;;;;;;;;;;;;;;;;;rdf:type -> sto:Standard

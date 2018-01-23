@@ -1,0 +1,191 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dbo: <http://dbpedia.org/ontology#> .
+@prefix dbont: <http://dbpedia.org/ontology/> .
+@prefix dbprop: <http://dbpedia.org/property/> .
+@prefix dbr: <http://dbpedia.org/resource#> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.geonames.org/ontology#> .
+@prefix lingg: <http://purl.org/linguistics/gold/> .
+@prefix muto: <http://purl.org/muto/core#> .
+@prefix nsprov: <http://www.w3.org/ns/prov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rami: <https://w3id.org/i40/rami#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sto: <https://w3id.org/i40/sto#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix vocvr: <http://purl.org/voc/vrank#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sto:BPMN a owl:NamedIndividual,
+        sto:Standard ;
+    rdfs:label "Business Process Model and Notation"@de,
+        "BPMN"@en,
+        "Business Process Model and Notation"@en,
+        "Business Process Model and Notation"@es,
+        "Business Process Model and Notation"@fr,
+        "ビジネスプロセスモデリング表記法"@ja,
+        "Business Process Model and Notation"@nl,
+        "Business Process Modeling Notation"@pl,
+        "Business Process Modeling Notation"@pt,
+        "BPMN"@ru,
+        "业务流程建模标记法"@zh ;
+    dbont:abstract "Die Business Process Model and Notation (BPMN, deutsch Geschäftsprozessmodell und -notation) ist eine grafische Spezifikationssprache in der Wirtschaftsinformatik und im Prozessmanagement. Sie stellt Symbole zur Verfügung, mit denen Fach-, Methoden- und Informatikspezialisten Geschäftsprozesse und Arbeitsabläufe modellieren und dokumentieren können."@de,
+        "Business Process Model and Notation (BPMN) is a graphical representation for specifying business processes in a business process model. Business Process Management Initiative (BPMI) developed BPMN, which has been maintained by the Object Management Group since the two organizations merged in 2005. Version 2.0 of BPMN was released in January 2011, at which point the name was adapted to Business Process Model and Notation as execution semantics were also introduced alongside the notational and diagramming elements."@en,
+        "Business Process Model and Notation (BPMN), en español Modelo y Notación de Procesos de Negocio, es una notación gráfica estandarizada que permite el modelado de procesos de negocio, en un formato de flujo de trabajo (workflow). BPMN fue inicialmente desarrollada por la organización Business Process Management Initiative (BPMI), y es actualmente mantenida por el Object Management Group (OMG), después de la fusión de las dos organizaciones en el año 2005. Su versión actual, es la 2.0.2. El principal objetivo de BPMN es proporcionar una notación estándar que sea fácilmente legible y entendible por parte de todos los involucrados e interesados del negocio (stakeholders). Entre estos interesados están los analistas de negocio (quienes definen y redefinen los procesos), los desarrolladores técnicos (responsables de implementar los procesos) y los gerentes y administradores del negocio (quienes monitorizan y gestionan los procesos). En síntesis, BPMN tiene la finalidad de servir como lenguaje común para cerrar la brecha de comunicación que frecuentemente se presenta entre el diseño de los procesos de negocio y su implementación. La gestión por procesos se confirma como uno de los mejores sistemas de organización empresarial para conseguir índices de calidad, productividad y excelencia. . En un contexto empresarial y económico tan complejo, globalizado y competitivo como el actual, la gestión de procesos se ha convertido en una necesidad para las empresas, no para tener éxito, sino incluso también para subsistir. Actualmente hay una amplia variedad de lenguajes, herramientas y metodologías para el modelado de procesos de negocio. La adopción cada vez mayor de la notación BPMN como estándar, ayudará a unificar la expresión de conceptos básicos de procesos de negocio (por ejemplo: procesos públicos y privados, orquestación, coreografía, etcétera) así como conceptos avanzados de modelado (por ejemplo: manejo de excepciones, compensación de transacciones, entre otros)."@es,
+        "Le Business Process Model and Notation (BPMN) est un modèle de processus métier et une notation graphique standardisée pour modéliser le savoir-faire d'une organisation à travers l'approche processus. La première version était connue sous le nom de Business Process Modeling Notation. Business Process Model and Notation a été développée au départ par la Business Process Management Initiative (BPMI), et est maintenant maintenue par l'Object Management Group (OMG) depuis leur fusion en 2005. Depuis mars 2011, la version actuelle de BPMN est la 2.0."@fr,
+        "ビジネスプロセスモデリング表記法（英語: Business Process Modeling Notation, BPMN）とは、ワークフローとしてビジネスプロセスを描画するグラフィカルな標準記法である。BPMN は Business Process Management Initiative (BPMI) が開発し、Object Management Group (OMG) と BPMI が 2005年に合併した後は OMG が保守している。 BPMN の目的はすべてのビジネス関係者が容易に理解できる標準記法を提供することである。ビジネス関係者には、プロセスの作成・更新を行うビジネスアナリスト、プロセスの実装を行う技術者、プロセスを管理するマネージャなどが含まれる。さらに BPMN はビジネスプロセスと実装の間によく発生するコミュニケーションギャップを埋めることを意図している。 現在、ビジネスプロセスモデリング言語・ツール・方法論は多数存在している。BPMN はそれらの表現を統一する可能性を持っている。 2009年11月現在、BPMN の最新版は 1.2 である。BPMN 2.0 への主要な改訂手続きは進行中であり、正式な移行までにはまだ数年を要すると思われる。"@ja,
+        "De Business Process Model and Notation (BPMN) is een standaard voor procesmodellering. Eerder stond het bekend als Business Process Modeling Notation. Het wordt onderhouden door de Object Management Group. De huidige versie BPMN 2.0.2 is gelanceerd in december 2013."@nl,
+        """Business Process Model and Notation, BPMN (Notacja i Model Procesu biznesowego) – graficzna notacja służąca do opisywania procesów biznesowych. Powstała w ramach Business Process Management Initiative, obecnie jest utrzymywana przez konsorcjum Object Management Group. Aktualna wersja standardu to 2.0. We wcześniejszych wersjach nazwa BPMN była rozwijana jako Business Process Modeling Notation. Dużą zaletą tej notacji jest jej jednoznaczność, przydatność zarówno do opisów procesów na potrzeby oprogramowania klasy ERP, jak i Workflow oraz to, że wspiera ją ponad 70 narzędzi. Notację tę obsługują m.in. narzędzia iGrafx, ADONIS, Borland, DYSANT i IBM. iGrafx oferuje również możliwość przejścia z modelu BPMN na model BPEL. Narzędzia DYSANT umożliwają z kolei zarówno modelowanie procesów przy wykorzystaniu standardu BPMN i wymianę definicji procesów z innymi narzędziami i środowiskami wykonawczymi przy wykorzystaniu standardów XPDL i BPMN 2.0. Metodą wymiany danych pomiędzy narzędziami BPMN są XPDL i BPMN DI (XML format zapisu modeli BPMN). Istnieje też jednoznaczna metoda tłumaczenia z BPMN do BPEL jednakże BPEL nie obsługuje wszystkich dozwolonych konstrukcji BPMN. BPMN opisuje dwa typy relacji procesów: 
+*  Orkiestrację – sposób realizacji procesu opisywaną modelem Procesu wewnętrznego – prywatnego private (internal) business process, 
+*  Choreografię – sposób współdziałania procesów, którą można zapisać diagramami: 
+*  Procesu publicznego – skróconego abstract – public 
+*  Procesu kooperacji – współpracy B2B Collaboration – global process 
+*  Choreografii – Choreography diagram Złożone struktury choreografii można zapisać diagramem: 
+*  Konwersacji – „Conversation” Podstawowe kategorie elementów graficznych BPMN: 
+*  elementy aktywne przepływu – flow objects 
+*  czynności 
+*  zdarzenia 
+*  bramki 
+*  połączenia – connecting objects 
+*  miejsca realizacji procesu – pools, swimlanes 
+*  obiekty danych – data objects 
+*  artefakty – artifacts, elementy graficzne nie będące elementami przepływu; służą umieszczaniu informacji uzupełniających. Trzy artefakty są zdefiniowane w BPMN: komunikaty, adnotacje i grupy. Można dodawać własne artefakty. Notacja BPMN zakłada operowanie trzema podstawowymi typami obiektów aktywnych (przepływu): 
+*  Zdarzenie Event – symbolizowane przez okrąg. Zdarzenia mogą być początkowe (pojedyncza cienka linia ciągła), pośrednie (podwójna cienka linia ciągła) i końcowe (pojedyncza gruba linia ciągła). Występują następujące typy zdarzeń: 
+*  nieokreślone, 
+*  komunikat, 
+*  sygnał, 
+*  zasada, 
+*  czas, 
+*  anulowanie, 
+*  zerwanie (terminacja), 
+*  usterka, 
+*  eskalacja 
+*  kompensacja, 
+*  łącze 
+*  wielokrotne. 
+*  Czynność – symbolizowane przez prostokąt z zaokrąglonymi rogami. Czynność to „praca” wykonywana w procesie lub w przypadku diagramów choreografii „współpraca” wykonywana pomiędzy procesami. Czynnościami mogą być: 
+*  Zadanie Task – czynność niezdekomponowana, 
+*  Podproces Sub-Process – czynność zdekomponowana posiadająca opisana innymi zadaniami lub podprocesami logikę wykonania. 
+*  Bramka logiczna Gateway – symbolizowaną przez romb. Bramki mogą rozdzielać lub łączyć przepływy. Swoistym elementem aktywnym jest Konwersacja – czyli uporządkowana wymiana komunikatów pomiędzy uczestnikami obrazowana za pomocą sześciokąta na powiązaniu konwersacyjnym. Połączenia: 
+*  Linia ciągła – przebieg procesu – sequence flow 
+*  Linia przerywana – przebieg wiadomości (komunikatów) – message flow 
+*  Linia kropkowana: 
+*  powiązanie – association 
+*  powiązanie danych – data association' 
+*  Linia podwójna – powiązanie konwersacyjne – Conversation Link Miejsca realizacji procesu: 
+*  Uczestnicy, pule pools, reprezentujące uczestników procesu (np. firmy / systemy informatyczne) i opisujące zwykle sytuacje B2B; 
+*  Tory lanes, będące elementami struktury organizacyjnej na jakie dzielimy w razie potrzeby uczestników (najczęściej role biznesowe występujące u danego uczestnika); specyfikacja nie definiuje sposobu wykorzystywania torów."""@pl,
+        "O Business Process Model and Notation (BPMN, anteriormente conhecido como Business Process Modeling Notation) (em português Notação de Modelagem de Processos de Negócio) é uma notação da metodologia de gerenciamento de processos de negócio e trata-se de uma série de ícones padrões para o desenho de processos, o que facilita o entendimento do usuário. A modelagem é uma etapa importante da automação pois é nela que os processos são descobertos e desenhados. É nela também que pode ser feita alguma alteração no percurso do processo visando a sua otimização. A notação também pode ser utilizada para a modelagem de Arquitetura de Processos. Foi desenvolvido pela Business Process Management Initiative (BPMI) e atualmente é mantida pelo Object Management Group já que as duas organizações se fundiram em 2005. Em março de 2011, a versão atual do BPMN é a 2.0."@pt,
+        "BPMN (англ. Business Process Model and Notation, нотация и модель бизнес-процессов)  — система условных обозначений (нотация) для моделирования бизнес-процессов. Разработана Business Process Management Initiative (BPMI.org) и поддерживается Object Management Group, после слияния организаций в 2005 году. Последняя версия BPMN — 2.0, предыдущая версия — 1.2."@ru,
+        "业务流程建模标记法（BPMN, Business Process Modeling Notation）是工作流中特定业务流程的图形化表示法。它由业务流程管理倡议组织（BPMI, Business Process Management Initiative）开发，该组织已于2005年与对象管理组织（OMG, Object Management Group）合并，从那时起，BPMN由OMG维护。BPMN当前版本为1.2，2009年1月发布，有重要修改的2.0版已经进入投票阶段。"@zh ;
+    dbont:thumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/BPMN-AProcesswithNormalFlow.svg?width=300> ;
+    dbont:wikiPageExternalLink <http://ryanko.files.wordpress.com/2008/03/bpm-journal-koleelee-bpms-survey.pdf>,
+        <http://www.bpmn.org/>,
+        <http://www.bpmn.org/Documents/Mapping_BPMN_to_BPEL_Example.pdf>,
+        <http://www.nomagic.com/component/phocadownload/category/1-quick-reference-guides.html?download=1:bpmn-quick-reference-guide>,
+        <http://www.omg.org/spec/BPMN/>,
+        <https://bpmnmatrix.github.io/>,
+        <https://code.google.com/p/bpmn2bpel/> ;
+    dbont:wikiPageID 3015586 ;
+    dbont:wikiPageRevisionID 744737650 ;
+    dbont:wikiPageWikiLink <http://dbpedia.org/resource/Abstraction>,
+        <http://dbpedia.org/resource/Activity_diagram>,
+        <http://dbpedia.org/resource/BPDM>,
+        <http://dbpedia.org/resource/BPEL>,
+        <http://dbpedia.org/resource/Business-to-business>,
+        <http://dbpedia.org/resource/Business_Process_Execution_Language>,
+        <http://dbpedia.org/resource/Business_Process_Management>,
+        <http://dbpedia.org/resource/Business_Process_Management_Initiative>,
+        <http://dbpedia.org/resource/Business_Process_Modeling>,
+        <http://dbpedia.org/resource/Business_process>,
+        <http://dbpedia.org/resource/Business_process_design>,
+        <http://dbpedia.org/resource/Business_process_management>,
+        <http://dbpedia.org/resource/Business_process_modeling>,
+        <http://dbpedia.org/resource/Business_rules>,
+        <http://dbpedia.org/resource/CMMN>,
+        <http://dbpedia.org/resource/Category:Business_process_modelling>,
+        <http://dbpedia.org/resource/Category:Diagrams>,
+        <http://dbpedia.org/resource/Category:ISO_standards>,
+        <http://dbpedia.org/resource/Category:Specification_languages>,
+        <http://dbpedia.org/resource/Category:Workflow_technology>,
+        <http://dbpedia.org/resource/Comparison_of_Business_Process_Modeling_Notation_tools>,
+        <http://dbpedia.org/resource/Computational_semantics>,
+        <http://dbpedia.org/resource/Control_flow>,
+        <http://dbpedia.org/resource/Cross_functional_flowchart>,
+        <http://dbpedia.org/resource/Data_flow_diagram>,
+        <http://dbpedia.org/resource/Decision_Model_and_Notation>,
+        <http://dbpedia.org/resource/Decision_model>,
+        <http://dbpedia.org/resource/Event-driven_Process_Chains>,
+        <http://dbpedia.org/resource/File:BPMN-AProcesswithNormalFlow.svg>,
+        <http://dbpedia.org/resource/Flowchart>,
+        <http://dbpedia.org/resource/Function_model>,
+        <http://dbpedia.org/resource/Functional_Software_Architecture>,
+        <http://dbpedia.org/resource/Human-readable>,
+        <http://dbpedia.org/resource/Information_visualization>,
+        <http://dbpedia.org/resource/Interactions>,
+        <http://dbpedia.org/resource/Logical_conjunction>,
+        <http://dbpedia.org/resource/Logical_disjunction>,
+        <http://dbpedia.org/resource/Mathias_Weske>,
+        <http://dbpedia.org/resource/Metamodeling>,
+        <http://dbpedia.org/resource/Object_Management_Group>,
+        <http://dbpedia.org/resource/Process_Driven_Messaging_Service>,
+        <http://dbpedia.org/resource/Serialization>,
+        <http://dbpedia.org/resource/Service_Component_Architecture>,
+        <http://dbpedia.org/resource/Swim_lane>,
+        <http://dbpedia.org/resource/Transaction_processing>,
+        <http://dbpedia.org/resource/Unified_Modeling_Language>,
+        <http://dbpedia.org/resource/Web_Service_Choreography>,
+        <http://dbpedia.org/resource/Workflow>,
+        <http://dbpedia.org/resource/Workflow_patterns>,
+        <http://dbpedia.org/resource/XML>,
+        <http://dbpedia.org/resource/XOR>,
+        <http://dbpedia.org/resource/XPDL>,
+        <http://dbpedia.org/resource/YAWL> ;
+    dcterms:subject <http://dbpedia.org/resource/Category:Business_process_modelling>,
+        <http://dbpedia.org/resource/Category:Diagrams>,
+        <http://dbpedia.org/resource/Category:ISO_standards>,
+        <http://dbpedia.org/resource/Category:Specification_languages>,
+        <http://dbpedia.org/resource/Category:Workflow_technology> ;
+    lingg:hypernym <http://dbpedia.org/resource/Representation> ;
+    rdfs:comment "Die Business Process Model and Notation (BPMN, deutsch Geschäftsprozessmodell und -notation) ist eine grafische Spezifikationssprache in der Wirtschaftsinformatik und im Prozessmanagement. Sie stellt Symbole zur Verfügung, mit denen Fach-, Methoden- und Informatikspezialisten Geschäftsprozesse und Arbeitsabläufe modellieren und dokumentieren können."@de,
+        "Business Process Model and Notation  is a graphical representation for specifying business processes in a business process model."@en,
+        "Business Process Model and Notation (BPMN) is a graphical representation for specifying business processes in a business process model. Business Process Management Initiative (BPMI) developed BPMN, which has been maintained by the Object Management Group since the two organizations merged in 2005. Version 2.0 of BPMN was released in January 2011, at which point the name was adapted to Business Process Model and Notation as execution semantics were also introduced alongside the notational and diagramming elements."@en,
+        "Business Process Model and Notation (BPMN), en español Modelo y Notación de Procesos de Negocio, es una notación gráfica estandarizada que permite el modelado de procesos de negocio, en un formato de flujo de trabajo (workflow). BPMN fue inicialmente desarrollada por la organización Business Process Management Initiative (BPMI), y es actualmente mantenida por el Object Management Group (OMG), después de la fusión de las dos organizaciones en el año 2005. Su versión actual, es la 2.0.2."@es,
+        "Le Business Process Model and Notation (BPMN) est un modèle de processus métier et une notation graphique standardisée pour modéliser le savoir-faire d'une organisation à travers l'approche processus. La première version était connue sous le nom de Business Process Modeling Notation. Business Process Model and Notation a été développée au départ par la Business Process Management Initiative (BPMI), et est maintenant maintenue par l'Object Management Group (OMG) depuis leur fusion en 2005. Depuis mars 2011, la version actuelle de BPMN est la 2.0."@fr,
+        "ビジネスプロセスモデリング表記法（英語: Business Process Modeling Notation, BPMN）とは、ワークフローとしてビジネスプロセスを描画するグラフィカルな標準記法である。BPMN は Business Process Management Initiative (BPMI) が開発し、Object Management Group (OMG) と BPMI が 2005年に合併した後は OMG が保守している。 BPMN の目的はすべてのビジネス関係者が容易に理解できる標準記法を提供することである。ビジネス関係者には、プロセスの作成・更新を行うビジネスアナリスト、プロセスの実装を行う技術者、プロセスを管理するマネージャなどが含まれる。さらに BPMN はビジネスプロセスと実装の間によく発生するコミュニケーションギャップを埋めることを意図している。 現在、ビジネスプロセスモデリング言語・ツール・方法論は多数存在している。BPMN はそれらの表現を統一する可能性を持っている。 2009年11月現在、BPMN の最新版は 1.2 である。BPMN 2.0 への主要な改訂手続きは進行中であり、正式な移行までにはまだ数年を要すると思われる。"@ja,
+        "De Business Process Model and Notation (BPMN) is een standaard voor procesmodellering. Eerder stond het bekend als Business Process Modeling Notation. Het wordt onderhouden door de Object Management Group. De huidige versie BPMN 2.0.2 is gelanceerd in december 2013."@nl,
+        """Business Process Model and Notation, BPMN (Notacja i Model Procesu biznesowego) – graficzna notacja służąca do opisywania procesów biznesowych. Powstała w ramach Business Process Management Initiative, obecnie jest utrzymywana przez konsorcjum Object Management Group. Aktualna wersja standardu to 2.0. We wcześniejszych wersjach nazwa BPMN była rozwijana jako Business Process Modeling Notation. BPMN opisuje dwa typy relacji procesów: Złożone struktury choreografii można zapisać diagramem: 
+*  Konwersacji – „Conversation” Podstawowe kategorie elementów graficznych BPMN: Połączenia:"""@pl,
+        "O Business Process Model and Notation (BPMN, anteriormente conhecido como Business Process Modeling Notation) (em português Notação de Modelagem de Processos de Negócio) é uma notação da metodologia de gerenciamento de processos de negócio e trata-se de uma série de ícones padrões para o desenho de processos, o que facilita o entendimento do usuário. A modelagem é uma etapa importante da automação pois é nela que os processos são descobertos e desenhados. É nela também que pode ser feita alguma alteração no percurso do processo visando a sua otimização. A notação também pode ser utilizada para a modelagem de Arquitetura de Processos."@pt,
+        "BPMN (англ. Business Process Model and Notation, нотация и модель бизнес-процессов)  — система условных обозначений (нотация) для моделирования бизнес-процессов. Разработана Business Process Management Initiative (BPMI.org) и поддерживается Object Management Group, после слияния организаций в 2005 году. Последняя версия BPMN — 2.0, предыдущая версия — 1.2."@ru,
+        "业务流程建模标记法（BPMN, Business Process Modeling Notation）是工作流中特定业务流程的图形化表示法。它由业务流程管理倡议组织（BPMI, Business Process Management Initiative）开发，该组织已于2005年与对象管理组织（OMG, Object Management Group）合并，从那时起，BPMN由OMG维护。BPMN当前版本为1.2，2009年1月发布，有重要修改的2.0版已经进入投票阶段。"@zh ;
+    owl:sameAs <http://cs.dbpedia.org/resource/Business_Process_Model_and_Notation>,
+        <http://de.dbpedia.org/resource/Business_Process_Model_and_Notation>,
+        <http://es.dbpedia.org/resource/Business_Process_Model_and_Notation>,
+        <http://fr.dbpedia.org/resource/Business_Process_Model_and_Notation>,
+        <http://ja.dbpedia.org/resource/ビジネスプロセスモデリング表記法>,
+        <http://nl.dbpedia.org/resource/Business_Process_Model_and_Notation>,
+        <http://pl.dbpedia.org/resource/Business_Process_Modeling_Notation>,
+        <http://pt.dbpedia.org/resource/Business_Process_Modeling_Notation>,
+        <http://rdf.freebase.com/ns/m.08kq3d>,
+        <http://wikidata.dbpedia.org/resource/Q1017605>,
+        <http://www.wikidata.org/entity/Q1017605> ;
+    nsprov:wasDerivedFrom <http://en.wikipedia.org/wiki/Business_Process_Model_and_Notation?oldid=744737650> ;
+    foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/BPMN-AProcesswithNormalFlow.svg> ;
+    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Business_Process_Model_and_Notation> ;
+    sto:developer sto:OMG ;
+    sto:hasClassification sto:SCM ;
+    sto:hasDBpediaResource "http://dbpedia.org/page/Business_Process_Model_and_Notation" ;
+    sto:hasOfficialResource "http://www.bpmn.org/" ;
+    sto:hasTag "BPMN"@en .
+
