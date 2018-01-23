@@ -13,32 +13,14 @@
       <div id="headPC"></div>
       <div class="s-main">
         <div id="headMobile"></div>
-        <div class="s-content">
-          <div class="query-form">
-            <select id="ontology" onchange="ontologyChange()">
-              <option value="sto">Standard Ontology</option>
-              <option value="dbp">DBpedia</option>
-            </select>
-            <div style="display: flex; flex-direction: row;">
-              <textarea id="query" rows="10" cols="45" name="text" class="query-textarea"></textarea>
-              <div class="fav-block">
-                <b>Last 10 queries:</b>
-                <span id="queryStack"></span>
-              </div>
-            </div>
-            <button onclick="sendQuery()">send query</button>
-          </div>
-          <img src="img/spinner.gif" id="spinner" class="spinner" />
-          <div id="queryResult" class="query-result"></div>
-          <div id="queryResultInfo" class="query-result-info">
-            <span>number of rows: <span id="rowsNum">0</span></span>
-            <span>number of cols: <span id="colsNum">0</span></span>
-          </div>
+        <div id="sContent" class="s-content">
+          <input type="button" value="new notebook" onclick="newNotebook()"></input>
         </div>
       </div>
     </div>
     <script src="node_modules/axios/dist/axios.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/editor.js"></script>
+    <!--script src="js/editor.js"></script-->
+    <script src="js/notebook.js"></script>
   </body>
 </html>

@@ -9,4 +9,5 @@ echo "-----Starting the server-----"
 cd ../back
 conda env create -f dev_environment.yml
 source activate websto
+echo "Starting app on localhost:5555/"
 python run.py

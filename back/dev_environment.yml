@@ -6,4 +6,6 @@ dependencies:
     - gevent
     - rdflib
     - SPARQLWrapper
-    - git+https://github.com/ansrivas/pylogging.git
+    - requests
+    - numpy
+    #- git+https://github.com/ansrivas/pylogging.git

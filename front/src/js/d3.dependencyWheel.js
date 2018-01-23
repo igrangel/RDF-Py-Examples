@@ -69,7 +69,7 @@ d3.chart.dependencyWheel = function(options) {
         // color = "hsl(" + parseInt(((packageNames[d.index][0].charCodeAt() - 97) / 26) * 360, 10) + ",90%,70%)";
         // console.log(color)
         console.log(d)
-        if (d.index < 20) return '#ccc'
+        if (d.index < 50) return '#ccc'
         else return 'rgb(110, 121, 248)'
         return
       };
