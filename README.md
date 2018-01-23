@@ -12,9 +12,13 @@ By default, the app will be available on [http://localhost:5555/](http://localho
 
 ## Usage
 Main - Describes the purpose of the website and the area of interest of our research.
+
 Editor - Provides a possibility to query knowledgebases of STO and DBpedia and to add any triple to the STO.
+
 Viewer - Visualizes the STO using the library WebVOWL.
+
 Wheel - Visualizes main entities of the STO using the library DependencyWheel.
+
 Notebook (in development) - Provides a possibility to query the STO / DBpedia and keep all the extracted data in one place.
 
 ### How to prepare data for Wheel
