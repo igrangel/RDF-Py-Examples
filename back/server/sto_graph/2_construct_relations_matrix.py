@@ -18,9 +18,9 @@ def main():
 
     mtx, sub_list, prop_list = construct_mtx(sto.query(sto_query))
     sub_list, prop_list = prefix_assign(sub_list, prop_list)
-    mtx, sub_list, prop_list = mtx_cleaner(mtx, sub_list, prop_list, False)
-    subclasses(mtx, prop_list)
-    mtx_to_csv(mtx, sub_list, prop_list)
+    mtx, sub_list, prop_list = mtx_sorter(mtx, sub_list, prop_list, False)
+    #subclasses(mtx, prop_list)
+    #mtx_to_csv(mtx, sub_list, prop_list)
     mtx_to_dep(mtx, sub_list, prop_list)
 
 
@@ -34,7 +34,8 @@ def construct_mtx(query_result):
         pred = str(row[1])
         obj = str(row[2])
         prop = (pred + ' -> ' + obj).encode('utf-8', 'replace')
-        mtx = mtx_enrich(mtx, sub_list, prop_list, sub, prop)
+        if obj.find('owl#') == -1:
+            mtx = mtx_enrich(mtx, sub_list, prop_list, sub, prop)
     return mtx, sub_list, prop_list
 
 
@@ -64,6 +65,42 @@ def mtx_enrich(mtx, sub_list, prop_list, sub, prop):
     return mtx
 
 
+def sum_rows(x):
+    return sum(x)
+
+
+def mtx_sorter(mtx, sub_list, prop_list, is_sum_in_mtx):
+    print('--> sorting matrix...')
+    sub_num = 50 #mtx.shape[0]
+    prop_num = 20
+    #thld = 16
+
+    mtx_sums = np.apply_along_axis(sum_rows, axis=0, arr=mtx)
+    sorted_args = mtx_sums.argsort()[::-1] # sorting args in desc order
+    mtx_sums_sorted = mtx_sums[sorted_args]
+    prop_list_sorted = np.asarray(prop_list)[sorted_args]
+    mtx_sorted = mtx[:, sorted_args]
+
+    #is_thld = False
+    #while not is_thld:
+    #    thld_args = np.where(mtx_sums_sorted == thld)
+    #    thld = thld + 1
+    #    is_thld = len(thld_args[0])
+    #last_arg = thld_args[0][len(thld_args[0])-1] + 1
+    
+    prop_list_sorted_cut = prop_list_sorted[0:prop_num]
+    sub_list_cut = np.asarray(sub_list)[0:sub_num]
+    mtx_sorted_cut = mtx_sorted[0:sub_num, 0:prop_num]
+    mtx_sums_sorted_cut = mtx_sums_sorted[0:prop_num]
+    
+    if is_sum_in_mtx:
+        mtx_sorted_cut = np.vstack([mtx_sorted_cut, np.zeros(mtx_sorted_cut.shape[1])])
+        mtx_sorted_cut[mtx_sorted_cut.shape[0] - 1][:] = mtx_sums_sorted_cut
+        sub_list_cut = np.append(sub_list_cut, 'SUM')
+
+    return mtx_sorted_cut, sub_list_cut, prop_list_sorted_cut
+
+
 def mtx_to_csv(mtx, sub_list, prop_list):
     print('--> saving as csv...')
     csv_mtx = np.empty((mtx.shape[0] + 1, mtx.shape[1] + 1), dtype=object)
@@ -71,37 +108,6 @@ def mtx_to_csv(mtx, sub_list, prop_list):
     csv_mtx[0, :] = np.insert(np.asarray(prop_list), 0, ''.encode('utf-8', 'replace')) #.astype(str)
     csv_mtx[1:, 1:] = mtx.astype(int)
     np.savetxt("csv/mtx.csv", csv_mtx, delimiter=";", fmt="%s")
-
-
-def sum_rows(x):
-    return sum(x)
-
-
-def mtx_cleaner(mtx, sub_list, prop_list, is_sum):
-    print('--> cleaning matrix...')
-    sub_num = 50 #mtx.shape[0]
-    #prop_num = 20
-    thld = 16
-
-    mtx_sums = np.apply_along_axis(sum_rows, axis=0, arr=mtx)
-    sort_args = mtx_sums.argsort()
-    new_mtx_sums = mtx_sums[sort_args]
-    new_prop_list = np.asarray(prop_list)[sort_args]
-    is_thld = False
-    while not is_thld:
-        thld_args = np.where(new_mtx_sums == thld)
-        thld = thld + 1
-        is_thld = len(thld_args[0])
-    last_arg = thld_args[0][len(thld_args[0])-1] + 1
-    new_mtx = mtx[0:sub_num, sort_args]
-    new_sub_list = np.asarray(sub_list)[0:sub_num]
-    if is_sum:
-        new_mtx = np.vstack([new_mtx, np.zeros(mtx.shape[1])])
-        new_mtx[new_mtx.shape[0] - 1][:] = new_mtx_sums
-        new_sub_list = np.append(new_sub_list, 'SUM')
-    sort_new_mtx = new_mtx[:, last_arg:]
-    print(sort_new_mtx.shape, new_sub_list.shape, new_prop_list[last_arg:].shape)
-    return sort_new_mtx, new_sub_list, new_prop_list[last_arg:]
 
 
 def prefix_assign(sub_list, prop_list):
@@ -154,22 +160,32 @@ def prefix_mapping():
     ]
 
 
+def mtx_cleaner(mtx, sub_list):
+    print('--> cleaning matrix...')
+
+    sub_ind = np.any(mtx > 0, axis=1)
+    new_mtx = mtx[sub_ind, :]
+    sub_list_no_zeros = sub_list[sub_ind]
+    return new_mtx, sub_list_no_zeros
+
 def mtx_to_dep(mtx, sub_list, prop_list):
+    print('--> creating depencdecy matrix...')
+    mtx, sub_list = mtx_cleaner(mtx, sub_list)
+    print('num of subs: ', len(sub_list))
+    #print(mtx.shape, sub_list.shape, prop_list.shape)
     names = np.append(sub_list, prop_list)
     data = np.zeros((len(names), len(names)))
     data[:len(sub_list), len(sub_list):] = mtx
     data[len(sub_list):, :len(sub_list)] = np.transpose(mtx) #np.flipud(np.rot90(mtx))
-    #np.savetxt("wheel/names.txt", names.astype(str), delimiter=", ", fmt="%s")
-    #np.savetxt("wheel/data.txt", data.astype(int), delimiter=", ", fmt="%s")
+
     text_file = open("wheel/names.txt", "w")
     names_txt = np.array2string(names.astype(str), separator=', ', max_line_width=np.inf)
     text_file.write(names_txt.replace('\'', '"'))
     text_file.close()
 
     text_file = open("wheel/data.txt", "w")
-    #arr_txt = data.astype(int).tostring().decode('utf-8')
     arr_txt = str(data.astype(int).tolist())
-    text_file.write(arr_txt) #np.array2string(data.astype(int), separator=', ')
+    text_file.write(arr_txt)
     text_file.close()
 
 
@@ -183,6 +199,7 @@ def subclass(x):
 
 
 def subclasses(mtx, prop_list):
+    print('--> extracting subclasses...')
     subs_mtx = np.empty((mtx.shape[1], mtx.shape[1]), dtype=object)
     for cnt, column in enumerate(np.transpose(mtx)):           
         new_mtx = np.transpose(mtx) - column
