@@ -1,3 +1,9 @@
+* {
+  font-family: initial;
+  line-height: initial;
+  text-decoration: none !important;
+}
+
 h1, p, li { font-family: 'Rosario', sans-serif; }
 h1 {
   font-size: 4em;
@@ -8,7 +14,55 @@ h1 {
 }
 #chart_placeholder {
   text-align: center;
-  margin-bottom: 20px;
 }
 .dependencyWheel { font: 10px sans-serif; }
 form .btn-primary { margin-top: 25px; }
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.right-menu {
+  position: absolute;
+  background-color: #18202A;
+  color: white;
+  right: 0;
+  height: calc(100% - 50px);
+  padding: 10px;
+  /*box-shadow: -6px 6px 6px -6px gray;*/
+  width: 200px;
+  transition: all 700ms;
+}
+
+.right-menu-close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 200px;
+  border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+  transition: all 700ms;
+}
+
+.right-menu-arrow {
+  font-size: 16px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.bottom-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  background-color: #18202A;
+  color: white;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

@@ -1,7 +1,7 @@
 """Module for enlarging existing ontology based on knowledge from DBpedia.
 """
 
-from STOLandscape import Ontology, DBpedia
+from .STOLandscape import Ontology, DBpedia
 import numpy as np
 import json
 
@@ -10,7 +10,7 @@ def mtx_main():
     Describes abstract algorithm of the matrix consctructing.
     """
 
-    sto = Ontology('ttl/sto_all.ttl', 'STO')
+    sto = Ontology('server/ttl/sto_all.ttl', 'STO')
     sto_query = """
         SELECT ?sub ?pred ?obj WHERE {
           ?sub ?pred ?obj .
@@ -20,7 +20,7 @@ def mtx_main():
     mtx, sub_list, prop_list = construct_mtx(sto.query(sto_query))
     sub_list, prop_list = prefix_assign(sub_list, prop_list)
     
-    conf = json.load(open('config.json'))
+    conf = json.load(open('server/config.json'))
     mtx, sub_list, prop_list = mtx_sorter(mtx, sub_list, prop_list, conf, False)
 
     #subclasses(mtx, prop_list)
@@ -182,12 +182,12 @@ def mtx_to_dep(mtx, sub_list, prop_list):
     data[:len(sub_list), len(sub_list):] = mtx
     data[len(sub_list):, :len(sub_list)] = np.transpose(mtx) #np.flipud(np.rot90(mtx))
 
-    text_file = open("wheel/names.txt", "w")
+    text_file = open("../front/src/data/names.txt", "w")
     names_txt = np.array2string(names.astype(str), separator=', ', max_line_width=np.inf)
     text_file.write(names_txt.replace('\'', '"'))
     text_file.close()
 
-    text_file = open("wheel/data.txt", "w")
+    text_file = open("../front/src/data/data.txt", "w")
     arr_txt = str(data.astype(int).tolist())
     text_file.write(arr_txt)
     text_file.close()

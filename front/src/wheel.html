@@ -17,7 +17,30 @@
         <div id="headMobile"></div>
         <!--div class="s-content"></div-->
           <div class="container">
-            <div id="chart_placeholder"></div>
+            <div style="display: flex; flex-direction: row;">
+              <div id="chart_placeholder"></div>
+              <div id="rightMenu" class="right-menu">
+                  <b>Prefixes:</b>
+                  <br><b>sto:</b> http://sto.ru
+                  <br><b>sto:</b> http://sto.ru
+                  <br><b>sto:</b> http://sto.ru
+                  <br><b>sto:</b> http://sto.ru
+                  <br><b>sto:</b> http://sto.ru
+                  <br><b>sto:</b> http://sto.ru
+                  <br><b>sto:</b> http://sto.ru
+                  <br><b>sto:</b> http://sto.ru
+                  <br><b>sto:</b> http://sto.ru
+              </div>
+              <div id="rightMenuArrow" class="right-menu-close" onclick="toggleRightMenu()">
+                <span id="rightMenuArrowText" class="right-menu-arrow">></span>
+              </div>
+              <div class="bottom-menu">
+                <div style="margin-left: 20px;"><span>number of subjects: </span><input type="number" value="20" id="subj" style="width: 40px;" /></div>
+                <div style="margin-left: 20px;"><span>number of pairs predicate -> object: </span><input type="number" id="probj" value="20" style="width: 40px;" /></div>
+                <button style="margin-left: 20px;" onclick=refreshWheel()>refresh</button>
+              </div>
+            </div>
+
           </div>
       </div>
     </div>
@@ -28,6 +51,32 @@
     <script src="js/d3.dependencyWheel.js"></script>
     <script src="js/composerBuilder.js"></script>
     <script>
+      function refreshWheel() {
+        console.log('refreshWheel')
+        var subj = document.getElementById('subj').value
+        var probj = document.getElementById('probj').value
+        postRequest('/refresh_wheel', {subj, probj})
+      }
+
+      function responseHandler(response) {
+        console.log(response)
+      }
+
+      var isExpandedRightMenu = true
+      function toggleRightMenu(){
+        isExpandedRightMenu = !isExpandedRightMenu
+        console.log(isExpandedRightMenu, document.getElementById('rightMenu').style.right)
+        if (isExpandedRightMenu) {
+          document.getElementById('rightMenu').style.right = "0px"
+          document.getElementById('rightMenuArrow').style.right = "200px"
+          document.getElementById('rightMenuArrowText').innerText = ">"
+        } else {
+          document.getElementById('rightMenu').style.right = "-200px"
+          document.getElementById('rightMenuArrow').style.right = "0px"
+          document.getElementById('rightMenuArrowText').innerText = "<"
+        }
+      }
+
       //https://raw.githubusercontent.com/i40-Tools/SemI40STOLandscape/sto-graph/src/wheel/data.txt
       //https://raw.githubusercontent.com/i40-Tools/SemI40STOLandscape/sto-graph/src/wheel/names.txt
       d3.json("data/data.txt", function(mtx) {
@@ -38,13 +87,13 @@
           }
   
           var chart = d3.chart.dependencyWheel()
-            .width(1200)    // also used for height, since the wheel is in a a square
-            .margin(350)   // used to display package names
+            .width(800)   // also used for height, since the wheel is in a a square
+            .margin(200)   // used to display package names
             .padding(.02); // separating groups in the wheel
   
           d3.select('#chart_placeholder')
             .datum(data)
-            .call(chart);
+            .call(chart)
         })
       })
     </script>

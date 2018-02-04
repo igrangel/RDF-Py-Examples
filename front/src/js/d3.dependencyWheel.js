@@ -52,13 +52,25 @@ d3.chart.dependencyWheel = function(options) {
       // Select the svg element, if it exists.
       var svg = d3.select(this).selectAll("svg").data([data]);
 
+      var zoom = d3.zoom()
+        .scaleExtent([0.5, 2])
+        .on("zoom", zooming)
+
       // Otherwise, create the skeletal chart.
       var gEnter = svg.enter().append("svg:svg")
-        .attr("width", width)
-        .attr("height", width)
+        .attr("width", window.innerWidth)
+        .attr("height", window.innerHeight - 55) // 50px height of top menu bar
         .attr("class", "dependencyWheel")
-      .append("g")
-        .attr("transform", "translate(" + (width / 2) + "," + (width / 2) + ")");
+        .call(zoom)
+      
+      var mainContainer = gEnter.append("g")
+        .attr("transform", "translate(" + (width / 2) + "," + (width / 2) + ")")
+
+      zoom.scaleTo(gEnter, 0.8)
+
+      function zooming() {
+        mainContainer.attr("transform", d3.event.transform)
+      }
 
       var arc = d3.arc()
         .innerRadius(radius)
@@ -68,7 +80,7 @@ d3.chart.dependencyWheel = function(options) {
         // if (d.index === 0) return '#ccc';
         // color = "hsl(" + parseInt(((packageNames[d.index][0].charCodeAt() - 97) / 26) * 360, 10) + ",90%,70%)";
         // console.log(color)
-        console.log(d)
+        // console.log(d)
         if (d.index < 44) return '#ccc'
         else return 'rgb(110, 121, 248)'
         return
@@ -77,14 +89,14 @@ d3.chart.dependencyWheel = function(options) {
       // Returns an event handler for fading a given chord group.
       var fade = function(opacity) {
         return function(g, i) {
-          gEnter.selectAll(".chord")
+          mainContainer.selectAll(".chord")
               .filter(function(d) {
                 return d.source.index != i && d.target.index != i;
               })
             .transition()
               .style("opacity", opacity);
           var groups = [];
-          gEnter.selectAll(".chord")
+          mainContainer.selectAll(".chord")
               .filter(function(d) {
                 if (d.source.index == i) {
                   groups.push(d.target.index);
@@ -95,7 +107,7 @@ d3.chart.dependencyWheel = function(options) {
               });
           groups.push(i);
           var length = groups.length;
-          gEnter.selectAll('.group')
+          mainContainer.selectAll('.group')
               .filter(function(d) {
                 for (var i = 0; i < length; i++) {
                   if(groups[i] == d.index) return false;
@@ -112,7 +124,7 @@ d3.chart.dependencyWheel = function(options) {
       var rootGroup = chordResult.groups[0];
       var rotation = - (rootGroup.endAngle - rootGroup.startAngle) / 2 * (180 / Math.PI);
 
-      var g = gEnter.selectAll("g.group")
+      var g = mainContainer.selectAll("g.group")
         .data(chordResult.groups)
         .enter().append("svg:g")
         .attr("class", "group")
@@ -142,7 +154,7 @@ d3.chart.dependencyWheel = function(options) {
         .on("mouseover", fade(0.1))
         .on("mouseout", fade(1));
 
-      gEnter.selectAll("path.chord")
+        mainContainer.selectAll("path.chord")
           .data(chordResult)
           .enter().append("svg:path")
           .attr("class", "chord")

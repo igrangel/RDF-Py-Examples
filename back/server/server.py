@@ -1,6 +1,7 @@
 """File that contains the endpoints for the app."""
 import logging
 import traceback
+import json
 
 from gevent.wsgi import WSGIServer
 
@@ -11,6 +12,8 @@ from flask import (Flask, Response, render_template, request,
 from .config import CONFIG
 
 from .STOLandscape import Ontology, DBpedia
+
+from .construct import mtx_main
 
 logger = logging.getLogger(__name__)
 app = Flask(__name__, static_folder='../../front/src')
@@ -116,6 +119,15 @@ def post_sto_update():
     sto.enrich(None, triple)
     sto.export('server/ttl/sto-some.ttl')
     return jsonify({'result': 'success', 'type': req_type})
+
+
+@app.route('/refresh_wheel', methods=['POST'])
+def refresh_wheel():
+    """Refresh Wheel."""
+    subj = request.get_json()['subj']
+    probj = request.get_json()['probj']
+    mtx_main()
+    return 'success'
 
 
 @app.route('/<path:path>')

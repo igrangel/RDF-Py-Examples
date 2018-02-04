@@ -1,4 +1,7 @@
-.s-body{ margin: 0; }
+.s-body{
+  margin: 0;
+  overflow: hidden;
+}
 
 .s-wrapper { height: calc(100vh - 50px); }
 
