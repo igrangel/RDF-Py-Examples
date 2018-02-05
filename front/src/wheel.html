@@ -21,16 +21,7 @@
             <div style="display: flex; flex-direction: row;">
               <div id="chart_placeholder"></div>
               <div id="rightMenu" class="right-menu">
-                  <b>Prefixes:</b>
-                  <br><b>sto:</b> http://sto.ru
-                  <br><b>sto:</b> http://sto.ru
-                  <br><b>sto:</b> http://sto.ru
-                  <br><b>sto:</b> http://sto.ru
-                  <br><b>sto:</b> http://sto.ru
-                  <br><b>sto:</b> http://sto.ru
-                  <br><b>sto:</b> http://sto.ru
-                  <br><b>sto:</b> http://sto.ru
-                  <br><b>sto:</b> http://sto.ru
+                  <span style="font-size: 16px;">Prefixes:</span><div id="prefixes"></div>
               </div>
               <div id="rightMenuArrow" class="right-menu-close" onclick="toggleRightMenu()">
                 <span id="rightMenuArrowText" class="right-menu-arrow">></span>
@@ -51,6 +42,7 @@
     <script src="js/d3.v4.min.js"></script>
     <script src="js/d3.dependencyWheel.js"></script>
     <script src="js/composerBuilder.js"></script>
+    <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/24f9aaca/src/FileSaver.js"></script>
     <script>
       dataFetch(true)
 
@@ -77,8 +69,6 @@
         console.log(response)
       }
 
-
-
       var isExpandedRightMenu = true
       function toggleRightMenu(){
         isExpandedRightMenu = !isExpandedRightMenu
@@ -97,37 +87,47 @@
       function dataFetch(isInitial) {
         d3.json('data/data.txt?_=' + new Date().getTime(), function(mtx) {
           d3.json('data/names.txt?_=' + new Date().getTime(), function(names) {
-            var data = {
-              packageNames: names,
-              matrix: mtx
-            }
+            d3.json('data/config.json?_=' + new Date().getTime(), function(config) {
+              // Assigninng prefixes
+              prefixHTML = ''
+              for (prefix of config["prefixes"]) {
+                prefixHTML += '<br><span><b>' + prefix[0] + '</b></span>: <span>' + prefix[1] + '</span>'//'<tr><td>' + prefix[0] + '</td><td>' + prefix[1] + '</td></tr>'
+              }
+              prefixHTML += ''
+              document.getElementById('prefixes').innerHTML = prefixHTML
+             
+              //Drawing chart
+              var data = {
+                packageNames: names,
+                matrix: mtx
+              }
 
-            var chart = d3.chart.dependencyWheel()
-              .width(800)   // also used for height, since the wheel is in a a square
-              .margin(200)   // used to display package names
-              .padding(.02); // separating groups in the wheel
+              var chart = d3.chart.dependencyWheel()
+                .width(800)   // also used for height, since the wheel is in a a square
+                .margin(200)   // used to display package names
+                .padding(.02) // separating groups in the wheel
+                .subjnum(config["subj"])
 
-            //document.getElementById('#chart_placeholder').innerHTML = ''
-            if (isInitial) { 
-              d3.select('#chart_placeholder')
-                .datum(data)
-                .call(chart)
-            } else {
-              var container = d3.select('#chart_placeholder');
-              
-              container.selectAll('.dependencyWheel')
-                .remove()
-                .exit()
-              
-              d3.select('#chart_placeholder')
-                .datum(data)
-                .call(chart)
-            }
+              if (isInitial) { 
+                d3.select('#chart_placeholder')
+                  .datum(data)
+                  .call(chart)
+              } else {
+                var container = d3.select('#chart_placeholder');
 
+                container.selectAll('.dependencyWheel')
+                  .remove()
+                  .exit()
+
+                d3.select('#chart_placeholder')
+                  .datum(data)
+                  .call(chart)
+              }
+            })
           })
         })
       }
-
+   
       //https://raw.githubusercontent.com/i40-Tools/SemI40STOLandscape/sto-graph/src/wheel/data.txt
       //https://raw.githubusercontent.com/i40-Tools/SemI40STOLandscape/sto-graph/src/wheel/names.txt
 

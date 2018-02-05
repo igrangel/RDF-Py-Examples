@@ -38,6 +38,7 @@ d3.chart.dependencyWheel = function(options) {
   var chartHeight = window.innerHeight - 90;
   var margin = 150;
   var padding = 0.02;
+  var subjnum = 0
 
   function chart(selection) {
     selection.each(function(data) {
@@ -63,10 +64,9 @@ d3.chart.dependencyWheel = function(options) {
         .attr("width", chartWidth)
         .attr("height", chartHeight) // 55px height of top menu bar
         .attr("class", "dependencyWheel")
-        .call(zoom) //.transform, d3.zoomIdentity.translate(chartWidth / 2, chartHeight / 2).scale(1)
+        .call(zoom)
       
       var mainContainer = gEnter.append("g")
-        //.attr("transform", "translate(" + (chartWidth / 2) + "," + (chartHeight / 2) + ")")
 
       gEnter.call(zoom.transform, d3.zoomIdentity.translate(chartWidth / 2, chartHeight / 2).scale(0.8));
 
@@ -83,7 +83,7 @@ d3.chart.dependencyWheel = function(options) {
         // color = "hsl(" + parseInt(((packageNames[d.index][0].charCodeAt() - 97) / 26) * 360, 10) + ",90%,70%)";
         // console.log(color)
         // console.log(d)
-        if (d.index < 44) return '#ccc'
+        if (d.index < subjnum) return '#ccc'
         else return 'rgb(110, 121, 248)'
         return
       };
@@ -187,6 +187,12 @@ d3.chart.dependencyWheel = function(options) {
     padding = value;
     return chart;
   };
+
+  chart.subjnum = function(value) {
+    if (!arguments.length) return padding;
+    subjnum = value;
+    return chart;
+  }
 
   return chart;
 };

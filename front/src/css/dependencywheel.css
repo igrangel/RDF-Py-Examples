@@ -24,15 +24,18 @@ form .btn-primary { margin-top: 25px; }
 }
 
 .right-menu {
+  font-size: 12px;
+  word-wrap: break-word;
   position: absolute;
   background-color: #18202A;
   color: white;
   right: 0;
-  height: calc(100% - 50px);
+  height: calc(100% - 90px);
   padding: 10px;
   /*box-shadow: -6px 6px 6px -6px gray;*/
   width: 200px;
   transition: all 700ms;
+  overflow-y: scroll;
 }
 
 .right-menu-close {
@@ -70,6 +73,6 @@ form .btn-primary { margin-top: 25px; }
 .spinner {
   display: none;
   position: absolute;
-  left: calc(50% - 25px);
+  left: calc(50% - 100px);
   top: calc(50% - 75px);
 }

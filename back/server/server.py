@@ -126,12 +126,16 @@ def refresh_wheel():
     """Refresh Wheel."""
     subj = request.get_json()['subj']
     probj = request.get_json()['probj']
-    conf = {
+    conf = json.load(open('server/config.json'))
+    conf_updated = {
         "subj": int(subj),
-        "probj": int(probj)
+        "probj": int(probj),
+        "prefixes": conf["prefixes"]
         }
     with open('server/config.json', 'w') as outfile:
-        json.dump(conf, outfile)
+        json.dump(conf_updated, outfile)
+    with open('../front/src/data/data.json', 'w') as outfile:
+        json.dump(conf_updated, outfile)
     mtx_main()
     return 'success'
 

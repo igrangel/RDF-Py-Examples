@@ -75,34 +75,28 @@ def sum_rows(x):
 
 def mtx_sorter(mtx, sub_list, prop_list, conf, is_sum_in_mtx):
     print('--> sorting matrix...')
-    sub_num = conf['subj'] #mtx.shape[0]
+    sub_num = conf['subj']
     prop_num = conf['probj']
-    #thld = 16
 
     mtx_sums = np.apply_along_axis(sum_rows, axis=0, arr=mtx)
     sorted_args = mtx_sums.argsort()[::-1] # sorting args in desc order
-    mtx_sums_sorted = mtx_sums[sorted_args]
     prop_list_sorted = np.asarray(prop_list)[sorted_args]
     mtx_sorted = mtx[:, sorted_args]
-
-    #is_thld = False
-    #while not is_thld:
-    #    thld_args = np.where(mtx_sums_sorted == thld)
-    #    thld = thld + 1
-    #    is_thld = len(thld_args[0])
-    #last_arg = thld_args[0][len(thld_args[0])-1] + 1
     
     prop_list_sorted_cut = prop_list_sorted[0:prop_num]
-    sub_list_cut = np.asarray(sub_list)[0:sub_num]
-    mtx_sorted_cut = mtx_sorted[0:sub_num, 0:prop_num]
-    mtx_sums_sorted_cut = mtx_sums_sorted[0:prop_num]
+    mtx_sorted_cut_prop = mtx_sorted[:, 0:prop_num]
+    mtx_sorted_clean, sub_list_clean = mtx_cleaner(mtx_sorted_cut_prop, sub_list)
+    mtx_sorted_clean_cut = mtx_sorted_clean[0:sub_num, :]
+    sub_list_clean_cut = np.asarray(sub_list_clean)[0:sub_num]
     
     if is_sum_in_mtx:
-        mtx_sorted_cut = np.vstack([mtx_sorted_cut, np.zeros(mtx_sorted_cut.shape[1])])
-        mtx_sorted_cut[mtx_sorted_cut.shape[0] - 1][:] = mtx_sums_sorted_cut
-        sub_list_cut = np.append(sub_list_cut, 'SUM')
+        mtx_sums_sorted = mtx_sums[sorted_args]
+        mtx_sums_sorted_cut = mtx_sums_sorted[0:prop_num]
+        mtx_sorted_clean_cut = np.vstack([mtx_sorted_clean_cut, np.zeros(mtx_sorted_clean_cut.shape[1])])
+        mtx_sorted_clean_cut[mtx_sorted_clean_cut.shape[0] - 1][:] = mtx_sums_sorted_cut
+        sub_list_cut = np.append(sub_list_clean_cut, 'SUM')
 
-    return mtx_sorted_cut, sub_list_cut, prop_list_sorted_cut
+    return mtx_sorted_clean_cut, sub_list_cut, prop_list_sorted_cut
 
 
 def mtx_to_csv(mtx, sub_list, prop_list):
@@ -166,15 +160,15 @@ def prefix_mapping():
 
 def mtx_cleaner(mtx, sub_list):
     print('--> cleaning matrix...')
-
     sub_ind = np.any(mtx > 0, axis=1)
     new_mtx = mtx[sub_ind, :]
     sub_list_no_zeros = sub_list[sub_ind]
     return new_mtx, sub_list_no_zeros
 
+
 def mtx_to_dep(mtx, sub_list, prop_list):
     print('--> creating depencdecy matrix...')
-    mtx, sub_list = mtx_cleaner(mtx, sub_list)
+    #mtx, sub_list = mtx_cleaner(mtx, sub_list)
     print('num of subs: ', len(sub_list))
     #print(mtx.shape, sub_list.shape, prop_list.shape)
     names = np.append(sub_list, prop_list)
