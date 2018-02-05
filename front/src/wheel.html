@@ -16,7 +16,8 @@
       <div class="s-main">
         <div id="headMobile"></div>
         <!--div class="s-content"></div-->
-          <div class="container">
+          <div id="container" class="container">
+            <img src="img/spinner.gif" id="spinner" class="spinner" />
             <div style="display: flex; flex-direction: row;">
               <div id="chart_placeholder"></div>
               <div id="rightMenu" class="right-menu">
@@ -51,51 +52,85 @@
     <script src="js/d3.dependencyWheel.js"></script>
     <script src="js/composerBuilder.js"></script>
     <script>
+      dataFetch(true)
+
+      function spinner(isSpinner) {
+        if (isSpinner) {
+          document.getElementById('container').style.opacity = 0.2
+          document.getElementById('spinner').style.display = 'initial'
+        } else {
+          document.getElementById('container').style.opacity = 1
+          document.getElementById('spinner').style.display = 'none'
+        }
+      }
+
       function refreshWheel() {
-        console.log('refreshWheel')
         var subj = document.getElementById('subj').value
         var probj = document.getElementById('probj').value
+        spinner(true)
         postRequest('/refresh_wheel', {subj, probj})
       }
 
       function responseHandler(response) {
+        dataFetch(false)
+        spinner(false)
         console.log(response)
       }
+
+
 
       var isExpandedRightMenu = true
       function toggleRightMenu(){
         isExpandedRightMenu = !isExpandedRightMenu
         console.log(isExpandedRightMenu, document.getElementById('rightMenu').style.right)
         if (isExpandedRightMenu) {
-          document.getElementById('rightMenu').style.right = "0px"
-          document.getElementById('rightMenuArrow').style.right = "200px"
-          document.getElementById('rightMenuArrowText').innerText = ">"
+          document.getElementById('rightMenu').style.right = '0px'
+          document.getElementById('rightMenuArrow').style.right = '200px'
+          document.getElementById('rightMenuArrowText').innerText = '>'
         } else {
-          document.getElementById('rightMenu').style.right = "-200px"
-          document.getElementById('rightMenuArrow').style.right = "0px"
-          document.getElementById('rightMenuArrowText').innerText = "<"
+          document.getElementById('rightMenu').style.right = '-200px'
+          document.getElementById('rightMenuArrow').style.right = '0px'
+          document.getElementById('rightMenuArrowText').innerText = '<'
         }
+      }
+
+      function dataFetch(isInitial) {
+        d3.json('data/data.txt?_=' + new Date().getTime(), function(mtx) {
+          d3.json('data/names.txt?_=' + new Date().getTime(), function(names) {
+            var data = {
+              packageNames: names,
+              matrix: mtx
+            }
+
+            var chart = d3.chart.dependencyWheel()
+              .width(800)   // also used for height, since the wheel is in a a square
+              .margin(200)   // used to display package names
+              .padding(.02); // separating groups in the wheel
+
+            //document.getElementById('#chart_placeholder').innerHTML = ''
+            if (isInitial) { 
+              d3.select('#chart_placeholder')
+                .datum(data)
+                .call(chart)
+            } else {
+              var container = d3.select('#chart_placeholder');
+              
+              container.selectAll('.dependencyWheel')
+                .remove()
+                .exit()
+              
+              d3.select('#chart_placeholder')
+                .datum(data)
+                .call(chart)
+            }
+
+          })
+        })
       }
 
       //https://raw.githubusercontent.com/i40-Tools/SemI40STOLandscape/sto-graph/src/wheel/data.txt
       //https://raw.githubusercontent.com/i40-Tools/SemI40STOLandscape/sto-graph/src/wheel/names.txt
-      d3.json("data/data.txt", function(mtx) {
-        d3.json("data/names.txt", function(names) {
-          var data = {
-            packageNames: names,
-            matrix: mtx
-          }
-  
-          var chart = d3.chart.dependencyWheel()
-            .width(800)   // also used for height, since the wheel is in a a square
-            .margin(200)   // used to display package names
-            .padding(.02); // separating groups in the wheel
-  
-          d3.select('#chart_placeholder')
-            .datum(data)
-            .call(chart)
-        })
-      })
+
     </script>
   </body>
 </html>

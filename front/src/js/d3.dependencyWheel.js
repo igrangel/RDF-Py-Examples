@@ -33,7 +33,9 @@ d3.chart = d3.chart || {};
  */
 d3.chart.dependencyWheel = function(options) {
 
-  var width = 700;
+  var width = 700
+  var chartWidth = window.innerWidth - 200;
+  var chartHeight = window.innerHeight - 90;
   var margin = 150;
   var padding = 0.02;
 
@@ -58,15 +60,15 @@ d3.chart.dependencyWheel = function(options) {
 
       // Otherwise, create the skeletal chart.
       var gEnter = svg.enter().append("svg:svg")
-        .attr("width", window.innerWidth)
-        .attr("height", window.innerHeight - 55) // 50px height of top menu bar
+        .attr("width", chartWidth)
+        .attr("height", chartHeight) // 55px height of top menu bar
         .attr("class", "dependencyWheel")
-        .call(zoom)
+        .call(zoom) //.transform, d3.zoomIdentity.translate(chartWidth / 2, chartHeight / 2).scale(1)
       
       var mainContainer = gEnter.append("g")
-        .attr("transform", "translate(" + (width / 2) + "," + (width / 2) + ")")
+        //.attr("transform", "translate(" + (chartWidth / 2) + "," + (chartHeight / 2) + ")")
 
-      zoom.scaleTo(gEnter, 0.8)
+      gEnter.call(zoom.transform, d3.zoomIdentity.translate(chartWidth / 2, chartHeight / 2).scale(0.8));
 
       function zooming() {
         mainContainer.attr("transform", d3.event.transform)

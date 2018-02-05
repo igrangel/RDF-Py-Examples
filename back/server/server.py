@@ -126,6 +126,12 @@ def refresh_wheel():
     """Refresh Wheel."""
     subj = request.get_json()['subj']
     probj = request.get_json()['probj']
+    conf = {
+        "subj": int(subj),
+        "probj": int(probj)
+        }
+    with open('server/config.json', 'w') as outfile:
+        json.dump(conf, outfile)
     mtx_main()
     return 'success'
 
