@@ -134,7 +134,7 @@ def refresh_wheel():
         }
     with open('server/config.json', 'w') as outfile:
         json.dump(conf_updated, outfile)
-    with open('../front/src/data/data.json', 'w') as outfile:
+    with open('../front/src/data/config.json', 'w') as outfile:
         json.dump(conf_updated, outfile)
     mtx_main()
     return 'success'

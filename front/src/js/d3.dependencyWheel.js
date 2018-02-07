@@ -34,7 +34,7 @@ d3.chart = d3.chart || {};
 d3.chart.dependencyWheel = function(options) {
 
   var width = 700
-  var chartWidth = window.innerWidth - 200;
+  var chartWidth = window.innerWidth;
   var chartHeight = window.innerHeight - 90;
   var margin = 150;
   var padding = 0.02;
