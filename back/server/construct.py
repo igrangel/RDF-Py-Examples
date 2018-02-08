@@ -22,9 +22,6 @@ def mtx_main():
     
     conf = json.load(open('server/config.json'))
     mtx, sub_list, prop_list = mtx_sorter(mtx, sub_list, prop_list, conf, False)
-
-    #subclasses(mtx, prop_list)
-    #mtx_to_csv(mtx, sub_list, prop_list)
     mtx_to_dep(mtx, sub_list, prop_list)
 
 
@@ -97,15 +94,6 @@ def mtx_sorter(mtx, sub_list, prop_list, conf, is_sum_in_mtx):
         sub_list_clean_cut = np.append(sub_list_clean_cut, 'SUM')
 
     return mtx_sorted_clean_cut, sub_list_clean_cut, prop_list_sorted_cut
-
-
-def mtx_to_csv(mtx, sub_list, prop_list):
-    print('--> saving as csv...')
-    csv_mtx = np.empty((mtx.shape[0] + 1, mtx.shape[1] + 1), dtype=object)
-    csv_mtx[:, 0] = np.insert(np.asarray(sub_list), 0, ''.encode('utf-8', 'replace')) #.astype(str)
-    csv_mtx[0, :] = np.insert(np.asarray(prop_list), 0, ''.encode('utf-8', 'replace')) #.astype(str)
-    csv_mtx[1:, 1:] = mtx.astype(int)
-    np.savetxt("csv/mtx.csv", csv_mtx, delimiter=";", fmt="%s")
 
 
 def prefix_assign(sub_list, prop_list):
@@ -185,30 +173,6 @@ def mtx_to_dep(mtx, sub_list, prop_list):
     arr_txt = str(data.astype(int).tolist())
     text_file.write(arr_txt)
     text_file.close()
-
-
-def subclass(x):
-    #has_minus_one = len(np.where(x == -1)[0])
-    has_plus_one = len(np.where(x == 1)[0])
-    if has_plus_one:
-        return False
-    else:
-        return True
-
-
-def subclasses(mtx, prop_list):
-    print('--> extracting subclasses...')
-    subs_mtx = np.empty((mtx.shape[1], mtx.shape[1]), dtype=object)
-    for cnt, column in enumerate(np.transpose(mtx)):           
-        new_mtx = np.transpose(mtx) - column
-        res_vec = np.apply_along_axis(subclass, axis=1, arr=new_mtx)
-        res_vec[cnt] = False
-        subs = np.where(res_vec == True)[0]
-        subs_mtx[0][cnt] = prop_list[cnt]
-        if len(subs) > 0:
-            subs_mtx[1:len(subs)+1, cnt] = prop_list[subs]
-        subs_mtx[len(subs)+1:, cnt] = ''
-    np.savetxt("csv/subs.csv", subs_mtx.astype(str), delimiter=";", fmt="%s")
 
 
 if __name__ == "__main__":
